@@ -1,0 +1,191 @@
+---
+title: "Merger"
+format: 
+    html:
+        csl: utils/apa.csl
+    pdf:
+        csl: utils/apa.csl
+bibliography: utils/references.bib
+jupyter: python3
+---
+
+## Simple
+
+### Definition
+
+The creation of a new municipality whose territory results from the union of two pre-existing municipalities
+
+### Implication of the change
+
+Pre-change (year t):
+
+- Municipalities A (with code identifier 1) and B (with code identifier 2) exist as separate entities, each with its own name, code, and territory.
+
+Post-change (year t + 1):
+
+- A and B are extinct.
+- Municipality C is established, covering the combined territory of A and B.
+- C either carries forward one predecessor’s name/code or receives a new name/code.
+
+### Example
+
+Establishment of new Municipality (Commune in French) Clux-Villeneuve with code identifier x. The new municipality was formed by the union of municipalities Clux and La Villeneuve.The changed is backed by the prefectural decree dated September 23, 2014, taking effect from January 1, 2015. 
+
+<br>
+<a href="documento.pdf" download class="btn btn-link d-flex align-items-center p-0 fs-5" style="color: inherit;">
+Download the legal backing of the change
+<i class="bi bi-file-earmark-pdf-fill ms-1 me-1"></i>
+<i class="bi bi-download"></i>
+</a>
+
+<a href="https://example.com" target="_blank" class="btn btn-link d-flex align-items-center p-0 fs-5" style="color: inherit;">
+Visit Official Resource
+<i class="bi bi-box-arrow-up-right ms-1"></i>
+</a>
+
+
+### Plots
+
+```{python}
+
+#| label: build-merger-map
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+
+import folium
+import geopandas as gpd
+from branca.element import Element
+
+
+gdf = gpd.read_file("geo_files/merger_before.geojson").to_crs(epsg=4326)
+
+
+centroid = gdf.unary_union.centroid
+
+
+m = folium.Map(
+    location=[centroid.y, centroid.x],
+    zoom_start=13,
+    tiles=None
+)
+
+
+folium.TileLayer(
+    tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    attr="Esri",
+    name="Satellite (Esri)",
+    control=True
+).add_to(m)
+folium.TileLayer("OpenStreetMap", name="Classic", control=True).add_to(m)
+folium.TileLayer("CartoDB positron", name="Black & White", control=True).add_to(m)
+
+
+css = """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+</style>
+"""
+m.get_root().header.add_child(Element(css))
+
+
+geojson_tooltip = folium.features.GeoJsonTooltip(
+    fields=["year", "com_name", "com_id"],
+    aliases=["Year:", "Municipality:", "Municipality Id:"],
+    localize=True,
+    labels=True,
+    style=(
+        "box-shadow: 3px 3px 6px rgba(0,0,0,0.1); "
+        "z-index: 9999; "
+        "font-family: 'Source Sans 3', sans-serif; "
+        "font-size: 14px; "            
+        "backdrop-filter: blur(20px); "
+        "-webkit-backdrop-filter: blur(20px); "
+        "padding: 8px; "
+        "border: 1px solid rgba(255, 255, 255, 0.15); "
+        "box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); "
+        "color: #343A40;"
+        "line-height: 1; "
+        "background: #f7f9f9;"
+    ),
+    sticky=True
+)
+
+
+geo_layer = folium.GeoJson(
+    data=gdf,
+    name="Merger Before",
+    style_function=lambda feat: {
+        "color": "#333333",
+        "weight": 1.5,
+        "fillOpacity": .1
+    },
+    tooltip=geojson_tooltip
+)
+geo_layer.add_to(m)
+
+
+_ = folium.LayerControl().add_to(m)
+
+```
+
+
+::: {.panel-tabset}
+
+## Diagram
+
+<div style='display: flex; gap: 1em; justify-content: center;'>
+<img src='img/‎merger_diagram.png'style="width: 100%; height: auto; margin: 0; padding: 0;" alt='merger diagram'/>
+</div>
+
+## Static map
+
+<div style="display: flex; gap: 1em; justify-content: center; align-items: flex-start; margin: 0; padding: 0; width: 100%;">
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;"><strong>Before</strong></p>
+<img src="img/merger_before.svg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="Before Map"/>
+</div>
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;"><strong>After</strong></p>
+<img src="img/merger_after.jpg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="After Map"/>
+</div>
+</div>
+
+
+## Interactive map
+
+```{python}
+#| echo: false
+#| output: true
+m
+```
+
+
+:::
+
+
+
+
+### How it is recorded in the data system
+
+
+## Multiple
+
+
+### Definition
+
+
+
+### Implication of te change
+
+
+
+### Example
+
+
+
+### How it is recorded in the data system
+

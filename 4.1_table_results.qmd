@@ -1,0 +1,220 @@
+---
+title: "Classification of Municipal Changes in the EU (2014–2024)"
+format: 
+    html:
+        csl: utils/apa.csl
+        toc: true
+        toc-depth: 4   
+    pdf:
+        csl: utils/apa.csl
+bibliography: utils/references.bib
+jupyter: python3
+---
+ 
+## Geographical changes
+
+### 1. Municipalities are created and dissolved [^1]
+
+<div class="table-responsive">
+<table class="table table-borderless table-sm">
+<thead>
+<tr>
+<th>Change</th>
+<th>Nature</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Merger</td>
+<td>Simple</td>
+<td>The creation of a new municipality whose territory results from the union of two pre-existing municipalities.</td>
+</tr>
+<tr>
+<td>Multiple [^2]</td>
+<td>The creation of a new municipality whose territory results from the union of more than two pre-existing municipalities.</td>
+</tr>
+<tr>
+<td rowspan="3">Split [^3]</td>
+<td>Simple</td>
+<td>The dissolution of one municipality, whose territory is divided among two newly established municipalities, neither of which retains the legal or administrative aspects of the original entity.</td>
+</tr>
+<tr>
+<td>Multiple</td>
+<td>The dissolution of one municipality, whose territory is divided among more than two newly established municipalities, none of which retains legal or administrative aspects of the original entity.</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>Composite restructuring [^4]</td>
+<td></td>
+<td>The simultaneous dissolution of one or multiple municipalities and the merger of their entire or partial territories, along with other pre-existing municipalities, into newly created municipalities.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+### 2. Municipalities are created and are not dissolved
+
+<div class="table-responsive">
+<table class="table table-borderless table-sm">
+<thead>
+<tr>
+<th>Change</th>
+<th>Nature</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">De-Merger [^5]</td>
+<td>Simple</td>
+<td>The re-establishment of one municipality that had previously participated in a merger (either simple or multiple) into a new, separate municipality whose territory exactly matches its original boundaries prior to the merger, thereby fully reversing the territorial effects of its inclusion in that merger</td>
+</tr>
+<tr>
+<td>Multiple</td>
+<td>The re-establishment of more than one municipality that had previously participated in a merger (either simple or multiple) into a new, separate municipalities whose territories exactly match their original boundaries prior to the merger, thereby fully reversing the territorial effects of its inclusion in that merger.</td>
+</tr>
+<tr>
+<td rowspan="3">Separation
+(secession) [^6]</td>
+<td>Simple</td>
+<td>The creation of a new municipality through the separation of a part of the territory from one municipality, which continues to exist.</td>
+</tr>
+<tr>
+<td>Multiple</td>
+<td>The creation of a new municipality through the separation of a part of the territory from more than one municipality, all of which continue to exist.</td>
+</tr>
+<tr>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+
+### 3. Municipalities are dissolved and are not created
+
+<div class="table-responsive">
+<table class="table table-borderless table-sm">
+<thead>
+<tr>
+<th>Change</th>
+<th>Nature</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Dissolution [^7]</td>
+<td>Simple</td>
+<td>The dissolution of one municipality and the distribution of its territory among two municipalities, neither of which is newly created. The original municipality ceases to exist as a legal-administrative entity.</td>
+</tr>
+<!-- <tr>
+<td>multiple</td>
+<td>The dissolution of one municipality and the distribution of its territory among more than two municipalities, none of which is newly created. The original municipality ceases to exist as a legal-administrative entity.</td>
+</tr> -->
+</tbody>
+</table>
+</div>
+
+
+### 4. Municipalities are neither created nor dissolved
+
+<div class="table-responsive">
+<table class="table table-borderless table-sm">
+<thead>
+<tr>
+<th>Change</th>
+<th>Nature</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Nature integration</td>
+<td>simple</td>
+<td>The integration of a previously non-municipal territory, such as a national park, forest, or uninhabited administrative zone, into two existing municipalities.</td>
+</tr>
+<tr>
+<td>multiple</td>
+<td>The integration of a previously non-municipal territory, such as a national park, forest, or uninhabited administrative zone, into more than two existing municipalities.</td>
+</tr>
+<tr>
+<td rowspan="4">Territorial transfer</td>
+<td>National Transfer</td>
+<td>The transfer of part of the territory of one municipality to another, without receiving territory in return, within the same country.</td>
+</tr>
+<tr>
+<td>National Exchange</td>
+<td>The one-time exchange of territories between two municipalities within the same country.</td>
+</tr>
+<tr>
+<td>International Transfer</td>
+<td>The transfer of part of the territory of one municipality from one country to another municipality in a neighboring country, without receiving territory in return.</td>
+</tr>
+<tr>
+<td>International Exchange</td>
+<td>The one-time exchange of territories between two municipalities from neighboring countries.</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+## Non-geographical changes
+
+All four categories presented above represent situations where municipal boundaries are changing. However, sometimes geographical changes occur simultaneously with changes in the municipalities' legal identifiers (such as code, name, or both). Typical examples include mergers or splits, where boundary changes are accompanied by the municipality’s name or code changes. Sometimes the geographical boundaries of a municipality change, while its legal identifiers remain the same. Typical examples include all territorial transfer situations. And sometimes, municipalities' boundaries may remain unchanged while its legal identifiers are modified. We have classified these situations into the following category:
+
+<div class="table-responsive">
+<table class="table table-borderless table-sm">
+<thead>
+<tr>
+<th>Change</th>
+<th>Nature</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="3">Non-geo</td>
+<td>Change name</td>
+<td>The change of a municipality’s name.</td>
+</tr>
+<tr>
+<td>Change id</td>
+<td>The change of a municipality’s id.</td>
+</tr>
+<tr>
+<td>Change id</td>
+<td>The change of a municipality’s id.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Download table
+
+<br>
+<a href="documento.pdf" download class="btn btn-link d-flex align-items-center p-0 fs-5" style="color: inherit;">
+Download table in PDF:
+<i class="bi bi-file-earmark-pdf-fill ms-1 me-1"></i>
+<i class="bi bi-download"></i>
+</a>
+
+
+## Notes
+
+[^1]:  We consider each change category as a relationship between two points in time — the situation before and after the change — and classify transformations based on whether municipalities were dissolved (i.e., ceased to exist as independent administrative units) or created (i.e., new administrative units were formed as a result of the change).
+
+[^2]:The distinguishing factor from a simple merger is explicitly quantitative (more than two pre-existing municipalities involved), reflecting increased administrative, political, social, and economic complexity due to negotiations among multiple governing authorities.
+
+[^3]:The dissolved municipality ceases to exist in legal and administrative terms. Unlike dissolution, all resulting municipalities are new creations, regardless of whether they retain parts of the name, code, or territory. Unlike separation (secession), no part of the original unit is recognized as its legal continuation.
+
+[^4]: The key feature is that no resulting municipality is pre-existing (all are established as part of the merger process, and some are composed of parts of previously dissolved municipalities).
+
+[^5]: This conceptual framework is designed for a study specifically tracking territorial changes in municipalities across Europe within a defined 10-year period (2014–2024). Events falling partially or fully outside this period, although potentially meeting conceptual definitions, are explicitly noted but classified separately due to the temporal constraints of the current project.
+
+[^6]: The key criterion is the identification of legal or administrative acts of creation. Separation (secession) occurs when the relevant legislation explicitly establishes one or more new municipalities while affirming the continuity of the remaining original municipality. Continuity can be inferred when the remaining entity is not replaced, regardless of whether it retains the same name or administrative code. In cases where legal records are unclear or unavailable, territorial majority may be used as a secondary criterion: if the remaining municipality retains more than 50% of the original area, it may be treated as the continuation of the original unit. This approach ensures consistency across jurisdictions, even where naming conventions or coding systems vary.
+
+[^7]: Unlike split, no new municipalities are created.

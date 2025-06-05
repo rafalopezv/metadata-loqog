@@ -1,0 +1,246 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "LoQoG Project",
+    "section": "",
+    "text": "About this site\nWe explain what this site is for",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "1_summary.html",
+    "href": "1_summary.html",
+    "title": "Project overview",
+    "section": "",
+    "text": "Overview of the project, including both boundary changes and the data aspects",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Project overview</span>"
+    ]
+  },
+  {
+    "objectID": "2_concept.html",
+    "href": "2_concept.html",
+    "title": "Conceptual approach",
+    "section": "",
+    "text": "The local map of EU: History of Municipal Borders for Comparative Research\nThe literature identifies various types of municipal changes, which can be broadly categorized into geographical and non-geographical changes. Geographical changes involve modifications to municipal boundaries, non-geographical changes, by contrast, affect the legal identifiers of municipalities—such as names or administrative codes—without altering their physical boundaries. In some cases, such non-geographical changes occur independently, with no accompanying changes to the municipality’s territory. For instance, municipalities may undergo name changes to reflect historical, cultural, or political factors, or experience adjustments to their official registry codes. These constitute purely non-geographical changes, as the territorial extent remains constant while the legal attributes are updated (see Figure 3.1). Conversely, geographical boundaries may change while the municipality’s legal identifiers remain unchanged. A typical example of such purely geographical changes is a territorial transfer. In some cases, however, geographical and non-geographical changes occur simultaneously—for example, during municipal mergers or splits, where a change in boundary (geo) coincides with a change in name or administrative code (non-geo).\nTo date, only a limited number of studies explicitly distinguish between geographical (i.e., boundary‐related) changes and non‐geographical modifications of municipalities in their analyses (Goerlich & Ruiz, 2018; Kociuba & Kociuba, 2023). In most cases, researchers focus on a single type of municipal change—typically within the context of a specific territorial reform—without differentiating between changes to boundaries and changes to legal identifiers. Moreover, due to the diversity of procedures and forms that municipal changes can take, most existing studies are confined to a single country, and in some cases, even to a single administrative unit within that country (see (Blesse & Baskaran, 2016; Heinisch et al., 2018; Strebel, 2018)).\nThus, some papers focus exclusively on mergers processes: for example, in the Netherlands (Allers & Geertsema, 2016), Denmark (Blom-Hansen et al., 2016; Hansen et al., 2014), Finland (Harjunen et al., 2021; Moisio & Uusitalo, 2013), Norway (Solvang et al., 2025), etc. Others research papers are devoted only to the splits processes: for example, in Sweden (Brink, 2004; Erlingsson et al., 2024), Slovenia (Bačlija Brajnik & Lavtar, 2021), Czech Republic (Lysek, 2021), Bulgaria, Croatia and Poland (Swianiewicz et al., 2024). Some studies examine municipal mergers and splits across multiple countries (Klausen, 2024; Swianiewicz, 2019), but such cross‐national research remains uncommon. Similarly, only a few studies consider both mergers and splits within a single country, for example in Hungary (Dobos, 2021). However, comprehensive analyses covering both types of changes simultaneously remain relatively uncommon.\nAt the same time, the majority of the papers mentioned above do not focus on analyzing the changes within municipalities themselves, but rather on the causes for these changes or their consequences or effects (see Figure 3.2 ). As for the causes of such changes, researchers have investigated factors such as financial incentives (Strebel, 2018), the degree of voluntariness—whether changes were initiated by municipalities themselves or imposed top‐down by higher levels of government (see (Blom-Hansen et al., 2016; Swianiewicz et al., 2022)), internal dissatisfaction within municipalities (Bačlija Brajnik & Lavtar, 2021), etc. With respect to consequences, studies have explored the impact of changes on local government spending, taxation, and service provision (Allers & Geertsema, 2016; Blom-Hansen et al., 2016; Erlingsson et al., 2024; Hansen et al., 2014), performance of local governments (Swianiewicz et al., 2024), political representation (Harjunen et al., 2021), voter turnout in local elections (Heinisch et al., 2018), trust in local politicians (Solvang et al., 2025), etc. A few studies attempt to address both the factors beyond the change and their potential consequences (e.g., (Swianiewicz, 2019)).\nThis project aims to provide a comprehensive analysis of all identifiable types of municipal‐level changes across EU countries during the period 2014–2024. Our approach relies on the systematic comparison of municipal shapefiles from official country sources, offering a novel geo‐based method for detecting and classifying these changes. While we do not seek to explore the underlying causes or motivations for each type of change, nor their broader consequences, our analysis enables a comparative assessment of the scale and distribution of these changes—both within individual countries and across the EU as a whole.\nOne of the main challenges we encountered was the absence of a unified and widely accepted typology of municipal changes in the academic literature. While some attempts have been made to address this gap—most notably in the contexts of Poland, Spain and the Czech Republic (Goerlich & Ruiz, 2018; Kociuba & Kociuba, 2023; Pászto et al., 2020)—they remain limited in scope. Thus, among the three studies listed above, the study by Goerlich and Ruiz (2018) is particularly relevant to our project, as it proposes a typology of boundary changes in Spanish municipalities between two points in time and distinguishes between territorial and non‐territorial changes. However, this approach has certain limitations. First, it is based on a single‐country case study, which limits its ability to capture the full range of municipal changes that may occur across different EU countries. Second, the temporal scope of the analysis (1842–2001) restricts its relevance for understanding more recent developments and complicates systematic cross‐national comparisons.\nOur project addresses these limitations by developing a harmonized typology of municipal changes that can be applied across EU member states and over a consistent time frame. This typology may serve as a foundation for more systematic, comparative studies of municipal restructuring across the EU. To date, no comprehensive source has been identified that captures the full range of municipal changes (geographical and non‐geographical) that have occurred in EU countries over the past decade. Moreover, there is a lack of harmonized data that would allow for a detailed examination of how such changes are distributed. This gap in the literature limits the capacity for systematic and comparative assessments of municipal transformations at the EU level.\nThis project seeks to address this gap through two main objectives. First, it introduces a new classification that systematically categorizes municipal changes in the EU since 2014. This classification encompasses both territorial changes and non‐territorial changes, including name changes and updates to administrative codes. Second, the project applies this classification to all EU countries to illustrate the distribution and frequency of these changes across them.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Conceptual approach</span>"
+    ]
+  },
+  {
+    "objectID": "2_concept.html#the-local-map-of-eu-history-of-municipal-borders-for-comparative-research",
+    "href": "2_concept.html#the-local-map-of-eu-history-of-municipal-borders-for-comparative-research",
+    "title": "Conceptual approach",
+    "section": "",
+    "text": "Figure 3.1: Intersection of geo and non-geo changes of the municipalities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3.2: How we can understand the process of change: from causes to consequences.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Conceptual approach</span>"
+    ]
+  },
+  {
+    "objectID": "2_concept.html#references",
+    "href": "2_concept.html#references",
+    "title": "Conceptual approach",
+    "section": "References",
+    "text": "References\n\n\n\n\nAllers, M. A., & Geertsema, J. B. (2016). The effects of local government amalgamation on public spending, taxation, and service levels: Evidence from 15 years of municipal consolidation. Journal of Regional Science, 56(4), 659–682.\n\n\nBačlija Brajnik, I., & Lavtar, R. (2021). Factors contributing to municipal splits in slovenia. Miscellanea Geographica. Regional Studies on Development, 25(1), 54–61.\n\n\nBlesse, S., & Baskaran, T. (2016). Do municipal mergers reduce costs? Evidence from a german federal state. Regional Science and Urban Economics, 59, 54–74.\n\n\nBlom-Hansen, J., Houlberg, K., Serritzlew, S., & Treisman, D. (2016). Jurisdiction size and local government policy expenditure: Assessing the effect of municipal amalgamation. American Political Science Review, 110(4), 812–831.\n\n\nBrink, A. (2004). The break‐up of municipalities: Voting behavior in local referenda. Economics of Governance, 119–135.\n\n\nDobos, G. (2021). Municipal splits and hidden amalgamations in hungary. Miscellanea Geographica. Regional Studies on Development, 25(1), 37–45.\n\n\nErlingsson, G. Ö., Klarin, J., & Mörk, E. (2024). Does size matter? Evidence from municipal splits. Journal of Regional Science, 64(3), 700–731.\n\n\nGoerlich, F., & Ruiz, F. (2018). Typology and representation of alterations in territorial units: A proposal. Journal of Official Statistics, 34(1), 83–106.\n\n\nHansen, S. W., Houlberg, K., & Pedersen, L. H. (2014). Do municipal mergers improve fiscal outcomes? Scandinavian Political Studies, 37(2), 196–214.\n\n\nHarjunen, O., Saarimaa, T., & Tukiainen, J. (2021). Political representation and effects of municipal mergers. Political Science Research and Methods, 9(1), 72–88.\n\n\nHeinisch, R., Lehner, T., Mühlböck, A., & Schimpf, C. H. (2018). How do municipal amalgamations affect turnout in local elections? Insights from the 2015 municipal reform in the austrian state of styria. Local Government Studies, 44(4), 465–491.\n\n\nKlausen, J. E. (2024). Governmental strategies for municipal amalgamations: Evidence from 24 european countries. Territory, Politics, Governance, 1–20.\n\n\nKociuba, D., & Kociuba, W. (2023). Variants of boundary changes—a case study of poland. Land, 12(6), 1208.\n\n\nLysek, J. (2021). Local identity or economic benefits? The municipal splits in the czech republic. Miscellanea Geographica. Regional Studies on Development, 25(1), 18–27.\n\n\nMoisio, A., & Uusitalo, R. (2013). The impact of municipal mergers on local public expenditures in finland. Public Finance and Management, 13(3), 148–166.\n\n\nPászto, V., Nétek, R., Vondráková, A., & Voženı́lek, V. (2020). Municipalities in the czech republic—compilation of “a universal” dataset. Data, 5(4), 107.\n\n\nSolvang, Ø., Saglie, J., & Winsvold, M. (2025). Does municipal amalgamation affect trust in local politicians? The case of norway. International Political Science Review, 46(1), 57–73.\n\n\nStrebel, M. A. (2018). Incented voluntary municipal mergers as a two‐stage process: Evidence from the swiss canton of fribourg. Urban Affairs Review, 54(2), 267–301.\n\n\nSwianiewicz, P. (2019). Municipal divorces–the under researched topic of territorial reforms in europe. Romania, 2948(3181), 3181.\n\n\nSwianiewicz, P., Gendźwiłł, A., Houlberg, K., & Klausen, J. E. (2022). Municipal territorial reforms of the 21st century in europe. Routledge.\n\n\nSwianiewicz, P., Łukomska, J., Jurlina Alibegović, D., & Kalcheva, D. (2024). The size of the size effect. The impact of splits of municipalities on the performance of local governments in bulgaria, croatia and poland. Local Government Studies, 1–23.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Conceptual approach</span>"
+    ]
+  },
+  {
+    "objectID": "4.1_table_results.html",
+    "href": "4.1_table_results.html",
+    "title": "Classification of Municipal Changes in the EU (2014–2024)",
+    "section": "",
+    "text": "Geographical changes",
+    "crumbs": [
+      "Results",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Classification of Municipal Changes in the EU (2014–2024)</span>"
+    ]
+  },
+  {
+    "objectID": "4.1_table_results.html#geographical-changes",
+    "href": "4.1_table_results.html#geographical-changes",
+    "title": "Classification of Municipal Changes in the EU (2014–2024)",
+    "section": "",
+    "text": "1. Municipalities are created and dissolved 1\n\n\n\n\n\nChange\n\n\nNature\n\n\nExplanation\n\n\n\n\n\n\nMerger\n\n\nSimple\n\n\nThe creation of a new municipality whose territory results from the union of two pre-existing municipalities.\n\n\n\n\nMultiple 2\n\n\nThe creation of a new municipality whose territory results from the union of more than two pre-existing municipalities.\n\n\n\n\nSplit 3\n\n\nSimple\n\n\nThe dissolution of one municipality, whose territory is divided among two newly established municipalities, neither of which retains the legal or administrative aspects of the original entity.\n\n\n\n\nMultiple\n\n\nThe dissolution of one municipality, whose territory is divided among more than two newly established municipalities, none of which retains legal or administrative aspects of the original entity.\n\n\n\n\n\n\nComposite restructuring 4\n\n\n\n\nThe simultaneous dissolution of one or multiple municipalities and the merger of their entire or partial territories, along with other pre-existing municipalities, into newly created municipalities.\n\n\n\n\n\n\n\n2. Municipalities are created and are not dissolved\n\n\n\n\n\nChange\n\n\nNature\n\n\nExplanation\n\n\n\n\n\n\nDe-Merger 5\n\n\nSimple\n\n\nThe re-establishment of one municipality that had previously participated in a merger (either simple or multiple) into a new, separate municipality whose territory exactly matches its original boundaries prior to the merger, thereby fully reversing the territorial effects of its inclusion in that merger\n\n\n\n\nMultiple\n\n\nThe re-establishment of more than one municipality that had previously participated in a merger (either simple or multiple) into a new, separate municipalities whose territories exactly match their original boundaries prior to the merger, thereby fully reversing the territorial effects of its inclusion in that merger.\n\n\n\n\nSeparation (secession) 6\n\n\nSimple\n\n\nThe creation of a new municipality through the separation of a part of the territory from one municipality, which continues to exist.\n\n\n\n\nMultiple\n\n\nThe creation of a new municipality through the separation of a part of the territory from more than one municipality, all of which continue to exist.\n\n\n\n\n\n\n\n\n\n3. Municipalities are dissolved and are not created\n\n\n\n\n\nChange\n\n\nNature\n\n\nExplanation\n\n\n\n\n\n\nDissolution 7\n\n\nSimple\n\n\nThe dissolution of one municipality and the distribution of its territory among two municipalities, neither of which is newly created. The original municipality ceases to exist as a legal-administrative entity.\n\n\n\n\n\n\n\n\n4. Municipalities are neither created nor dissolved\n\n\n\n\n\nChange\n\n\nNature\n\n\nExplanation\n\n\n\n\n\n\nNature integration\n\n\nsimple\n\n\nThe integration of a previously non-municipal territory, such as a national park, forest, or uninhabited administrative zone, into two existing municipalities.\n\n\n\n\nmultiple\n\n\nThe integration of a previously non-municipal territory, such as a national park, forest, or uninhabited administrative zone, into more than two existing municipalities.\n\n\n\n\nTerritorial transfer\n\n\nNational Transfer\n\n\nThe transfer of part of the territory of one municipality to another, without receiving territory in return, within the same country.\n\n\n\n\nNational Exchange\n\n\nThe one-time exchange of territories between two municipalities within the same country.\n\n\n\n\nInternational Transfer\n\n\nThe transfer of part of the territory of one municipality from one country to another municipality in a neighboring country, without receiving territory in return.\n\n\n\n\nInternational Exchange\n\n\nThe one-time exchange of territories between two municipalities from neighboring countries.",
+    "crumbs": [
+      "Results",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Classification of Municipal Changes in the EU (2014–2024)</span>"
+    ]
+  },
+  {
+    "objectID": "4.1_table_results.html#non-geographical-changes",
+    "href": "4.1_table_results.html#non-geographical-changes",
+    "title": "Classification of Municipal Changes in the EU (2014–2024)",
+    "section": "Non-geographical changes",
+    "text": "Non-geographical changes\nAll four categories presented above represent situations where municipal boundaries are changing. However, sometimes geographical changes occur simultaneously with changes in the municipalities’ legal identifiers (such as code, name, or both). Typical examples include mergers or splits, where boundary changes are accompanied by the municipality’s name or code changes. Sometimes the geographical boundaries of a municipality change, while its legal identifiers remain the same. Typical examples include all territorial transfer situations. And sometimes, municipalities’ boundaries may remain unchanged while its legal identifiers are modified. We have classified these situations into the following category:\n\n\n\n\n\nChange\n\n\nNature\n\n\nExplanation\n\n\n\n\n\n\nNon-geo\n\n\nChange name\n\n\nThe change of a municipality’s name.\n\n\n\n\nChange id\n\n\nThe change of a municipality’s id.\n\n\n\n\nChange id\n\n\nThe change of a municipality’s id.",
+    "crumbs": [
+      "Results",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Classification of Municipal Changes in the EU (2014–2024)</span>"
+    ]
+  },
+  {
+    "objectID": "4.1_table_results.html#download-table",
+    "href": "4.1_table_results.html#download-table",
+    "title": "Classification of Municipal Changes in the EU (2014–2024)",
+    "section": "Download table",
+    "text": "Download table\n  Download table in PDF:",
+    "crumbs": [
+      "Results",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Classification of Municipal Changes in the EU (2014–2024)</span>"
+    ]
+  },
+  {
+    "objectID": "4.1_table_results.html#notes",
+    "href": "4.1_table_results.html#notes",
+    "title": "Classification of Municipal Changes in the EU (2014–2024)",
+    "section": "Notes",
+    "text": "Notes",
+    "crumbs": [
+      "Results",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Classification of Municipal Changes in the EU (2014–2024)</span>"
+    ]
+  },
+  {
+    "objectID": "4.1_table_results.html#footnotes",
+    "href": "4.1_table_results.html#footnotes",
+    "title": "Classification of Municipal Changes in the EU (2014–2024)",
+    "section": "",
+    "text": "We consider each change category as a relationship between two points in time — the situation before and after the change — and classify transformations based on whether municipalities were dissolved (i.e., ceased to exist as independent administrative units) or created (i.e., new administrative units were formed as a result of the change).↩︎\nThe distinguishing factor from a simple merger is explicitly quantitative (more than two pre-existing municipalities involved), reflecting increased administrative, political, social, and economic complexity due to negotiations among multiple governing authorities.↩︎\nThe dissolved municipality ceases to exist in legal and administrative terms. Unlike dissolution, all resulting municipalities are new creations, regardless of whether they retain parts of the name, code, or territory. Unlike separation (secession), no part of the original unit is recognized as its legal continuation.↩︎\nThe key feature is that no resulting municipality is pre-existing (all are established as part of the merger process, and some are composed of parts of previously dissolved municipalities).↩︎\nThis conceptual framework is designed for a study specifically tracking territorial changes in municipalities across Europe within a defined 10-year period (2014–2024). Events falling partially or fully outside this period, although potentially meeting conceptual definitions, are explicitly noted but classified separately due to the temporal constraints of the current project.↩︎\nThe key criterion is the identification of legal or administrative acts of creation. Separation (secession) occurs when the relevant legislation explicitly establishes one or more new municipalities while affirming the continuity of the remaining original municipality. Continuity can be inferred when the remaining entity is not replaced, regardless of whether it retains the same name or administrative code. In cases where legal records are unclear or unavailable, territorial majority may be used as a secondary criterion: if the remaining municipality retains more than 50% of the original area, it may be treated as the continuation of the original unit. This approach ensures consistency across jurisdictions, even where naming conventions or coding systems vary.↩︎\nUnlike split, no new municipalities are created.↩︎",
+    "crumbs": [
+      "Results",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Classification of Municipal Changes in the EU (2014–2024)</span>"
+    ]
+  },
+  {
+    "objectID": "4.2_merger.html",
+    "href": "4.2_merger.html",
+    "title": "Merger",
+    "section": "",
+    "text": "Simple",
+    "crumbs": [
+      "Results",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Merger</span>"
+    ]
+  },
+  {
+    "objectID": "4.2_merger.html#simple",
+    "href": "4.2_merger.html#simple",
+    "title": "Merger",
+    "section": "",
+    "text": "Definition\nThe creation of a new municipality whose territory results from the union of two pre-existing municipalities\n\n\nImplication of the change\nPre-change (year t):\n\nMunicipalities A (with code identifier 1) and B (with code identifier 2) exist as separate entities, each with its own name, code, and territory.\n\nPost-change (year t + 1):\n\nA and B are extinct.\nMunicipality C is established, covering the combined territory of A and B.\nC either carries forward one predecessor’s name/code or receives a new name/code.\n\n\n\nExample\nEstablishment of new Municipality (Commune in French) Clux-Villeneuve with code identifier x. The new municipality was formed by the union of municipalities Clux and La Villeneuve.The changed is backed by the prefectural decree dated September 23, 2014, taking effect from January 1, 2015.\n  Download the legal backing of the change   \n Visit Official Resource  \n\n\nPlots\n\nDiagramStatic mapInteractive map\n\n\n\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter\n\n\n\n\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\nHow it is recorded in the data system",
+    "crumbs": [
+      "Results",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Merger</span>"
+    ]
+  },
+  {
+    "objectID": "4.2_merger.html#multiple",
+    "href": "4.2_merger.html#multiple",
+    "title": "Merger",
+    "section": "Multiple",
+    "text": "Multiple\n\nDefinition\n\n\nImplication of te change\n\n\nExample\n\n\nHow it is recorded in the data system",
+    "crumbs": [
+      "Results",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Merger</span>"
+    ]
+  },
+  {
+    "objectID": "4_results.html",
+    "href": "4_results.html",
+    "title": "Results",
+    "section": "",
+    "text": "Classification table + plots + real maps",
+    "crumbs": [
+      "Results",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "4_results.html#classification-table-plots-real-maps",
+    "href": "4_results.html#classification-table-plots-real-maps",
+    "title": "Results",
+    "section": "",
+    "text": "DiagramStatic mapInteractive map\n\n\n\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter\n\n\n\n\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook",
+    "crumbs": [
+      "Results",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "4_results.html#citations",
+    "href": "4_results.html#citations",
+    "title": "Results",
+    "section": "Citations",
+    "text": "Citations\nThis is a sentence with a footnote1.\nHere’s another sentence with a longer footnote explanation2.",
+    "crumbs": [
+      "Results",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "4_results.html#bibliography",
+    "href": "4_results.html#bibliography",
+    "title": "Results",
+    "section": "Bibliography",
+    "text": "Bibliography\nLater, we will explore how this idea has evolved over time (Smith, 2020, p. 42).",
+    "crumbs": [
+      "Results",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "4_results.html#footnotes",
+    "href": "4_results.html#footnotes",
+    "title": "Results",
+    "section": "",
+    "text": "This is a direct quote in APA format.↩︎\nThis is a longer footnote with more detail. You can write multiple lines here, and it will render properly at the bottom of the page or document, depending on the output format.↩︎",
+    "crumbs": [
+      "Results",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Results</span>"
+    ]
+  },
+  {
+    "objectID": "5_activities.html",
+    "href": "5_activities.html",
+    "title": "Current activities",
+    "section": "",
+    "text": "What the team is doing currently\n\nPapers\nConferences",
+    "crumbs": [
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Current activities</span>"
+    ]
+  },
+  {
+    "objectID": "playground.html",
+    "href": "playground.html",
+    "title": "Playground",
+    "section": "",
+    "text": "Static map example",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Playground</span>"
+    ]
+  },
+  {
+    "objectID": "playground.html#static-map-example",
+    "href": "playground.html#static-map-example",
+    "title": "Playground",
+    "section": "",
+    "text": "Before\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Playground</span>"
+    ]
+  },
+  {
+    "objectID": "playground.html#interctive-map-example",
+    "href": "playground.html#interctive-map-example",
+    "title": "Playground",
+    "section": "Interctive map example",
+    "text": "Interctive map example\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Playground</span>"
+    ]
+  }
+]

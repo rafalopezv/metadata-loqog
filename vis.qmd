@@ -1,0 +1,17 @@
+---
+title: Test drive
+format:
+  html:
+    code-fold: false
+    page-layout: full
+jupyter: python3
+---
+
+
+<div style="width: 100%; height: 0; padding-bottom: 56.25%; position: relative;">
+<iframe
+src="https://loqog-map-compare.apps.k8s.gu.se/"
+style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh; border: none;"
+allowfullscreen>
+</iframe>
+</div>

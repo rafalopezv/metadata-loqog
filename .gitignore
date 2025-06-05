@@ -1,0 +1,36 @@
+
+# 1) Quarto‐generated output directories
+_book/             # by default, Quarto puts rendered PDF/HTML/book outputs here
+_site/             # legacy for Quarto website builds (if used)
+
+# 2) Quarto build/cache folders
+.quarto/           # internal Quarto cache (e.g. project metadata)
+_quarto.yml.user   # user‐specific overrides (if you ever check one in locally)
+*_cache/           # R Markdown style cache folders (if any chunks use caching)
+*.utf8_cache       # cached files for unicode conversion (rare, but can appear)
+
+# 3) R/Python artifacts (if you use RStudio or Python in your workflow)
+.Rhistory          # R command history
+.RData             # R workspace images
+.Rproj.user/       # RStudio project‐specific cache
+__pycache__/       # Python bytecode cache
+*.pyc              # compiled Python files
+
+# 4) LaTeX intermediate files (when knitting to PDF)
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# 5) System files / IDE settings
+.DS_Store          # macOS Finder metadata
+Thumbs.db          # Windows Explorer metadata
+.vscode/           # VSCode workspace settings (if you don’t want to share them)
+.idea/             # IntelliJ/CLion/PyCharm project files
+
+
+
+/.quarto/

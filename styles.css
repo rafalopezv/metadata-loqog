@@ -1,0 +1,118 @@
+/* 1. Load Source Sans Pro from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+/* 2. Base Styles: Typography + Color */
+html,
+body {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333333; /* Charcoal text */
+  background: #fafafa; /* Very light off-white (closer to white) */
+  margin: 0;
+  padding: 1.5rem; /* Generous padding for whitespace */
+  line-height: 1.6; /* Comfortable line spacing */
+}
+
+/* 3. Headings */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 4. Paragraphs */
+p {
+  margin-bottom: 1rem;
+}
+
+/* 5. Links: Primary Accent (Swedish Blue) */
+
+a {
+  text-decoration: none;
+  color: #4a90e2;
+  transition: border-color 0.2s ease-in-out;
+}
+
+/* 2. Creamos el pseudo‐elemento ::after que hará el “subrayado” */
+
+/* 4) (Opcional) Cambio sutil de color al hacer hover */
+a:hover {
+  border-bottom-color: currentColor;
+}
+
+/* 6. Buttons / Call-to-Action (Secondary Accent: Mustard Yellow) */
+button,
+.btn-primary {
+  background-color: #fecb00; /* Mustard yellow */
+  color: #333333;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+}
+button:hover,
+.btn-primary:hover {
+  background-color: #e6b800; /* Slightly darker on hover */
+}
+
+/* 7. Code Blocks / Inline Code */
+pre,
+code {
+  font-family: Menlo, Consolas, "Courier New", monospace;
+  background: #efefef; /* Very light gray for contrast */
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* 8. Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+th,
+td {
+  border: 1px solid #ebebeb;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+}
+thead {
+  background: #f0f0f0; /* Subtle light gray header */
+}
+tbody tr:nth-child(even) {
+  background: #fcfcfc; /* Very faint stripe for readability */
+}
+
+#quarto-sidebar {
+  background-color: #fafafa;
+}
+
+form.aa-Form.d-flex {
+  background: #f0f0f0;
+  border: none;
+}
+
+.tab-content {
+  margin: 0;
+  padding: 0;
+  border: #fafafa solid 2px;
+}
+
+.tab-pane {
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #fafafa;
+  color: #333333;
+}

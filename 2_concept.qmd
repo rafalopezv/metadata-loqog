@@ -1,0 +1,41 @@
+---
+title: "Conceptual approach"
+format: 
+    html:
+        csl: utils/apa.csl
+    pdf:
+        csl: utils/apa.csl
+bibliography: utils/references.bib
+jupyter: python3
+---
+
+## The local map of EU: History of Municipal Borders for Comparative Research
+
+The literature identifies various types of municipal changes, which can be broadly categorized into geographical and non-geographical changes. Geographical changes involve modifications to municipal boundaries, non-geographical changes, by contrast, affect the legal identifiers of municipalities—such as names or administrative codes—without altering their physical boundaries. In some cases, such non-geographical changes occur independently, with no accompanying changes to the municipality’s territory. For instance, municipalities may undergo name changes to reflect historical, cultural, or political factors, or experience adjustments to their official registry codes. These constitute purely non-geographical changes, as the territorial extent remains constant while the legal attributes are updated (see @fig-1). Conversely, geographical boundaries may change while the municipality's legal identifiers remain unchanged. A typical example of such purely geographical changes is a territorial transfer. In some cases, however, geographical and non-geographical changes occur simultaneously—for example, during municipal mergers or splits, where a change in boundary (geo) coincides with a change in name or administrative code (non-geo).
+
+::: center
+![Intersection of geo and non-geo changes of the municipalities](img/‎Untitled.‎001.png){#fig-1 width="100%" max-width="500px" alt="intersection"}
+:::
+
+To date, only a limited number of studies explicitly distinguish between geographical (i.e., boundary‐related) changes and non‐geographical modifications of municipalities in their analyses [@goerlich2018; @kociuba2023]. In most cases, researchers focus on a single type of municipal change—typically within the context of a specific territorial reform—without differentiating between changes to boundaries and changes to legal identifiers. Moreover, due to the diversity of procedures and forms that municipal changes can take, most existing studies are confined to a single country, and in some cases, even to a single administrative unit within that country (see [@blesse2016; @heinisch2018; @strebel2018]).
+
+Thus, some papers focus exclusively on mergers processes: for example, in the Netherlands [@allers2016], Denmark [@hansen2014; @blomhansen2016], Finland [@moisio2013; @harjunen2021], Norway [@solvang2025], etc. Others research papers are devoted only to the splits processes: for example, in Sweden [@erlingsson2024; @brink2004], Slovenia [@baclija2021], Czech Republic [@lysek2021], Bulgaria, Croatia and Poland [@swianiewicz2024]. Some studies examine municipal mergers and splits across multiple countries [@klausen2024; @swianiewicz2019], but such cross‐national research remains uncommon. Similarly, only a few studies consider both mergers and splits within a single country, for example in Hungary [@dobos2021]. However, comprehensive analyses covering both types of changes simultaneously remain relatively uncommon.
+
+At the same time, the majority of the papers mentioned above do not focus on analyzing the changes within municipalities themselves, but rather on the causes for these changes or their consequences or effects (see @fig-2 ). As for the causes of such changes, researchers have investigated factors such as financial incentives [@strebel2018], the degree of voluntariness—whether changes were initiated by municipalities themselves or imposed top‐down by higher levels of government (see [@blomhansen2016; @swianiewicz2022]), internal dissatisfaction within municipalities [@baclija2021], etc. With respect to consequences, studies have explored the impact of changes on local government spending, taxation, and service provision [@hansen2014; @allers2016; @blomhansen2016; @erlingsson2024], performance of local governments [@swianiewicz2024], political representation [@harjunen2021], voter turnout in local elections [@heinisch2018], trust in local politicians [@solvang2025], etc. A few studies attempt to address both the factors beyond the change and their potential consequences (e.g., [@swianiewicz2019]).
+
+::: center
+![How we can understand the process of change: from causes to consequences.](img/‎Untitled.‎002.png){#fig-2 width="100%" max-width="500px" alt="merger diagram"}
+:::
+
+This project aims to provide a comprehensive analysis of all identifiable types of municipal‐level changes across EU countries during the period 2014–2024. Our approach relies on the systematic comparison of municipal shapefiles from official country sources, offering a novel geo‐based method for detecting and classifying these changes. While we do not seek to explore the underlying causes or motivations for each type of change, nor their broader consequences, our analysis enables a comparative assessment of the scale and distribution of these changes—both within individual countries and across the EU as a whole.
+
+One of the main challenges we encountered was the absence of a unified and widely accepted typology of municipal changes in the academic literature. While some attempts have been made to address this gap—most notably in the contexts of Poland, Spain and the Czech Republic [@kociuba2023; @goerlich2018; @paszto2020]—they remain limited in scope. Thus, among the three studies listed above, the study by Goerlich and Ruiz (2018) is particularly relevant to our project, as it proposes a typology of boundary changes in Spanish municipalities between two points in time and distinguishes between territorial and non‐territorial changes. However, this approach has certain limitations. First, it is based on a single‐country case study, which limits its ability to capture the full range of municipal changes that may occur across different EU countries. Second, the temporal scope of the analysis (1842–2001) restricts its relevance for understanding more recent developments and complicates systematic cross‐national comparisons.
+
+Our project addresses these limitations by developing a harmonized typology of municipal changes that can be applied across EU member states and over a consistent time frame. This typology may serve as a foundation for more systematic, comparative studies of municipal restructuring across the EU. To date, no comprehensive source has been identified that captures the full range of municipal changes (geographical and non‐geographical) that have occurred in EU countries over the past decade. Moreover, there is a lack of harmonized data that would allow for a detailed examination of how such changes are distributed. This gap in the literature limits the capacity for systematic and comparative assessments of municipal transformations at the EU level.
+
+This project seeks to address this gap through two main objectives. First, it introduces a new classification that systematically categorizes municipal changes in the EU since 2014. This classification encompasses both territorial changes and non‐territorial changes, including name changes and updates to administrative codes. Second, the project applies this classification to all EU countries to illustrate the distribution and frequency of these changes across them.
+
+## References
+
+
+

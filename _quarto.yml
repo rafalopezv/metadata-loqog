@@ -1,0 +1,42 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "LoQoG Project"
+  author: "QoG Data Team"
+  date: last-modified
+
+  chapters:
+    - index.qmd
+    - 1_summary.qmd
+    - 2_concept.qmd
+    - part: "Methodology"
+      chapters:
+        - 3.1_summary.qmd
+        - 3.2_unit.qmd
+        - 3.3_code.qmd
+        - 3.4_legal.qmd
+        - 3.5_data.qmd
+        - 3.6_exclusions.qmd
+    - part: "Results"
+      chapters:
+        - 4.1_table_results.qmd
+        - 4.2_merger.qmd
+        - 4_results.qmd
+    - 5_activities.qmd
+    - playground.qmd
+    - vis.qmd
+
+execute:
+  enabled: true
+  jupyter: python3
+
+format:
+  html:
+    css: styles.css
+    toc: true
+    number-sections: false
+    code-fold: false
+    htmlwidgets: true
+    prefer-html: true

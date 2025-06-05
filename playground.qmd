@@ -1,0 +1,114 @@
+---
+title: "Playground"
+jupyter: python3
+---
+
+
+## Static map example
+
+<div style='display: flex; gap: 1em; justify-content: center;'>
+<div style='flex: 1; text-align: center;'>
+<p><strong>Before</strong></p>
+<img src='img/merger_before.jpg' style='width: 100%; max-width: 500px;' alt='Before Map'/>
+</div>
+<div style='flex: 1; text-align: center;'>
+<p><strong>After</strong></p>
+<img src='img/merger_after.jpg' style='width: 100%; max-width: 500px;' alt='After Map'/>
+</div>
+</div>
+
+
+## Interctive map example
+
+
+```{python}
+
+#| label: build-merger-map
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+
+import folium
+import geopandas as gpd
+from branca.element import Element
+
+
+gdf = gpd.read_file("geo_files/merger_before.geojson").to_crs(epsg=4326)
+
+
+centroid = gdf.unary_union.centroid
+
+
+m = folium.Map(
+    location=[centroid.y, centroid.x],
+    zoom_start=13,
+    tiles=None
+)
+
+
+folium.TileLayer(
+    tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    attr="Esri",
+    name="Satellite (Esri)",
+    control=True
+).add_to(m)
+folium.TileLayer("OpenStreetMap", name="Classic", control=True).add_to(m)
+folium.TileLayer("CartoDB positron", name="Black & White", control=True).add_to(m)
+
+
+css = """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+</style>
+"""
+m.get_root().header.add_child(Element(css))
+
+
+geojson_tooltip = folium.features.GeoJsonTooltip(
+    fields=["year", "com_name", "com_id"],
+    aliases=["Year:", "Municipality:", "Municipality Id:"],
+    localize=True,
+    labels=True,
+    style=(
+        "box-shadow: 3px 3px 6px rgba(0,0,0,0.1); "
+        "z-index: 9999; "
+        "font-family: 'Source Sans 3', sans-serif; "
+        "font-size: 14px; "            
+        "backdrop-filter: blur(20px); "
+        "-webkit-backdrop-filter: blur(20px); "
+        "padding: 8px; "
+        "border: 1px solid rgba(255, 255, 255, 0.15); "
+        "box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); "
+        "color: #343A40;"
+        "line-height: 1; "
+        "background: #f7f9f9;"
+    ),
+    sticky=True
+)
+
+
+geo_layer = folium.GeoJson(
+    data=gdf,
+    name="Merger Before",
+    style_function=lambda feat: {
+        "color": "#333333",
+        "weight": 1.5,
+        "fillOpacity": .1
+    },
+    tooltip=geojson_tooltip
+)
+geo_layer.add_to(m)
+
+
+_ = folium.LayerControl().add_to(m)
+
+```
+
+
+
+```{python}
+#| echo: false
+#| output: true
+m
+```
