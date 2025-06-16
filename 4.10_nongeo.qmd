@@ -1,0 +1,10 @@
+---
+title: "Non Geographical Changes"
+format: 
+    html:
+        csl: utils/apa.csl
+    pdf:
+        csl: utils/apa.csl
+bibliography: utils/references.bib
+jupyter: python3
+---

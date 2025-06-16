@@ -53,21 +53,3 @@ quarto render
 ```bash
 quarto preview
 ```
-
-## 7. Geo files
-
-- Add a separated geojson file per example at `geo_files` folder. Files need to come from the `input/clean_geo`.
-
-## 8. Plotting static maps
-
-- For static maps I suggest to use ggplot in R
-- There is a folder named `r_static_plots` where I placed the code example `example.R` that produces the `img/merger_after.jpg` and the `img/merger_before.jpg`
-- Add the resulting plots in the same `img` folder
-
-## 8. Plotting interactive maps
-
-- Probably wraping the example provided at `4_results.qmd` under the comment `This is the interactive plot example` is a better approach. I leave that to you
-
-## 9. Testing interactive and static plots
-
-- You can test your code works at the `plaground.qmd` file

@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Home
 format:
   html:
     code-fold: false
@@ -9,5 +9,31 @@ jupyter: python3
 # About this site
 
 
-We explain what this site is for
+This will be filled at the end. For now I use it as a test site.
+
+
+```r
+# This is a dummy R example
+a %>%
+  filter(com_id %in% c("71138", "71578")) %>% 
+  mutate(
+    com_name = str_to_title(com_name),
+    label = paste0(
+      com_name, ", France", "\n", 
+      "Year ",
+      year, "\n",
+      "Municipality Id: ", 
+      com_id
+    )
+  )
+```
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({"name": ["Alice", "Bob"], "score": [90, 85]})
+print(df.describe())
+```
+
+![alt](img/pic_one.svg)
 

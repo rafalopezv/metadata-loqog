@@ -1,5 +1,5 @@
 ---
-title: Test drive
+title: Graphing Tool
 format:
   html:
     code-fold: false

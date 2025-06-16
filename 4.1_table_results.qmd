@@ -20,7 +20,7 @@ jupyter: python3
 <thead>
 <tr>
 <th>Change</th>
-<th>Nature</th>
+<th>Sub-Change</th>
 <th>Explanation</th>
 </tr>
 </thead>
@@ -61,7 +61,7 @@ jupyter: python3
 <thead>
 <tr>
 <th>Change</th>
-<th>Nature</th>
+<th>Sub-Change</th>
 <th>Explanation</th>
 </tr>
 </thead>
@@ -100,7 +100,7 @@ jupyter: python3
 <thead>
 <tr>
 <th>Change</th>
-<th>Nature</th>
+<th>Sub-Change</th>
 <th>Explanation</th>
 </tr>
 </thead>
@@ -126,7 +126,7 @@ jupyter: python3
 <thead>
 <tr>
 <th>Change</th>
-<th>Nature</th>
+<th>Sub-Change</th>
 <th>Explanation</th>
 </tr>
 </thead>
@@ -171,7 +171,7 @@ All four categories presented above represent situations where municipal boundar
 <thead>
 <tr>
 <th>Change</th>
-<th>Nature</th>
+<th>Sub-Change</th>
 <th>Explanation</th>
 </tr>
 </thead>

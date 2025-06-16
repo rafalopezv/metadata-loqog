@@ -1,5 +1,5 @@
 ---
-title: "Unit of Analysis Definition"
+title: "Definition of Unit of Analysis"
 format: 
     html:
         csl: utils/apa.csl

@@ -1,5 +1,5 @@
 ---
-title: "Conceptual approach"
+title: "Composite restructuring"
 format: 
     html:
         csl: utils/apa.csl
@@ -8,12 +8,3 @@ format:
 bibliography: utils/references.bib
 jupyter: python3
 ---
-
-
-
-
-
-
-
-We tell our conceptual approach, why this work is different
-

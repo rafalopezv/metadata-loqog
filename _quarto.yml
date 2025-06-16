@@ -3,7 +3,7 @@ project:
   output-dir: _book
 
 book:
-  title: "LoQoG Project"
+  title: "Local Quality of Government Project"
   author: "QoG Data Team"
   date: last-modified
 
@@ -23,8 +23,27 @@ book:
       chapters:
         - 4.1_table_results.qmd
         - 4.2_merger.qmd
-        - 4_results.qmd
+        - 4.3_split.qmd
+        - 4.4_composite.qmd
+        - 4.5_demerger.qmd
+        - 4.6_separation.qmd
+        - 4.7_dissolution.qmd
+        - 4.8_nature.qmd
+        - 4.9_transfer.qmd
+        - 4.10_nongeo.qmd
+    - part: "Data"
+      chapters:
+        - 5.1_data-structure.qmd
+        - 5.2_linking-datasets.qmd
+        - 5.3_geographic-base.qmd
+        - 5.4_event-log.qmd
+        - 5.5_auxiliary-files.qmd
+        - 5.6_standards.qmd
+        - 5.7_use-cases.qmd
+        - 5.8_changelog.qmd
+        - 5.9_glossary.qmd
     - 5_activities.qmd
+    - 6_project_status.qmd
     - playground.qmd
     - vis.qmd
 
@@ -36,7 +55,16 @@ format:
   html:
     css: styles.css
     toc: true
+    toc-depth: 5
     number-sections: false
     code-fold: false
     htmlwidgets: true
     prefer-html: true
+    download: ["pdf", "docx"]
+
+  pdf:
+    documentclass: book # use the LaTeX book class
+    toc: true # include a table of contents
+    number-sections: true # enable numbered headings
+
+  docx: {} # default Word output

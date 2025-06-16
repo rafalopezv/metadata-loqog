@@ -1,15 +1,16 @@
 ---
-title: "Playground"
+title: "Page for Victo's graph tests"
 jupyter: python3
 ---
 
+This will be removed 
 
 ## Static map example
 
 <div style='display: flex; gap: 1em; justify-content: center;'>
 <div style='flex: 1; text-align: center;'>
 <p><strong>Before</strong></p>
-<img src='img/merger_before.jpg' style='width: 100%; max-width: 500px;' alt='Before Map'/>
+<img src='img/merger_before.svg' style='width: 100%; max-width: 500px;' alt='Before Map'/>
 </div>
 <div style='flex: 1; text-align: center;'>
 <p><strong>After</strong></p>

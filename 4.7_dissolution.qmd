@@ -1,5 +1,5 @@
 ---
-title: "Current activities"
+title: "Dissolution"
 format: 
     html:
         csl: utils/apa.csl
@@ -8,15 +8,3 @@ format:
 bibliography: utils/references.bib
 jupyter: python3
 ---
-
-
-
-
-
-
-
-What  the team is doing currently
-
-- Papers
-- Conferences
-

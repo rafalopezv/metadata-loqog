@@ -1,5 +1,5 @@
 ---
-title: "Exclusions and Restrictions"
+title: "Limitations"
 format: 
     html:
         csl: utils/apa.csl

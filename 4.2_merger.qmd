@@ -27,24 +27,83 @@ Post-change (year t + 1):
 - Municipality C is established, covering the combined territory of A and B.
 - C either carries forward one predecessor’s name/code or receives a new name/code.
 
-### Example
+### Visual overview
 
-Establishment of new Municipality (Commune in French) Clux-Villeneuve with code identifier x. The new municipality was formed by the union of municipalities Clux and La Villeneuve.The changed is backed by the prefectural decree dated September 23, 2014, taking effect from January 1, 2015. 
+<br/>
 
-<br>
-<a href="documento.pdf" download class="btn btn-link d-flex align-items-center p-0 fs-5" style="color: inherit;">
-Download the legal backing of the change
+<p style="text-align: center; font-weight: 600;font-size: 1.1rem; marin-top:30px;">Simple Merger</p>
+<div style="text-align: center;">
+<img src="img/appendix/merger_simple.svg"
+style="width: 80%; height: auto; margin-top:5px;" 
+alt="merger diagram" />
+</div>
+<p style="text-align: center; font-weight: 400;font-size: 0.8rem; marin-top:10px;">The number of municipal units involved is indicated in brackets under each description.</p>
+
+### Examples
+
+#### France
+
+The case occured in 2015 and it was noticeable in 2016.
+
+The new municipality (Commune in France) Val de Lambronne (id 11080) was created through the merger of the municipalities Caudeval (id 11080) and Gueytes-et-Labastide (id 11171). The name Val de Lambronne is new, and the id was inherited from the municipality of Caudeval. The case was registered in the metadata dataset under the id: fr-m-34-2015-2016.
+
+
+<a href="documento.pdf" download class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
+Legal verification of the change
 <i class="bi bi-file-earmark-pdf-fill ms-1 me-1"></i>
 <i class="bi bi-download"></i>
 </a>
 
-<a href="https://example.com" target="_blank" class="btn btn-link d-flex align-items-center p-0 fs-5" style="color: inherit;">
+<a href="https://example.com" target="_blank" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
 Visit Official Resource
 <i class="bi bi-box-arrow-up-right ms-1"></i>
 </a>
 
+#### Luxembourg
 
-### Plots
+The case took place in 2014 and it was noticeable in 2015.
+
+The new municipality (Commune in Luxembourg) Wiltz (id 0807) was created through the merger of the municipalities Wiltz (id 0807) and Eschweiler (id 0803). Both the name and id were inherited from the former Wiltz municipality. The case was registered in the metadata dataset under the id: fr-m-34-2015-2016.
+
+In some case, the inherited name of a new municipality formed after a merger sometimes consists of a combination of the names of the municipalities involved, separated by a hyphen. For example, the municipality (Commune in France) Clux-Villeneuve (id 71138) was created through the merger of the municipalities Clux (id 71138) and La Villeneuve (id 71578). The name is new—formed by combining the names of the merged entities—while the id was inherited from Clux (Case id: fr-m-10-2014-2015). Similarly, the municipality (Commune in Luxembourg) Rosport-Mompach (id 1006) was created through the merger of the municipalities Rosport (id 1007) and Mompach (id 1006). The name combines the names of both former municipalities, and the id was inherited from Mompach. Case id: lu-m-4-2017-2018
+
+<a href="documento.pdf" download class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
+Legal verification of the change
+<i class="bi bi-file-earmark-pdf-fill ms-1 me-1"></i>
+<i class="bi bi-download"></i>
+</a>
+
+<a href="https://example.com" target="_blank" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
+Visit Official Resource
+<i class="bi bi-box-arrow-up-right ms-1"></i>
+</a>
+
+#### Norway
+
+The case took place in 2017 and it was noticeable in 2018.
+
+The new municipality (Kommune in Norway) Larvik (id 0712) was created through the merger of the municipalities Larvik (id 0709) and Lardal (id 0728). The name Larvik is inherited from the former Larvik municipality, and the id 0712 was new . The case was registered in the metadata dataset under the id: no-m-2-2017-2018
+
+<a href="documento.pdf" download class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
+Legal verification of the change
+<i class="bi bi-file-earmark-pdf-fill ms-1 me-1"></i>
+<i class="bi bi-download"></i>
+</a>
+
+<a href="https://example.com" target="_blank" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
+Visit Official Resource
+<i class="bi bi-box-arrow-up-right ms-1"></i>
+</a>
+
+Likewise,  the new municipality (Kommune in Norway) Indre Fosen (id 5054) was created through the merger of the municipalities Leksvik (id 1718) and Rissa (id 1624). Both the name and the id are new (source).Case id: no-m-6-2017-2018
+
+<a href="https://example.com" target="_blank" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
+Visit Official Resource
+<i class="bi bi-box-arrow-up-right ms-1"></i>
+</a>
+
+### Map Plots
+
 
 ```{python}
 
@@ -133,11 +192,17 @@ _ = folium.LayerControl().add_to(m)
 
 ::: {.panel-tabset}
 
-## Diagram
 
-<div style='display: flex; gap: 1em; justify-content: center;'>
-<img src='img/‎merger_diagram.png'style="width: 100%; height: auto; margin: 0; padding: 0;" alt='merger diagram'/>
-</div>
+
+
+## Interactive map
+
+```{python}
+#| echo: false
+#| output: true
+m
+```
+
 
 ## Static map
 
@@ -153,16 +218,6 @@ _ = folium.LayerControl().add_to(m)
 <img src="img/merger_after.jpg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="After Map"/>
 </div>
 </div>
-
-
-## Interactive map
-
-```{python}
-#| echo: false
-#| output: true
-m
-```
-
 
 :::
 
