@@ -41,7 +41,9 @@ alt="merger diagram" />
 
 ### Examples
 
-#### France
+Based on our cross-country analysis, we identified several configurations in how newly formed municipalities—created through simple mergers—are assigned names and ids. Specifically, we observed four common combinations: (a) a new name with an inherited id, (b) an inherited name with an inherited id, (c) an inherited name with a new id, and (d) a new name with a new id. Below we present illustrative examples from different EU countries for each case.
+
+#### New name with an inherited id
 
 The case occured in 2015 and it was noticeable in 2016.
 
@@ -59,7 +61,7 @@ Visit Official Resource
 <i class="bi bi-box-arrow-up-right ms-1"></i>
 </a>
 
-#### Luxembourg
+#### Inherited name and id
 
 The case took place in 2014 and it was noticeable in 2015.
 
@@ -78,7 +80,7 @@ Visit Official Resource
 <i class="bi bi-box-arrow-up-right ms-1"></i>
 </a>
 
-#### Norway
+#### Inherited name with a new id
 
 The case took place in 2017 and it was noticeable in 2018.
 
@@ -95,7 +97,17 @@ Visit Official Resource
 <i class="bi bi-box-arrow-up-right ms-1"></i>
 </a>
 
-Likewise,  the new municipality (Kommune in Norway) Indre Fosen (id 5054) was created through the merger of the municipalities Leksvik (id 1718) and Rissa (id 1624). Both the name and the id are new (source).Case id: no-m-6-2017-2018
+#### New name with a new id
+
+The case occured in 2075 and it was noticeable in 2018.
+
+The new municipality (Kommune in Norway) Indre Fosen (id 5054) was created through the merger of the municipalities Leksvik (id 1718) and Rissa (id 1624). Both the name and the id are new (source).Case id: no-m-6-2017-2018
+
+<a href="documento.pdf" download class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
+Legal verification of the change
+<i class="bi bi-file-earmark-pdf-fill ms-1 me-1"></i>
+<i class="bi bi-download"></i>
+</a>
 
 <a href="https://example.com" target="_blank" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
 Visit Official Resource
