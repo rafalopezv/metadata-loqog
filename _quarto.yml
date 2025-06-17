@@ -55,7 +55,7 @@ format:
   html:
     css: styles.css
     toc: true
-    toc-depth: 5
+    toc-depth: 3
     number-sections: false
     code-fold: false
     htmlwidgets: true

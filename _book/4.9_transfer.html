@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -68,6 +68,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -189,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./4.4_composite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Composite restructuring</span></a>
+  <a href="./4.4_composite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Composite Restructuring</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -209,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./4.8_nature.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Nature integration</span></a>
+  <a href="./4.8_nature.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Nature Integration</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -305,8 +308,47 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#national-transfer" id="toc-national-transfer" class="nav-link active" data-scroll-target="#national-transfer">National Transfer</a>
+  <ul>
+  <li><a href="#definition" id="toc-definition" class="nav-link" data-scroll-target="#definition">Definition</a></li>
+  <li><a href="#implication-of-the-change" id="toc-implication-of-the-change" class="nav-link" data-scroll-target="#implication-of-the-change">Implication of the change</a></li>
+  <li><a href="#visual-overview" id="toc-visual-overview" class="nav-link" data-scroll-target="#visual-overview">Visual overview</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
+  <li><a href="#map-plots" id="toc-map-plots" class="nav-link" data-scroll-target="#map-plots">Map Plots</a></li>
+  <li><a href="#how-it-is-recorded-in-the-data-system" id="toc-how-it-is-recorded-in-the-data-system" class="nav-link" data-scroll-target="#how-it-is-recorded-in-the-data-system">How it is recorded in the data system</a></li>
+  </ul></li>
+  <li><a href="#national-exchange" id="toc-national-exchange" class="nav-link" data-scroll-target="#national-exchange">National Exchange</a>
+  <ul>
+  <li><a href="#definition-1" id="toc-definition-1" class="nav-link" data-scroll-target="#definition-1">Definition</a></li>
+  <li><a href="#implication-of-the-change-1" id="toc-implication-of-the-change-1" class="nav-link" data-scroll-target="#implication-of-the-change-1">Implication of the change</a></li>
+  <li><a href="#visual-overview-1" id="toc-visual-overview-1" class="nav-link" data-scroll-target="#visual-overview-1">Visual overview</a></li>
+  <li><a href="#example-1" id="toc-example-1" class="nav-link" data-scroll-target="#example-1">Example</a></li>
+  <li><a href="#map-plots-1" id="toc-map-plots-1" class="nav-link" data-scroll-target="#map-plots-1">Map Plots</a></li>
+  </ul></li>
+  <li><a href="#international-transfer" id="toc-international-transfer" class="nav-link" data-scroll-target="#international-transfer">International Transfer</a>
+  <ul>
+  <li><a href="#definition-2" id="toc-definition-2" class="nav-link" data-scroll-target="#definition-2">Definition</a></li>
+  <li><a href="#implication-of-the-change-2" id="toc-implication-of-the-change-2" class="nav-link" data-scroll-target="#implication-of-the-change-2">Implication of the change</a></li>
+  <li><a href="#visual-overview-2" id="toc-visual-overview-2" class="nav-link" data-scroll-target="#visual-overview-2">Visual overview</a></li>
+  <li><a href="#example-2" id="toc-example-2" class="nav-link" data-scroll-target="#example-2">Example</a></li>
+  <li><a href="#map-plots-2" id="toc-map-plots-2" class="nav-link" data-scroll-target="#map-plots-2">Map Plots</a></li>
+  </ul></li>
+  <li><a href="#international-exchnage" id="toc-international-exchnage" class="nav-link" data-scroll-target="#international-exchnage">International Exchnage</a>
+  <ul>
+  <li><a href="#definition-3" id="toc-definition-3" class="nav-link" data-scroll-target="#definition-3">Definition</a></li>
+  <li><a href="#implication-of-the-change-3" id="toc-implication-of-the-change-3" class="nav-link" data-scroll-target="#implication-of-the-change-3">Implication of the change</a></li>
+  <li><a href="#visual-overview-3" id="toc-visual-overview-3" class="nav-link" data-scroll-target="#visual-overview-3">Visual overview</a></li>
+  <li><a href="#example-3" id="toc-example-3" class="nav-link" data-scroll-target="#example-3">Example</a></li>
+  <li><a href="#map-plots-3" id="toc-map-plots-3" class="nav-link" data-scroll-target="#map-plots-3">Map Plots</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -330,8 +372,1369 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="national-transfer" class="level2">
+<h2 class="anchored" data-anchor-id="national-transfer">National Transfer</h2>
+<section id="definition" class="level3">
+<h3 class="anchored" data-anchor-id="definition">Definition</h3>
+<p>The transfer of part of the territory of one municipality to another, without receiving territory in return, within the same country.</p>
+</section>
+<section id="implication-of-the-change" class="level3">
+<h3 class="anchored" data-anchor-id="implication-of-the-change">Implication of the change</h3>
+<p>Before (year t):</p>
+<ul>
+<li>Municipalities A (with id 1<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>) and B (with id 2) exist as separate entities, each with its own name, id, and territory.</li>
+</ul>
+<p>After (year t + 1):</p>
+<ul>
+<li>Municipality A transferred one part of its territory to Municipality B, without receiving any territory in return, within the same country.</li>
+<li>Municipality A and B didn’t change their names or ids.</li>
+</ul>
+</section>
+<section id="visual-overview" class="level3">
+<h3 class="anchored" data-anchor-id="visual-overview">Visual overview</h3>
+<p><br></p>
+<p style="text-align: center; font-weight: 600;font-size: 1.1rem; marin-top:30px;">
+National Transfer
+</p>
+<div style="text-align: center;">
+<p><img src="img/appendix/national_transfer.svg" style="width: 80%; height: auto; margin-top:5px;" alt="merger diagram"></p>
+</div>
+<p style="text-align: center; font-weight: 400;font-size: 0.8rem; marin-top:10px;">
+The number of municipal units involved is indicated in brackets under each description.
+</p>
+</section>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example">Example</h3>
+<p>Since 2017, the municipality (kommune in Norway) of <em>Stokke</em> (id 5301) transferred one part of its territory to municipality <em>Tønsberg</em> (id 0704), without receiving territory in return, within the same country. Municipalities Stokke and Tønsberg retained both its name and id (source). The case was registered in the metadata dataset under the id: no-t-1-2016-2017.</p>
+<p><a href="documento.pdf" download="" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;"> Legal verification of the change <i class="bi bi-file-earmark-pdf-fill ms-1 me-1"></i> <i class="bi bi-download"></i> </a></p>
+<p><a href="https://example.com" target="_blank" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;"> Visit Official Resource <i class="bi bi-box-arrow-up-right ms-1"></i> </a></p>
+</section>
+<section id="map-plots" class="level3">
+<h3 class="anchored" data-anchor-id="map-plots">Map Plots</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Interactive map</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Static map</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="4c18a4bc" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="116">
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe srcdoc="<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; />
+    
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap');
+</style>
+    <script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;></script>
+    <script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;></script>
+    <script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;></script>
+    <script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;></script>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/>
+    
+            <meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
+            <style>
+                #map_a480f1efddc459b2c40ffb940f04094d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            box-shadow: 3px 3px 6px rgba(0,0,0,0.1); z-index: 9999; font-family: 'Source Sans 3', sans-serif; font-size: 14px; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); padding: 8px; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); color: #343A40;line-height: 1; background: #f7f9f9;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class=&quot;folium-map&quot; id=&quot;map_a480f1efddc459b2c40ffb940f04094d&quot; ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a480f1efddc459b2c40ffb940f04094d = L.map(
+                &quot;map_a480f1efddc459b2c40ffb940f04094d&quot;,
+                {
+                    center: [46.95784586873126, 5.1833857861665775],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;zoom&quot;: 13,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e = L.tileLayer(
+                &quot;https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 18,
+  &quot;maxNativeZoom&quot;: 18,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;Esri&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            var tile_layer_093f212c0cee9de0399883a3ae617683 = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_093f212c0cee9de0399883a3ae617683.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            var tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c = L.tileLayer(
+                &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 20,
+  &quot;maxNativeZoom&quot;: 20,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\&quot;https://carto.com/attributions\&quot;\u003eCARTO\u003c/a\u003e&quot;,
+  &quot;subdomains&quot;: &quot;abcd&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+        function geo_json_4144da7b029177bd4f05f11b649e9424_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {&quot;color&quot;: &quot;#333333&quot;, &quot;fillOpacity&quot;: 0.1, &quot;weight&quot;: 1.5};
+            }
+        }
+
+        function geo_json_4144da7b029177bd4f05f11b649e9424_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_4144da7b029177bd4f05f11b649e9424 = L.geoJson(null, {
+                onEachFeature: geo_json_4144da7b029177bd4f05f11b649e9424_onEachFeature,
+            
+                style: geo_json_4144da7b029177bd4f05f11b649e9424_styler,
+            ...{
+}
+        });
+
+        function geo_json_4144da7b029177bd4f05f11b649e9424_add (data) {
+            geo_json_4144da7b029177bd4f05f11b649e9424
+                .addData(data);
+        }
+            geo_json_4144da7b029177bd4f05f11b649e9424_add({&quot;bbox&quot;: [5.142162220699198, 46.94120314839282, 5.217289061172729, 46.983509302455545], &quot;features&quot;: [{&quot;bbox&quot;: [5.142162220699198, 46.94226352045587, 5.192867917927415, 46.97482718094012], &quot;geometry&quot;: {&quot;coordinates&quot;: [[[[5.166914532692316, 46.943094677327345], [5.166850629073029, 46.94314091335979], [5.1646263106357315, 46.9434258931201], [5.1641720884197655, 46.94226352045587], [5.1617416756247, 46.942327141156625], [5.156241932995612, 46.94259227911133], [5.1513603615380825, 46.94352113480729], [5.148778087911881, 46.94439793473069], [5.147677477913446, 46.94483276268035], [5.147531028991022, 46.94578121328004], [5.146809249491561, 46.94714568851577], [5.146563115379705, 46.94724034074866], [5.144409589640008, 46.94765870966551], [5.142162220699198, 46.952348027145646], [5.143007994977203, 46.95410665644266], [5.145457616122731, 46.95650195193651], [5.145654430710289, 46.95648928256377], [5.150442244323479, 46.956147890300656], [5.154046199758558, 46.958449419841635], [5.1551333842461595, 46.96031153805781], [5.153442864585817, 46.96212647945685], [5.151645020150458, 46.96422260756629], [5.150558310764183, 46.96600821855903], [5.150454312421055, 46.966370431126336], [5.153372866086396, 46.96697346773717], [5.153901986509028, 46.96704464768169], [5.158118335731908, 46.964560988643605], [5.162543365972497, 46.96368548347844], [5.163647307932537, 46.963655768068286], [5.166234471151254, 46.963868394391305], [5.166904064624571, 46.9641620476579], [5.176965785088175, 46.96931363004334], [5.177517536483773, 46.969618454911426], [5.179932200439078, 46.971743501388076], [5.1813005959867215, 46.97402339590947], [5.181662022776653, 46.97482718094012], [5.181859259011499, 46.97482344988183], [5.187455023926376, 46.97360059745801], [5.188753129270203, 46.973161650886134], [5.192867917927415, 46.97144422325038], [5.192864265603478, 46.97135422322824], [5.191180261528416, 46.969413710206254], [5.188195555912355, 46.967191625974515], [5.185158329360773, 46.96366445625037], [5.182643745960824, 46.95971299840481], [5.18654972103817, 46.95675676463298], [5.188598439891623, 46.95699710929184], [5.190410221023781, 46.956908661243524], [5.190798384548026, 46.95609966480657], [5.190780145457849, 46.955649662195086], [5.190098907810506, 46.95409538964556], [5.187323500382087, 46.948897006885296], [5.186827096469505, 46.948005725510306], [5.186498532999515, 46.94801195796111], [5.182311316882605, 46.94919916042471], [5.1793707827147735, 46.9499933600708], [5.177282754680596, 46.95040210010509], [5.173682247107606, 46.95048805878113], [5.172695062962349, 46.945561853481486], [5.172551112338983, 46.9429615556777], [5.171292198926591, 46.94272407512923], [5.169450967667651, 46.94272271633709], [5.166914532692316, 46.943094677327345]]]], &quot;type&quot;: &quot;MultiPolygon&quot;}, &quot;id&quot;: &quot;0&quot;, &quot;properties&quot;: {&quot;com_id&quot;: &quot;71578&quot;, &quot;com_name&quot;: &quot;La Villeneuve&quot;, &quot;com_name_clean&quot;: &quot;LA VILLENEUVE&quot;, &quot;shape_area&quot;: 7475137.560827868, &quot;year&quot;: &quot;2014&quot;}, &quot;type&quot;: &quot;Feature&quot;}, {&quot;bbox&quot;: [5.172551112338983, 46.94120314839282, 5.217289061172729, 46.983509302455545], &quot;geometry&quot;: {&quot;coordinates&quot;: [[[[5.201518039395136, 46.98319562788573], [5.2017865618915415, 46.98332560692095], [5.207256007156112, 46.983509302455545], [5.209469672470719, 46.981962759698845], [5.212198536270828, 46.98014508907395], [5.211791870513715, 46.9798556572983], [5.211252234722454, 46.9795327454391], [5.210629286367223, 46.97910334413112], [5.210214537077994, 46.97861590834935], [5.209496046814916, 46.97745876641823], [5.207781199186381, 46.97381675512672], [5.207594277651217, 46.97278452952108], [5.207698183943799, 46.97210701622], [5.213374913937411, 46.9651708872887], [5.217289061172729, 46.96052011014048], [5.217133648012244, 46.95352460957853], [5.2166471275494475, 46.95224595331852], [5.2137909460053145, 46.95220175738197], [5.202327335596764, 46.94654873044883], [5.190329112322733, 46.94224680661869], [5.188514959605547, 46.94161474695491], [5.1864730494279945, 46.94120314839282], [5.173081831791218, 46.94307764888971], [5.172551112338983, 46.9429615556777], [5.172695062962349, 46.945561853481486], [5.173682247107606, 46.95048805878113], [5.177282754680596, 46.95040210010509], [5.1793707827147735, 46.9499933600708], [5.182311316882605, 46.94919916042471], [5.186498532999515, 46.94801195796111], [5.186827096469505, 46.948005725510306], [5.187323500382087, 46.948897006885296], [5.190098907810506, 46.95409538964556], [5.190780145457849, 46.955649662195086], [5.190798384548026, 46.95609966480657], [5.190410221023781, 46.956908661243524], [5.188598439891623, 46.95699710929184], [5.18654972103817, 46.95675676463298], [5.182643745960824, 46.95971299840481], [5.185158329360773, 46.96366445625037], [5.188195555912355, 46.967191625974515], [5.191180261528416, 46.969413710206254], [5.192864265603478, 46.97135422322824], [5.193371199732725, 46.9712004719537], [5.196296324727094, 46.97162217145311], [5.196953518594641, 46.973546149659136], [5.200741619649677, 46.982228686876205], [5.201501220864468, 46.98310587945855], [5.201518039395136, 46.98319562788573]]]], &quot;type&quot;: &quot;MultiPolygon&quot;}, &quot;id&quot;: &quot;1&quot;, &quot;properties&quot;: {&quot;com_id&quot;: &quot;71138&quot;, &quot;com_name&quot;: &quot;Clux&quot;, &quot;com_name_clean&quot;: &quot;CLUX&quot;, &quot;shape_area&quot;: 7687714.853903577, &quot;year&quot;: &quot;2014&quot;}, &quot;type&quot;: &quot;Feature&quot;}], &quot;type&quot;: &quot;FeatureCollection&quot;});
+
+        
+    
+    geo_json_4144da7b029177bd4f05f11b649e9424.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = [&quot;year&quot;, &quot;com_name&quot;, &quot;com_id&quot;];
+    let aliases = [&quot;Year:&quot;, &quot;Municipality:&quot;, &quot;Municipality Id:&quot;];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  &quot;sticky&quot;: true,
+  &quot;className&quot;: &quot;foliumtooltip&quot;,
+});
+                     
+    
+            geo_json_4144da7b029177bd4f05f11b649e9424.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            var layer_control_82b9af8063fcfde838670e487d3e5882_layers = {
+                base_layers : {
+                    &quot;Satellite (Esri)&quot; : tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e,
+                    &quot;Classic&quot; : tile_layer_093f212c0cee9de0399883a3ae617683,
+                    &quot;Black \u0026 White&quot; : tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c,
+                },
+                overlays :  {
+                    &quot;Merger Before&quot; : geo_json_4144da7b029177bd4f05f11b649e9424,
+                },
+            };
+            let layer_control_82b9af8063fcfde838670e487d3e5882 = L.control.layers(
+                layer_control_82b9af8063fcfde838670e487d3e5882_layers.base_layers,
+                layer_control_82b9af8063fcfde838670e487d3e5882_layers.overlays,
+                {
+  &quot;position&quot;: &quot;topright&quot;,
+  &quot;collapsed&quot;: true,
+  &quot;autoZIndex&quot;: true,
+}
+            ).addTo(map_a480f1efddc459b2c40ffb940f04094d);
+
+        
+</script>
+</html>" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div style="display: flex; gap: 1em; justify-content: center; align-items: flex-start; margin: 0; padding: 0; width: 100%;">
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;">
+<strong>Before</strong>
+</p>
+<p><img src="img/merger_before.svg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="Before Map"></p>
+</div>
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;">
+<strong>After</strong>
+</p>
+<p><img src="img/merger_after.jpg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="After Map"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="how-it-is-recorded-in-the-data-system" class="level3">
+<h3 class="anchored" data-anchor-id="how-it-is-recorded-in-the-data-system">How it is recorded in the data system</h3>
+</section>
+</section>
+<section id="national-exchange" class="level2">
+<h2 class="anchored" data-anchor-id="national-exchange">National Exchange</h2>
+<section id="definition-1" class="level3">
+<h3 class="anchored" data-anchor-id="definition-1">Definition</h3>
+<p>The one-time exchange of territories between two municipalities within the same country.</p>
+</section>
+<section id="implication-of-the-change-1" class="level3">
+<h3 class="anchored" data-anchor-id="implication-of-the-change-1">Implication of the change</h3>
+<p>Before (year t):</p>
+<ul>
+<li>Municipalities A (with id 1) and B (with id 2) exist as separate entities, each with its own name, id, and territory.</li>
+</ul>
+<p>After (year t + 1):</p>
+<ul>
+<li>Municipality A transferred part of its territory to Municipality B and, at the same time, received part of Municipality B’s territory in return, within the same country.</li>
+<li>Municipality A and B didn’t change their names or ids.</li>
+</ul>
+</section>
+<section id="visual-overview-1" class="level3">
+<h3 class="anchored" data-anchor-id="visual-overview-1">Visual overview</h3>
+<p><br></p>
+<p style="text-align: center; font-weight: 600;font-size: 1.1rem; marin-top:30px;">
+National Exchange
+</p>
+<div style="text-align: center;">
+<p><img src="img/appendix/national_exchange.svg" style="width: 80%; height: auto; margin-top:5px;" alt="merger diagram"></p>
+</div>
+<p style="text-align: center; font-weight: 400;font-size: 0.8rem; marin-top:10px;">
+The number of municipal units involved is indicated in brackets under each description.
+</p>
+</section>
+<section id="example-1" class="level3">
+<h3 class="anchored" data-anchor-id="example-1">Example</h3>
+<p>Since 2021, the municipality (gmina in Poland) <em>Świdnica</em> (id 0809072) transferred one part of its territory to municipality <em>Zielona Góra</em> (id 0862011), and, at the same time, received part of Municipality <em>Zielona Góra’s</em> territory (id 0862011) in return. Municipalities <em>Świdnica</em> and <em>Zielona Góra</em> (id 0862011) retained both its name and id (source). The case was registered in the metadata dataset under: pl-t-32-2020-2021.</p>
+<p><a href="documento.pdf" download="" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;"> Legal verification of the change <i class="bi bi-file-earmark-pdf-fill ms-1 me-1"></i> <i class="bi bi-download"></i> </a></p>
+<p><a href="https://example.com" target="_blank" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;"> Visit Official Resource <i class="bi bi-box-arrow-up-right ms-1"></i> </a></p>
+</section>
+<section id="map-plots-1" class="level3">
+<h3 class="anchored" data-anchor-id="map-plots-1">Map Plots</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Interacive Map</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Static Map</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="370a47b6" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="117">
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe srcdoc="<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; />
+    
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap');
+</style>
+    <script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;></script>
+    <script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;></script>
+    <script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;></script>
+    <script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;></script>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/>
+    
+            <meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
+            <style>
+                #map_a480f1efddc459b2c40ffb940f04094d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            box-shadow: 3px 3px 6px rgba(0,0,0,0.1); z-index: 9999; font-family: 'Source Sans 3', sans-serif; font-size: 14px; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); padding: 8px; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); color: #343A40;line-height: 1; background: #f7f9f9;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class=&quot;folium-map&quot; id=&quot;map_a480f1efddc459b2c40ffb940f04094d&quot; ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a480f1efddc459b2c40ffb940f04094d = L.map(
+                &quot;map_a480f1efddc459b2c40ffb940f04094d&quot;,
+                {
+                    center: [46.95784586873126, 5.1833857861665775],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;zoom&quot;: 13,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e = L.tileLayer(
+                &quot;https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 18,
+  &quot;maxNativeZoom&quot;: 18,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;Esri&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            var tile_layer_093f212c0cee9de0399883a3ae617683 = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_093f212c0cee9de0399883a3ae617683.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            var tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c = L.tileLayer(
+                &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 20,
+  &quot;maxNativeZoom&quot;: 20,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\&quot;https://carto.com/attributions\&quot;\u003eCARTO\u003c/a\u003e&quot;,
+  &quot;subdomains&quot;: &quot;abcd&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+        function geo_json_4144da7b029177bd4f05f11b649e9424_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {&quot;color&quot;: &quot;#333333&quot;, &quot;fillOpacity&quot;: 0.1, &quot;weight&quot;: 1.5};
+            }
+        }
+
+        function geo_json_4144da7b029177bd4f05f11b649e9424_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_4144da7b029177bd4f05f11b649e9424 = L.geoJson(null, {
+                onEachFeature: geo_json_4144da7b029177bd4f05f11b649e9424_onEachFeature,
+            
+                style: geo_json_4144da7b029177bd4f05f11b649e9424_styler,
+            ...{
+}
+        });
+
+        function geo_json_4144da7b029177bd4f05f11b649e9424_add (data) {
+            geo_json_4144da7b029177bd4f05f11b649e9424
+                .addData(data);
+        }
+            geo_json_4144da7b029177bd4f05f11b649e9424_add({&quot;bbox&quot;: [5.142162220699198, 46.94120314839282, 5.217289061172729, 46.983509302455545], &quot;features&quot;: [{&quot;bbox&quot;: [5.142162220699198, 46.94226352045587, 5.192867917927415, 46.97482718094012], &quot;geometry&quot;: {&quot;coordinates&quot;: [[[[5.166914532692316, 46.943094677327345], [5.166850629073029, 46.94314091335979], [5.1646263106357315, 46.9434258931201], [5.1641720884197655, 46.94226352045587], [5.1617416756247, 46.942327141156625], [5.156241932995612, 46.94259227911133], [5.1513603615380825, 46.94352113480729], [5.148778087911881, 46.94439793473069], [5.147677477913446, 46.94483276268035], [5.147531028991022, 46.94578121328004], [5.146809249491561, 46.94714568851577], [5.146563115379705, 46.94724034074866], [5.144409589640008, 46.94765870966551], [5.142162220699198, 46.952348027145646], [5.143007994977203, 46.95410665644266], [5.145457616122731, 46.95650195193651], [5.145654430710289, 46.95648928256377], [5.150442244323479, 46.956147890300656], [5.154046199758558, 46.958449419841635], [5.1551333842461595, 46.96031153805781], [5.153442864585817, 46.96212647945685], [5.151645020150458, 46.96422260756629], [5.150558310764183, 46.96600821855903], [5.150454312421055, 46.966370431126336], [5.153372866086396, 46.96697346773717], [5.153901986509028, 46.96704464768169], [5.158118335731908, 46.964560988643605], [5.162543365972497, 46.96368548347844], [5.163647307932537, 46.963655768068286], [5.166234471151254, 46.963868394391305], [5.166904064624571, 46.9641620476579], [5.176965785088175, 46.96931363004334], [5.177517536483773, 46.969618454911426], [5.179932200439078, 46.971743501388076], [5.1813005959867215, 46.97402339590947], [5.181662022776653, 46.97482718094012], [5.181859259011499, 46.97482344988183], [5.187455023926376, 46.97360059745801], [5.188753129270203, 46.973161650886134], [5.192867917927415, 46.97144422325038], [5.192864265603478, 46.97135422322824], [5.191180261528416, 46.969413710206254], [5.188195555912355, 46.967191625974515], [5.185158329360773, 46.96366445625037], [5.182643745960824, 46.95971299840481], [5.18654972103817, 46.95675676463298], [5.188598439891623, 46.95699710929184], [5.190410221023781, 46.956908661243524], [5.190798384548026, 46.95609966480657], [5.190780145457849, 46.955649662195086], [5.190098907810506, 46.95409538964556], [5.187323500382087, 46.948897006885296], [5.186827096469505, 46.948005725510306], [5.186498532999515, 46.94801195796111], [5.182311316882605, 46.94919916042471], [5.1793707827147735, 46.9499933600708], [5.177282754680596, 46.95040210010509], [5.173682247107606, 46.95048805878113], [5.172695062962349, 46.945561853481486], [5.172551112338983, 46.9429615556777], [5.171292198926591, 46.94272407512923], [5.169450967667651, 46.94272271633709], [5.166914532692316, 46.943094677327345]]]], &quot;type&quot;: &quot;MultiPolygon&quot;}, &quot;id&quot;: &quot;0&quot;, &quot;properties&quot;: {&quot;com_id&quot;: &quot;71578&quot;, &quot;com_name&quot;: &quot;La Villeneuve&quot;, &quot;com_name_clean&quot;: &quot;LA VILLENEUVE&quot;, &quot;shape_area&quot;: 7475137.560827868, &quot;year&quot;: &quot;2014&quot;}, &quot;type&quot;: &quot;Feature&quot;}, {&quot;bbox&quot;: [5.172551112338983, 46.94120314839282, 5.217289061172729, 46.983509302455545], &quot;geometry&quot;: {&quot;coordinates&quot;: [[[[5.201518039395136, 46.98319562788573], [5.2017865618915415, 46.98332560692095], [5.207256007156112, 46.983509302455545], [5.209469672470719, 46.981962759698845], [5.212198536270828, 46.98014508907395], [5.211791870513715, 46.9798556572983], [5.211252234722454, 46.9795327454391], [5.210629286367223, 46.97910334413112], [5.210214537077994, 46.97861590834935], [5.209496046814916, 46.97745876641823], [5.207781199186381, 46.97381675512672], [5.207594277651217, 46.97278452952108], [5.207698183943799, 46.97210701622], [5.213374913937411, 46.9651708872887], [5.217289061172729, 46.96052011014048], [5.217133648012244, 46.95352460957853], [5.2166471275494475, 46.95224595331852], [5.2137909460053145, 46.95220175738197], [5.202327335596764, 46.94654873044883], [5.190329112322733, 46.94224680661869], [5.188514959605547, 46.94161474695491], [5.1864730494279945, 46.94120314839282], [5.173081831791218, 46.94307764888971], [5.172551112338983, 46.9429615556777], [5.172695062962349, 46.945561853481486], [5.173682247107606, 46.95048805878113], [5.177282754680596, 46.95040210010509], [5.1793707827147735, 46.9499933600708], [5.182311316882605, 46.94919916042471], [5.186498532999515, 46.94801195796111], [5.186827096469505, 46.948005725510306], [5.187323500382087, 46.948897006885296], [5.190098907810506, 46.95409538964556], [5.190780145457849, 46.955649662195086], [5.190798384548026, 46.95609966480657], [5.190410221023781, 46.956908661243524], [5.188598439891623, 46.95699710929184], [5.18654972103817, 46.95675676463298], [5.182643745960824, 46.95971299840481], [5.185158329360773, 46.96366445625037], [5.188195555912355, 46.967191625974515], [5.191180261528416, 46.969413710206254], [5.192864265603478, 46.97135422322824], [5.193371199732725, 46.9712004719537], [5.196296324727094, 46.97162217145311], [5.196953518594641, 46.973546149659136], [5.200741619649677, 46.982228686876205], [5.201501220864468, 46.98310587945855], [5.201518039395136, 46.98319562788573]]]], &quot;type&quot;: &quot;MultiPolygon&quot;}, &quot;id&quot;: &quot;1&quot;, &quot;properties&quot;: {&quot;com_id&quot;: &quot;71138&quot;, &quot;com_name&quot;: &quot;Clux&quot;, &quot;com_name_clean&quot;: &quot;CLUX&quot;, &quot;shape_area&quot;: 7687714.853903577, &quot;year&quot;: &quot;2014&quot;}, &quot;type&quot;: &quot;Feature&quot;}], &quot;type&quot;: &quot;FeatureCollection&quot;});
+
+        
+    
+    geo_json_4144da7b029177bd4f05f11b649e9424.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = [&quot;year&quot;, &quot;com_name&quot;, &quot;com_id&quot;];
+    let aliases = [&quot;Year:&quot;, &quot;Municipality:&quot;, &quot;Municipality Id:&quot;];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  &quot;sticky&quot;: true,
+  &quot;className&quot;: &quot;foliumtooltip&quot;,
+});
+                     
+    
+            geo_json_4144da7b029177bd4f05f11b649e9424.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            var layer_control_82b9af8063fcfde838670e487d3e5882_layers = {
+                base_layers : {
+                    &quot;Satellite (Esri)&quot; : tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e,
+                    &quot;Classic&quot; : tile_layer_093f212c0cee9de0399883a3ae617683,
+                    &quot;Black \u0026 White&quot; : tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c,
+                },
+                overlays :  {
+                    &quot;Merger Before&quot; : geo_json_4144da7b029177bd4f05f11b649e9424,
+                },
+            };
+            let layer_control_82b9af8063fcfde838670e487d3e5882 = L.control.layers(
+                layer_control_82b9af8063fcfde838670e487d3e5882_layers.base_layers,
+                layer_control_82b9af8063fcfde838670e487d3e5882_layers.overlays,
+                {
+  &quot;position&quot;: &quot;topright&quot;,
+  &quot;collapsed&quot;: true,
+  &quot;autoZIndex&quot;: true,
+}
+            ).addTo(map_a480f1efddc459b2c40ffb940f04094d);
+
+        
+    
+            tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            tile_layer_093f212c0cee9de0399883a3ae617683.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            geo_json_4144da7b029177bd4f05f11b649e9424.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+</script>
+</html>" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div style="display: flex; gap: 1em; justify-content: center; align-items: flex-start; margin: 0; padding: 0; width: 100%;">
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;">
+<strong>Before</strong>
+</p>
+<p><img src="img/merger_before.svg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="Before Map"></p>
+</div>
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;">
+<strong>After</strong>
+</p>
+<p><img src="img/merger_after.jpg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="After Map"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="international-transfer" class="level2">
+<h2 class="anchored" data-anchor-id="international-transfer">International Transfer</h2>
+<section id="definition-2" class="level3">
+<h3 class="anchored" data-anchor-id="definition-2">Definition</h3>
+<p>The transfer of part of the territory of one municipality from one country to another municipality in a neighboring country, without receiving territory in return.</p>
+</section>
+<section id="implication-of-the-change-2" class="level3">
+<h3 class="anchored" data-anchor-id="implication-of-the-change-2">Implication of the change</h3>
+<p>Before (year t):</p>
+<ul>
+<li>Municipalities A (with id 1) and B (with id 2) exist as separate entities, each with its own name, id, and territory.</li>
+</ul>
+<p>After (year t + 1):</p>
+<ul>
+<li>Municipality A from one country transferred part of its territory to Municipality B in a neighboring country, without receiving any territory in return.</li>
+<li>Municipality A and B didn’t change their names or ids.</li>
+</ul>
+</section>
+<section id="visual-overview-2" class="level3">
+<h3 class="anchored" data-anchor-id="visual-overview-2">Visual overview</h3>
+<p><br></p>
+<p style="text-align: center; font-weight: 600;font-size: 1.1rem; marin-top:30px;">
+International Transfer
+</p>
+<div style="text-align: center;">
+<p><img src="img/appendix/international_transfer.svg" style="width: 80%; height: auto; margin-top:5px;" alt="merger diagram"></p>
+</div>
+<p style="text-align: center; font-weight: 400;font-size: 0.8rem; marin-top:10px;">
+The number of municipal units involved is indicated in brackets under each description.
+</p>
+</section>
+<section id="example-2" class="level3">
+<h3 class="anchored" data-anchor-id="example-2">Example</h3>
+<p>Since 2021, the municipality (gmina in Poland) <em>Świdnica</em> (id 0809072) transferred one part of its territory to municipality <em>Zielona Góra</em> (id 0862011), and, at the same time, received part of Municipality <em>Zielona Góra’s</em> territory (id 0862011) in return. Municipalities <em>Świdnica</em> and <em>Zielona Góra</em> (id 0862011) retained both its name and id (source). The case was registered in the metadata dataset under: pl-t-32-2020-2021.</p>
+<p><a href="documento.pdf" download="" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;"> Legal verification of the change <i class="bi bi-file-earmark-pdf-fill ms-1 me-1"></i> <i class="bi bi-download"></i> </a></p>
+<p><a href="https://example.com" target="_blank" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;"> Visit Official Resource <i class="bi bi-box-arrow-up-right ms-1"></i> </a></p>
+</section>
+<section id="map-plots-2" class="level3">
+<h3 class="anchored" data-anchor-id="map-plots-2">Map Plots</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Interacive Map</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Static Map</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div id="88920ac0" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="118">
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe srcdoc="<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; />
+    
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap');
+</style>
+    <script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;></script>
+    <script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;></script>
+    <script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;></script>
+    <script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;></script>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/>
+    
+            <meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
+            <style>
+                #map_a480f1efddc459b2c40ffb940f04094d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            box-shadow: 3px 3px 6px rgba(0,0,0,0.1); z-index: 9999; font-family: 'Source Sans 3', sans-serif; font-size: 14px; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); padding: 8px; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); color: #343A40;line-height: 1; background: #f7f9f9;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class=&quot;folium-map&quot; id=&quot;map_a480f1efddc459b2c40ffb940f04094d&quot; ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a480f1efddc459b2c40ffb940f04094d = L.map(
+                &quot;map_a480f1efddc459b2c40ffb940f04094d&quot;,
+                {
+                    center: [46.95784586873126, 5.1833857861665775],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;zoom&quot;: 13,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e = L.tileLayer(
+                &quot;https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 18,
+  &quot;maxNativeZoom&quot;: 18,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;Esri&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            var tile_layer_093f212c0cee9de0399883a3ae617683 = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_093f212c0cee9de0399883a3ae617683.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            var tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c = L.tileLayer(
+                &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 20,
+  &quot;maxNativeZoom&quot;: 20,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\&quot;https://carto.com/attributions\&quot;\u003eCARTO\u003c/a\u003e&quot;,
+  &quot;subdomains&quot;: &quot;abcd&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+        function geo_json_4144da7b029177bd4f05f11b649e9424_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {&quot;color&quot;: &quot;#333333&quot;, &quot;fillOpacity&quot;: 0.1, &quot;weight&quot;: 1.5};
+            }
+        }
+
+        function geo_json_4144da7b029177bd4f05f11b649e9424_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_4144da7b029177bd4f05f11b649e9424 = L.geoJson(null, {
+                onEachFeature: geo_json_4144da7b029177bd4f05f11b649e9424_onEachFeature,
+            
+                style: geo_json_4144da7b029177bd4f05f11b649e9424_styler,
+            ...{
+}
+        });
+
+        function geo_json_4144da7b029177bd4f05f11b649e9424_add (data) {
+            geo_json_4144da7b029177bd4f05f11b649e9424
+                .addData(data);
+        }
+            geo_json_4144da7b029177bd4f05f11b649e9424_add({&quot;bbox&quot;: [5.142162220699198, 46.94120314839282, 5.217289061172729, 46.983509302455545], &quot;features&quot;: [{&quot;bbox&quot;: [5.142162220699198, 46.94226352045587, 5.192867917927415, 46.97482718094012], &quot;geometry&quot;: {&quot;coordinates&quot;: [[[[5.166914532692316, 46.943094677327345], [5.166850629073029, 46.94314091335979], [5.1646263106357315, 46.9434258931201], [5.1641720884197655, 46.94226352045587], [5.1617416756247, 46.942327141156625], [5.156241932995612, 46.94259227911133], [5.1513603615380825, 46.94352113480729], [5.148778087911881, 46.94439793473069], [5.147677477913446, 46.94483276268035], [5.147531028991022, 46.94578121328004], [5.146809249491561, 46.94714568851577], [5.146563115379705, 46.94724034074866], [5.144409589640008, 46.94765870966551], [5.142162220699198, 46.952348027145646], [5.143007994977203, 46.95410665644266], [5.145457616122731, 46.95650195193651], [5.145654430710289, 46.95648928256377], [5.150442244323479, 46.956147890300656], [5.154046199758558, 46.958449419841635], [5.1551333842461595, 46.96031153805781], [5.153442864585817, 46.96212647945685], [5.151645020150458, 46.96422260756629], [5.150558310764183, 46.96600821855903], [5.150454312421055, 46.966370431126336], [5.153372866086396, 46.96697346773717], [5.153901986509028, 46.96704464768169], [5.158118335731908, 46.964560988643605], [5.162543365972497, 46.96368548347844], [5.163647307932537, 46.963655768068286], [5.166234471151254, 46.963868394391305], [5.166904064624571, 46.9641620476579], [5.176965785088175, 46.96931363004334], [5.177517536483773, 46.969618454911426], [5.179932200439078, 46.971743501388076], [5.1813005959867215, 46.97402339590947], [5.181662022776653, 46.97482718094012], [5.181859259011499, 46.97482344988183], [5.187455023926376, 46.97360059745801], [5.188753129270203, 46.973161650886134], [5.192867917927415, 46.97144422325038], [5.192864265603478, 46.97135422322824], [5.191180261528416, 46.969413710206254], [5.188195555912355, 46.967191625974515], [5.185158329360773, 46.96366445625037], [5.182643745960824, 46.95971299840481], [5.18654972103817, 46.95675676463298], [5.188598439891623, 46.95699710929184], [5.190410221023781, 46.956908661243524], [5.190798384548026, 46.95609966480657], [5.190780145457849, 46.955649662195086], [5.190098907810506, 46.95409538964556], [5.187323500382087, 46.948897006885296], [5.186827096469505, 46.948005725510306], [5.186498532999515, 46.94801195796111], [5.182311316882605, 46.94919916042471], [5.1793707827147735, 46.9499933600708], [5.177282754680596, 46.95040210010509], [5.173682247107606, 46.95048805878113], [5.172695062962349, 46.945561853481486], [5.172551112338983, 46.9429615556777], [5.171292198926591, 46.94272407512923], [5.169450967667651, 46.94272271633709], [5.166914532692316, 46.943094677327345]]]], &quot;type&quot;: &quot;MultiPolygon&quot;}, &quot;id&quot;: &quot;0&quot;, &quot;properties&quot;: {&quot;com_id&quot;: &quot;71578&quot;, &quot;com_name&quot;: &quot;La Villeneuve&quot;, &quot;com_name_clean&quot;: &quot;LA VILLENEUVE&quot;, &quot;shape_area&quot;: 7475137.560827868, &quot;year&quot;: &quot;2014&quot;}, &quot;type&quot;: &quot;Feature&quot;}, {&quot;bbox&quot;: [5.172551112338983, 46.94120314839282, 5.217289061172729, 46.983509302455545], &quot;geometry&quot;: {&quot;coordinates&quot;: [[[[5.201518039395136, 46.98319562788573], [5.2017865618915415, 46.98332560692095], [5.207256007156112, 46.983509302455545], [5.209469672470719, 46.981962759698845], [5.212198536270828, 46.98014508907395], [5.211791870513715, 46.9798556572983], [5.211252234722454, 46.9795327454391], [5.210629286367223, 46.97910334413112], [5.210214537077994, 46.97861590834935], [5.209496046814916, 46.97745876641823], [5.207781199186381, 46.97381675512672], [5.207594277651217, 46.97278452952108], [5.207698183943799, 46.97210701622], [5.213374913937411, 46.9651708872887], [5.217289061172729, 46.96052011014048], [5.217133648012244, 46.95352460957853], [5.2166471275494475, 46.95224595331852], [5.2137909460053145, 46.95220175738197], [5.202327335596764, 46.94654873044883], [5.190329112322733, 46.94224680661869], [5.188514959605547, 46.94161474695491], [5.1864730494279945, 46.94120314839282], [5.173081831791218, 46.94307764888971], [5.172551112338983, 46.9429615556777], [5.172695062962349, 46.945561853481486], [5.173682247107606, 46.95048805878113], [5.177282754680596, 46.95040210010509], [5.1793707827147735, 46.9499933600708], [5.182311316882605, 46.94919916042471], [5.186498532999515, 46.94801195796111], [5.186827096469505, 46.948005725510306], [5.187323500382087, 46.948897006885296], [5.190098907810506, 46.95409538964556], [5.190780145457849, 46.955649662195086], [5.190798384548026, 46.95609966480657], [5.190410221023781, 46.956908661243524], [5.188598439891623, 46.95699710929184], [5.18654972103817, 46.95675676463298], [5.182643745960824, 46.95971299840481], [5.185158329360773, 46.96366445625037], [5.188195555912355, 46.967191625974515], [5.191180261528416, 46.969413710206254], [5.192864265603478, 46.97135422322824], [5.193371199732725, 46.9712004719537], [5.196296324727094, 46.97162217145311], [5.196953518594641, 46.973546149659136], [5.200741619649677, 46.982228686876205], [5.201501220864468, 46.98310587945855], [5.201518039395136, 46.98319562788573]]]], &quot;type&quot;: &quot;MultiPolygon&quot;}, &quot;id&quot;: &quot;1&quot;, &quot;properties&quot;: {&quot;com_id&quot;: &quot;71138&quot;, &quot;com_name&quot;: &quot;Clux&quot;, &quot;com_name_clean&quot;: &quot;CLUX&quot;, &quot;shape_area&quot;: 7687714.853903577, &quot;year&quot;: &quot;2014&quot;}, &quot;type&quot;: &quot;Feature&quot;}], &quot;type&quot;: &quot;FeatureCollection&quot;});
+
+        
+    
+    geo_json_4144da7b029177bd4f05f11b649e9424.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = [&quot;year&quot;, &quot;com_name&quot;, &quot;com_id&quot;];
+    let aliases = [&quot;Year:&quot;, &quot;Municipality:&quot;, &quot;Municipality Id:&quot;];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  &quot;sticky&quot;: true,
+  &quot;className&quot;: &quot;foliumtooltip&quot;,
+});
+                     
+    
+            geo_json_4144da7b029177bd4f05f11b649e9424.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            var layer_control_82b9af8063fcfde838670e487d3e5882_layers = {
+                base_layers : {
+                    &quot;Satellite (Esri)&quot; : tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e,
+                    &quot;Classic&quot; : tile_layer_093f212c0cee9de0399883a3ae617683,
+                    &quot;Black \u0026 White&quot; : tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c,
+                },
+                overlays :  {
+                    &quot;Merger Before&quot; : geo_json_4144da7b029177bd4f05f11b649e9424,
+                },
+            };
+            let layer_control_82b9af8063fcfde838670e487d3e5882 = L.control.layers(
+                layer_control_82b9af8063fcfde838670e487d3e5882_layers.base_layers,
+                layer_control_82b9af8063fcfde838670e487d3e5882_layers.overlays,
+                {
+  &quot;position&quot;: &quot;topright&quot;,
+  &quot;collapsed&quot;: true,
+  &quot;autoZIndex&quot;: true,
+}
+            ).addTo(map_a480f1efddc459b2c40ffb940f04094d);
+
+        
+    
+            tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            tile_layer_093f212c0cee9de0399883a3ae617683.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            geo_json_4144da7b029177bd4f05f11b649e9424.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            tile_layer_093f212c0cee9de0399883a3ae617683.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            geo_json_4144da7b029177bd4f05f11b649e9424.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+</script>
+</html>" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
+</div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div style="display: flex; gap: 1em; justify-content: center; align-items: flex-start; margin: 0; padding: 0; width: 100%;">
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;">
+<strong>Before</strong>
+</p>
+<p><img src="img/merger_before.svg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="Before Map"></p>
+</div>
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;">
+<strong>After</strong>
+</p>
+<p><img src="img/merger_after.jpg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="After Map"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="international-exchnage" class="level2">
+<h2 class="anchored" data-anchor-id="international-exchnage">International Exchnage</h2>
+<section id="definition-3" class="level3">
+<h3 class="anchored" data-anchor-id="definition-3">Definition</h3>
+<p>The one-time exchange of territories between two municipalities from neighboring countries.</p>
+</section>
+<section id="implication-of-the-change-3" class="level3">
+<h3 class="anchored" data-anchor-id="implication-of-the-change-3">Implication of the change</h3>
+<p>Before (year t):</p>
+<ul>
+<li>Municipalities A (with id 1) and B (with id 2) exist as separate entities, each with its own name, id, and territory.</li>
+</ul>
+<p>After (year t + 1):</p>
+<ul>
+<li>Municipality A from one country transferred part of its territory to Municipality B from a neighboring country and, at the same time, received part of Municipality B’s territory in return.</li>
+<li>Municipality A and B didn’t change their names or ids.</li>
+</ul>
+</section>
+<section id="visual-overview-3" class="level3">
+<h3 class="anchored" data-anchor-id="visual-overview-3">Visual overview</h3>
+<p><br></p>
+<p style="text-align: center; font-weight: 600;font-size: 1.1rem; marin-top:30px;">
+International Exchange
+</p>
+<div style="text-align: center;">
+<p><img src="img/appendix/international_exchange.svg" style="width: 80%; height: auto; margin-top:5px;" alt="merger diagram"></p>
+</div>
+<p style="text-align: center; font-weight: 400;font-size: 0.8rem; marin-top:10px;">
+The number of municipal units involved is indicated in brackets under each description.
+</p>
+</section>
+<section id="example-3" class="level3">
+<h3 class="anchored" data-anchor-id="example-3">Example</h3>
+<p>Since 2021, the municipality (gmina in Poland) <em>Świdnica</em> (id 0809072) transferred one part of its territory to municipality <em>Zielona Góra</em> (id 0862011), and, at the same time, received part of Municipality <em>Zielona Góra’s</em> territory (id 0862011) in return. Municipalities <em>Świdnica</em> and <em>Zielona Góra</em> (id 0862011) retained both its name and id (source).</p>
+<p>Since 2019, a part of settlement <em>Pince-Marof</em> from municipality <em>Lendava</em> (id 059) was eliminated from the national territory of the Republic of Slovenia and joined the national territory of the Republic of Croatia, while parts of settlements <em>Pince-Marof</em> and <em>Brezovec</em> were eliminated from the national territory of the Republic of Croatia and joined the national territory of the Republic of Slovenia. The case was registered in the metadata dataset under: sl-t-25-2018-2019.</p>
+<p><a href="documento.pdf" download="" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;"> Legal verification of the change <i class="bi bi-file-earmark-pdf-fill ms-1 me-1"></i> <i class="bi bi-download"></i> </a></p>
+<p><a href="https://example.com" target="_blank" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;"> Visit Official Resource <i class="bi bi-box-arrow-up-right ms-1"></i> </a></p>
+</section>
+<section id="map-plots-3" class="level3">
+<h3 class="anchored" data-anchor-id="map-plots-3">Map Plots</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Interacive Map</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Static Map</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div id="cb29459d" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display" data-execution_count="119">
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe srcdoc="<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; />
+    
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap');
+</style>
+    <script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;></script>
+    <script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;></script>
+    <script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;></script>
+    <script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;></script>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/>
+    
+            <meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
+            <style>
+                #map_a480f1efddc459b2c40ffb940f04094d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            box-shadow: 3px 3px 6px rgba(0,0,0,0.1); z-index: 9999; font-family: 'Source Sans 3', sans-serif; font-size: 14px; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); padding: 8px; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); color: #343A40;line-height: 1; background: #f7f9f9;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class=&quot;folium-map&quot; id=&quot;map_a480f1efddc459b2c40ffb940f04094d&quot; ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a480f1efddc459b2c40ffb940f04094d = L.map(
+                &quot;map_a480f1efddc459b2c40ffb940f04094d&quot;,
+                {
+                    center: [46.95784586873126, 5.1833857861665775],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;zoom&quot;: 13,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e = L.tileLayer(
+                &quot;https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 18,
+  &quot;maxNativeZoom&quot;: 18,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;Esri&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            var tile_layer_093f212c0cee9de0399883a3ae617683 = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_093f212c0cee9de0399883a3ae617683.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            var tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c = L.tileLayer(
+                &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 20,
+  &quot;maxNativeZoom&quot;: 20,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\&quot;https://carto.com/attributions\&quot;\u003eCARTO\u003c/a\u003e&quot;,
+  &quot;subdomains&quot;: &quot;abcd&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+        function geo_json_4144da7b029177bd4f05f11b649e9424_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {&quot;color&quot;: &quot;#333333&quot;, &quot;fillOpacity&quot;: 0.1, &quot;weight&quot;: 1.5};
+            }
+        }
+
+        function geo_json_4144da7b029177bd4f05f11b649e9424_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_4144da7b029177bd4f05f11b649e9424 = L.geoJson(null, {
+                onEachFeature: geo_json_4144da7b029177bd4f05f11b649e9424_onEachFeature,
+            
+                style: geo_json_4144da7b029177bd4f05f11b649e9424_styler,
+            ...{
+}
+        });
+
+        function geo_json_4144da7b029177bd4f05f11b649e9424_add (data) {
+            geo_json_4144da7b029177bd4f05f11b649e9424
+                .addData(data);
+        }
+            geo_json_4144da7b029177bd4f05f11b649e9424_add({&quot;bbox&quot;: [5.142162220699198, 46.94120314839282, 5.217289061172729, 46.983509302455545], &quot;features&quot;: [{&quot;bbox&quot;: [5.142162220699198, 46.94226352045587, 5.192867917927415, 46.97482718094012], &quot;geometry&quot;: {&quot;coordinates&quot;: [[[[5.166914532692316, 46.943094677327345], [5.166850629073029, 46.94314091335979], [5.1646263106357315, 46.9434258931201], [5.1641720884197655, 46.94226352045587], [5.1617416756247, 46.942327141156625], [5.156241932995612, 46.94259227911133], [5.1513603615380825, 46.94352113480729], [5.148778087911881, 46.94439793473069], [5.147677477913446, 46.94483276268035], [5.147531028991022, 46.94578121328004], [5.146809249491561, 46.94714568851577], [5.146563115379705, 46.94724034074866], [5.144409589640008, 46.94765870966551], [5.142162220699198, 46.952348027145646], [5.143007994977203, 46.95410665644266], [5.145457616122731, 46.95650195193651], [5.145654430710289, 46.95648928256377], [5.150442244323479, 46.956147890300656], [5.154046199758558, 46.958449419841635], [5.1551333842461595, 46.96031153805781], [5.153442864585817, 46.96212647945685], [5.151645020150458, 46.96422260756629], [5.150558310764183, 46.96600821855903], [5.150454312421055, 46.966370431126336], [5.153372866086396, 46.96697346773717], [5.153901986509028, 46.96704464768169], [5.158118335731908, 46.964560988643605], [5.162543365972497, 46.96368548347844], [5.163647307932537, 46.963655768068286], [5.166234471151254, 46.963868394391305], [5.166904064624571, 46.9641620476579], [5.176965785088175, 46.96931363004334], [5.177517536483773, 46.969618454911426], [5.179932200439078, 46.971743501388076], [5.1813005959867215, 46.97402339590947], [5.181662022776653, 46.97482718094012], [5.181859259011499, 46.97482344988183], [5.187455023926376, 46.97360059745801], [5.188753129270203, 46.973161650886134], [5.192867917927415, 46.97144422325038], [5.192864265603478, 46.97135422322824], [5.191180261528416, 46.969413710206254], [5.188195555912355, 46.967191625974515], [5.185158329360773, 46.96366445625037], [5.182643745960824, 46.95971299840481], [5.18654972103817, 46.95675676463298], [5.188598439891623, 46.95699710929184], [5.190410221023781, 46.956908661243524], [5.190798384548026, 46.95609966480657], [5.190780145457849, 46.955649662195086], [5.190098907810506, 46.95409538964556], [5.187323500382087, 46.948897006885296], [5.186827096469505, 46.948005725510306], [5.186498532999515, 46.94801195796111], [5.182311316882605, 46.94919916042471], [5.1793707827147735, 46.9499933600708], [5.177282754680596, 46.95040210010509], [5.173682247107606, 46.95048805878113], [5.172695062962349, 46.945561853481486], [5.172551112338983, 46.9429615556777], [5.171292198926591, 46.94272407512923], [5.169450967667651, 46.94272271633709], [5.166914532692316, 46.943094677327345]]]], &quot;type&quot;: &quot;MultiPolygon&quot;}, &quot;id&quot;: &quot;0&quot;, &quot;properties&quot;: {&quot;com_id&quot;: &quot;71578&quot;, &quot;com_name&quot;: &quot;La Villeneuve&quot;, &quot;com_name_clean&quot;: &quot;LA VILLENEUVE&quot;, &quot;shape_area&quot;: 7475137.560827868, &quot;year&quot;: &quot;2014&quot;}, &quot;type&quot;: &quot;Feature&quot;}, {&quot;bbox&quot;: [5.172551112338983, 46.94120314839282, 5.217289061172729, 46.983509302455545], &quot;geometry&quot;: {&quot;coordinates&quot;: [[[[5.201518039395136, 46.98319562788573], [5.2017865618915415, 46.98332560692095], [5.207256007156112, 46.983509302455545], [5.209469672470719, 46.981962759698845], [5.212198536270828, 46.98014508907395], [5.211791870513715, 46.9798556572983], [5.211252234722454, 46.9795327454391], [5.210629286367223, 46.97910334413112], [5.210214537077994, 46.97861590834935], [5.209496046814916, 46.97745876641823], [5.207781199186381, 46.97381675512672], [5.207594277651217, 46.97278452952108], [5.207698183943799, 46.97210701622], [5.213374913937411, 46.9651708872887], [5.217289061172729, 46.96052011014048], [5.217133648012244, 46.95352460957853], [5.2166471275494475, 46.95224595331852], [5.2137909460053145, 46.95220175738197], [5.202327335596764, 46.94654873044883], [5.190329112322733, 46.94224680661869], [5.188514959605547, 46.94161474695491], [5.1864730494279945, 46.94120314839282], [5.173081831791218, 46.94307764888971], [5.172551112338983, 46.9429615556777], [5.172695062962349, 46.945561853481486], [5.173682247107606, 46.95048805878113], [5.177282754680596, 46.95040210010509], [5.1793707827147735, 46.9499933600708], [5.182311316882605, 46.94919916042471], [5.186498532999515, 46.94801195796111], [5.186827096469505, 46.948005725510306], [5.187323500382087, 46.948897006885296], [5.190098907810506, 46.95409538964556], [5.190780145457849, 46.955649662195086], [5.190798384548026, 46.95609966480657], [5.190410221023781, 46.956908661243524], [5.188598439891623, 46.95699710929184], [5.18654972103817, 46.95675676463298], [5.182643745960824, 46.95971299840481], [5.185158329360773, 46.96366445625037], [5.188195555912355, 46.967191625974515], [5.191180261528416, 46.969413710206254], [5.192864265603478, 46.97135422322824], [5.193371199732725, 46.9712004719537], [5.196296324727094, 46.97162217145311], [5.196953518594641, 46.973546149659136], [5.200741619649677, 46.982228686876205], [5.201501220864468, 46.98310587945855], [5.201518039395136, 46.98319562788573]]]], &quot;type&quot;: &quot;MultiPolygon&quot;}, &quot;id&quot;: &quot;1&quot;, &quot;properties&quot;: {&quot;com_id&quot;: &quot;71138&quot;, &quot;com_name&quot;: &quot;Clux&quot;, &quot;com_name_clean&quot;: &quot;CLUX&quot;, &quot;shape_area&quot;: 7687714.853903577, &quot;year&quot;: &quot;2014&quot;}, &quot;type&quot;: &quot;Feature&quot;}], &quot;type&quot;: &quot;FeatureCollection&quot;});
+
+        
+    
+    geo_json_4144da7b029177bd4f05f11b649e9424.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = [&quot;year&quot;, &quot;com_name&quot;, &quot;com_id&quot;];
+    let aliases = [&quot;Year:&quot;, &quot;Municipality:&quot;, &quot;Municipality Id:&quot;];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  &quot;sticky&quot;: true,
+  &quot;className&quot;: &quot;foliumtooltip&quot;,
+});
+                     
+    
+            geo_json_4144da7b029177bd4f05f11b649e9424.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            var layer_control_82b9af8063fcfde838670e487d3e5882_layers = {
+                base_layers : {
+                    &quot;Satellite (Esri)&quot; : tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e,
+                    &quot;Classic&quot; : tile_layer_093f212c0cee9de0399883a3ae617683,
+                    &quot;Black \u0026 White&quot; : tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c,
+                },
+                overlays :  {
+                    &quot;Merger Before&quot; : geo_json_4144da7b029177bd4f05f11b649e9424,
+                },
+            };
+            let layer_control_82b9af8063fcfde838670e487d3e5882 = L.control.layers(
+                layer_control_82b9af8063fcfde838670e487d3e5882_layers.base_layers,
+                layer_control_82b9af8063fcfde838670e487d3e5882_layers.overlays,
+                {
+  &quot;position&quot;: &quot;topright&quot;,
+  &quot;collapsed&quot;: true,
+  &quot;autoZIndex&quot;: true,
+}
+            ).addTo(map_a480f1efddc459b2c40ffb940f04094d);
+
+        
+    
+            tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            tile_layer_093f212c0cee9de0399883a3ae617683.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            geo_json_4144da7b029177bd4f05f11b649e9424.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            tile_layer_093f212c0cee9de0399883a3ae617683.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            geo_json_4144da7b029177bd4f05f11b649e9424.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            tile_layer_0a8c8cf2f3b7dbabf7606b259e24825e.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            tile_layer_093f212c0cee9de0399883a3ae617683.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            tile_layer_d4d28a0bbf163cc1727467a0f0dfe04c.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+    
+            geo_json_4144da7b029177bd4f05f11b649e9424.addTo(map_a480f1efddc459b2c40ffb940f04094d);
+        
+</script>
+</html>" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
+</div>
+</div>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div style="display: flex; gap: 1em; justify-content: center; align-items: flex-start; margin: 0; padding: 0; width: 100%;">
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;">
+<strong>Before</strong>
+</p>
+<p><img src="img/merger_before.svg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="Before Map"></p>
+</div>
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;">
+<strong>After</strong>
+</p>
+<p><img src="img/merger_after.jpg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="After Map"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 
 
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>By <strong>id</strong> we mean code identifier of the municipality.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -753,8 +2156,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./4.8_nature.html" class="pagination-link" aria-label="Nature integration">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Nature integration</span></span>
+      <a href="./4.8_nature.html" class="pagination-link" aria-label="Nature Integration">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Nature Integration</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

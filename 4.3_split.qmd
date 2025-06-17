@@ -8,3 +8,238 @@ format:
 bibliography: utils/references.bib
 jupyter: python3
 ---
+
+## Simple Split
+
+### Definition
+
+The dissolution of one municipality, whose territory is divided among two newly established municipalities, neither of which retains the legal or administrative aspects of the original entity.
+
+### Implication of the change
+
+Before (year t):
+
+-	Municipality A (with id  1[^1]) exists as a separate entity with its own name, id, and territory
+
+After (year t + 1):
+
+- Municipality A was dissolved.
+- Municipalities B and C were created, covering the territory of Municipality A.
+- Municipalities B and C have their own names and ids, or one of them retains Municipality A’s id.
+
+### Visual overview
+
+<br/>
+
+<p style="text-align: center; font-weight: 600;font-size: 1.1rem; marin-top:30px;">Simple Split</p>
+<div style="text-align: center;">
+<img src="img/appendix/split_simple.svg"
+style="width: 80%; height: auto; margin-top:5px;" 
+alt="merger diagram" />
+</div>
+<p style="text-align: center; font-weight: 400;font-size: 0.8rem; marin-top:10px;">The number of municipal units involved is indicated in brackets under each description.</p>
+
+### Example
+
+Since 2020, the municipality (dímos in Greece) of *Lesvos* (id 5301) has been dissolved. Two new municipalities were created in its place: *Dytiki* Lesvos (id 5302) and *Mytilini* (id 5301), covering the entire territory of the former municipality of *Lesvos*. *Dytiki Lesvos* received a new id, while the id of *Mytilini* was retained from the former municipality of *Lesvos* (source). The case was registered in the metadata dataset under the id: gr-s-4-2019-2020.
+
+<a href="documento.pdf" download class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
+Legal verification of the change
+<i class="bi bi-file-earmark-pdf-fill ms-1 me-1"></i>
+<i class="bi bi-download"></i>
+</a>
+
+<a href="https://example.com" target="_blank" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
+Visit Official Resource
+<i class="bi bi-box-arrow-up-right ms-1"></i>
+</a>
+
+### Map Plots
+
+
+```{python}
+
+#| label: build-merger-map
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+
+import folium
+import geopandas as gpd
+from branca.element import Element
+
+
+gdf = gpd.read_file("geo_files/merger_before.geojson").to_crs(epsg=4326)
+
+
+centroid = gdf.unary_union.centroid
+
+
+m = folium.Map(
+    location=[centroid.y, centroid.x],
+    zoom_start=13,
+    tiles=None
+)
+
+
+folium.TileLayer(
+    tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    attr="Esri",
+    name="Satellite (Esri)",
+    control=True
+).add_to(m)
+folium.TileLayer("OpenStreetMap", name="Classic", control=True).add_to(m)
+folium.TileLayer("CartoDB positron", name="Black & White", control=True).add_to(m)
+
+
+css = """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+</style>
+"""
+m.get_root().header.add_child(Element(css))
+
+
+geojson_tooltip = folium.features.GeoJsonTooltip(
+    fields=["year", "com_name", "com_id"],
+    aliases=["Year:", "Municipality:", "Municipality Id:"],
+    localize=True,
+    labels=True,
+    style=(
+        "box-shadow: 3px 3px 6px rgba(0,0,0,0.1); "
+        "z-index: 9999; "
+        "font-family: 'Source Sans 3', sans-serif; "
+        "font-size: 14px; "            
+        "backdrop-filter: blur(20px); "
+        "-webkit-backdrop-filter: blur(20px); "
+        "padding: 8px; "
+        "border: 1px solid rgba(255, 255, 255, 0.15); "
+        "box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); "
+        "color: #343A40;"
+        "line-height: 1; "
+        "background: #f7f9f9;"
+    ),
+    sticky=True
+)
+
+
+geo_layer = folium.GeoJson(
+    data=gdf,
+    name="Merger Before",
+    style_function=lambda feat: {
+        "color": "#333333",
+        "weight": 1.5,
+        "fillOpacity": .1
+    },
+    tooltip=geojson_tooltip
+)
+geo_layer.add_to(m)
+
+
+_ = folium.LayerControl().add_to(m)
+
+```
+
+
+::: {.panel-tabset}
+
+
+
+
+## Interactive map
+
+```{python}
+#| echo: false
+#| output: true
+m
+```
+
+
+## Static map
+
+<div style="display: flex; gap: 1em; justify-content: center; align-items: flex-start; margin: 0; padding: 0; width: 100%;">
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;"><strong>Before</strong></p>
+<img src="img/merger_before.svg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="Before Map"/>
+</div>
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;"><strong>After</strong></p>
+<img src="img/merger_after.jpg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="After Map"/>
+</div>
+</div>
+
+:::
+
+### How it is recorded in the data system
+
+## Multiple Split
+
+### Definition
+
+The dissolution of one municipality, whose territory is divided among more than two newly established municipalities, none of which retains legal or administrative aspects of the original entity.
+
+### Implication of the change
+
+Before (year t):
+
+- Municipality A (with id 1) exists as a separate entity with its own name, id, and territory.
+
+After (year t + 1):
+
+- Municipality A was dissolved.
+- Municipalities B, C, and D were created, covering the territory of Municipality A.
+- Municipalities B, C, and D have their own names/ids, or one of them retains Municipality A’s id.
+
+### Visual overview
+
+<br/>
+
+<p style="text-align: center; font-weight: 600;font-size: 1.1rem; marin-top:30px;">Multiple Split</p>
+<div style="text-align: center;">
+<img src="img/appendix/split_multiple.svg"
+style="width: 80%; height: auto; margin-top:5px;" 
+alt="merger diagram" />
+</div>
+<p style="text-align: center; font-weight: 400;font-size: 0.8rem; marin-top:10px;">The number of municipal units involved is indicated in brackets under each description.</p>
+
+### Example
+
+Since 2020, the municipality (dímos in Greece) of *Kefalonia* (id 3501) has been dissolved. Three new municipalities were created in its place: *Lixouri* (id 3502), *Sami* (id 3503), and *Argostoli* (id 3501), covering the entire territory of the former municipality of *Kefalonia*. *Lixouri* and *Sami* received new ids, while the id of *Argostoli* was retained from the former municipality of *Kefalonia*. The case was registered in the metadata dataset under the id: gr-s-3-2019-2020.
+
+### Map Plots
+
+::: {.panel-tabset}
+
+## Interacive Map
+
+```{python}
+#| echo: false
+#| output: true
+m
+```
+
+## Static Map
+
+<div style="display: flex; gap: 1em; justify-content: center; align-items: flex-start; margin: 0; padding: 0; width: 100%;">
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;"><strong>Before</strong></p>
+<img src="img/merger_before.svg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="Before Map"/>
+</div>
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;"><strong>After</strong></p>
+<img src="img/merger_after.jpg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="After Map"/>
+</div>
+</div>
+
+:::
+
+## References
+
+[^1]: By **id** we mean code identifier of the municipality.
+  
+

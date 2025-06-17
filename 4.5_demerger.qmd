@@ -8,3 +8,259 @@ format:
 bibliography: utils/references.bib
 jupyter: python3
 ---
+
+## Simple De-merger
+
+### Definition
+
+The re-establishment of one municipality that had previously participated in a merger (either simple or multiple) into a new, separate municipality whose territory exactly matches its original boundaries prior to the merger, thereby fully reversing the territorial effects of its inclusion in that merger.
+
+### Implication of the change
+
+Even before (year t-1):
+
+- Municipalities A (with id  1[^1]), B (with id 2), C (with id 3), and D (with id 4) exist as separate entities, each with its own name, id, and territory.
+
+Before (year t):
+
+- Municipalities A, B, C, and D were dissolved.
+- Municipality E was created, covering the combined territory of Municipalities A, B, C and D.
+- Municipality E either retains one predecessor’s name/id or receives a new name/id.
+
+After (year t + 1):
+
+- Municipality C was re-established as a new, separate municipality whose territory exactly matches its original boundaries prior to the merger (year t - 1)
+- Municipality E, from (year t + 1), combines only territories of Municipalities A, B and D.
+
+### Visual overview
+
+<br/>
+
+<p style="text-align: center; font-weight: 600;font-size: 1.1rem; marin-top:30px;">Simple De-merger</p>
+<div style="text-align: center;">
+<img src="img/appendix/demerger_simple.svg"
+style="width: 95%; height: auto; margin-top:5px;" 
+alt="merger diagram" />
+</div>
+<p style="text-align: center; font-weight: 400;font-size: 0.8rem; marin-top:10px;">The number of municipal units involved is indicated in brackets under each description.</p>
+
+### Example
+
+From 2019, the new municipality (commune in France) *Les Hauts-Talican* (id 60054) was formed by the merger of the municipalities *Beaumont-les-Nonains* (id 60054), *Neuville-Garnier* (id 60455), and *Villotran* (id 60694). The name was new, and the id was inherited from *Beaumont-les-Nonains*. However, from 2024, the municipality *Beaumont-lès-Nonains* is re-established as a new, separate municipality whose territory exactly matches its original boundaries prior to the merger. It reverts to its previous name, *Beaumont-les-Nonains*, and resumes the id 60054. The municipality *Les Hauts-Talican*, now consisting only of the former municipalities *Neuville-Garnier* and *Villotran* (from year t + 1), conserves the name *Les Hauts-Talican* but adopts a new id, 60694, inherited from *Villotran*. The case was registered in the metadata dataset under the id: fr-dm-1-2019-2024. 
+
+<a href="documento.pdf" download class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
+Legal verification of the change
+<i class="bi bi-file-earmark-pdf-fill ms-1 me-1"></i>
+<i class="bi bi-download"></i>
+</a>
+
+<a href="https://example.com" target="_blank" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
+Visit Official Resource
+<i class="bi bi-box-arrow-up-right ms-1"></i>
+</a>
+
+### Map Plots
+
+
+```{python}
+
+#| label: build-merger-map
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+
+import folium
+import geopandas as gpd
+from branca.element import Element
+
+
+gdf = gpd.read_file("geo_files/merger_before.geojson").to_crs(epsg=4326)
+
+
+centroid = gdf.unary_union.centroid
+
+
+m = folium.Map(
+    location=[centroid.y, centroid.x],
+    zoom_start=13,
+    tiles=None
+)
+
+
+folium.TileLayer(
+    tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    attr="Esri",
+    name="Satellite (Esri)",
+    control=True
+).add_to(m)
+folium.TileLayer("OpenStreetMap", name="Classic", control=True).add_to(m)
+folium.TileLayer("CartoDB positron", name="Black & White", control=True).add_to(m)
+
+
+css = """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+</style>
+"""
+m.get_root().header.add_child(Element(css))
+
+
+geojson_tooltip = folium.features.GeoJsonTooltip(
+    fields=["year", "com_name", "com_id"],
+    aliases=["Year:", "Municipality:", "Municipality Id:"],
+    localize=True,
+    labels=True,
+    style=(
+        "box-shadow: 3px 3px 6px rgba(0,0,0,0.1); "
+        "z-index: 9999; "
+        "font-family: 'Source Sans 3', sans-serif; "
+        "font-size: 14px; "            
+        "backdrop-filter: blur(20px); "
+        "-webkit-backdrop-filter: blur(20px); "
+        "padding: 8px; "
+        "border: 1px solid rgba(255, 255, 255, 0.15); "
+        "box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); "
+        "color: #343A40;"
+        "line-height: 1; "
+        "background: #f7f9f9;"
+    ),
+    sticky=True
+)
+
+
+geo_layer = folium.GeoJson(
+    data=gdf,
+    name="Merger Before",
+    style_function=lambda feat: {
+        "color": "#333333",
+        "weight": 1.5,
+        "fillOpacity": .1
+    },
+    tooltip=geojson_tooltip
+)
+geo_layer.add_to(m)
+
+
+_ = folium.LayerControl().add_to(m)
+
+```
+
+
+::: {.panel-tabset}
+
+
+
+## Interactive map
+
+```{python}
+#| echo: false
+#| output: true
+m
+```
+
+
+## Static map
+
+<div style="display: flex; gap: 1em; justify-content: center; align-items: flex-start; margin: 0; padding: 0; width: 100%;">
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;"><strong>Before</strong></p>
+<img src="img/merger_before.svg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="Before Map"/>
+</div>
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;"><strong>After</strong></p>
+<img src="img/merger_after.jpg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="After Map"/>
+</div>
+</div>
+
+:::
+
+### How it is recorded in the data system
+
+## Multiple De-merger
+
+### Definition
+
+The re-establishment of more than one municipality that had previously participated in a merger (either simple or multiple) into a new, separate municipalities whose territories exactly match their original boundaries prior to the merger, thereby fully reversing the territorial effects of its inclusion in that merger.
+
+### Implication of the change
+
+Even before (year t-1):
+
+- Municipalities A (with id 1), B (with id 2), C (with id 3), and D (with id 4) exist as separate entities, each with its own name, id, and territory.
+
+Before (year t):
+
+- Municipalities A, B, C, D were dissolved.
+- Municipality E was created, covering the combined territory of Municipalities A, B, C and D.
+- Municipality E either retains one predecessor’s name/od or receives a new name/id.
+
+After (year t + 1):
+
+- Municipalities A and C were re-established as new, separate municipalities whose territory exactly match their original boundaries prior to the merger (year t - 1)
+- Municipality E, from (year t + 1), combines only territories of Municipalities B and D.
+
+
+### Visual overview
+
+<br/>
+
+<p style="text-align: center; font-weight: 600;font-size: 1.1rem; marin-top:30px;">Multiple De-merger</p>
+<div style="text-align: center;">
+<img src="img/appendix/demerger_multiple.svg"
+style="width: 95%; height: auto; margin-top:5px;" 
+alt="merger diagram" />
+</div>
+<p style="text-align: center; font-weight: 400;font-size: 0.8rem; marin-top:10px;">The number of municipal units involved is indicated in brackets under each description.</p>
+
+### Example
+
+Since 2016, the new municipality (commune in France) *L'Essarts-en-Bocage* (id 85084) was formed by the merger of the municipalities *Les Essarts* (id 85084), *Le Boulogne* (id 85030), *L'Oie* (id 85165), and *Sainte-Florence* (id 85212). The name was new, and the id was inherited from *Les Essarts*. However, since 2024, two municipalities — (1) *L'Oie*  and (2) *Sainte-Florence* — are re-established as new, separate municipalities whose territories exactly match their original boundaries prior to the merger. They revert to their previous names and ids. The municipality *L'Essarts-en-Bocage*, now consisting only of the former municipalities *Les Essarts* and *Le Boulogne* (from year t + 1), retains the name *L'Essarts-en-Bocage* and the id 85084, inherited originally from *Les Essarts*. The case was registered in the metadata dataset under:  fr-dm-2-2016-2024
+
+<a href="documento.pdf" download class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
+Legal verification of the change
+<i class="bi bi-file-earmark-pdf-fill ms-1 me-1"></i>
+<i class="bi bi-download"></i>
+</a>
+
+<a href="https://example.com" target="_blank" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
+Visit Official Resource
+<i class="bi bi-box-arrow-up-right ms-1"></i>
+</a>
+
+### Map Plots
+
+::: {.panel-tabset}
+
+## Interacive Map
+
+```{python}
+#| echo: false
+#| output: true
+m
+```
+
+## Static Map
+
+<div style="display: flex; gap: 1em; justify-content: center; align-items: flex-start; margin: 0; padding: 0; width: 100%;">
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;"><strong>Before</strong></p>
+<img src="img/merger_before.svg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="Before Map"/>
+</div>
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;"><strong>After</strong></p>
+<img src="img/merger_after.jpg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="After Map"/>
+</div>
+</div>
+
+:::
+
+## References
+
+[^1]: By **id** we mean code identifier of the municipality.
+  
+

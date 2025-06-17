@@ -1,5 +1,5 @@
 ---
-title: "Nature integration"
+title: "Nature Integration"
 format: 
     html:
         csl: utils/apa.csl
@@ -8,3 +8,172 @@ format:
 bibliography: utils/references.bib
 jupyter: python3
 ---
+
+### Definition
+
+The integration of a previously non-municipal territory, such as a national park, forest, or uninhabited administrative zone, into one already existing municipality.
+
+### Implication of the change
+
+Before (year t):
+
+- Municipality A (with id 1[^1]) exists as a separate entity with its own name, id, and territory.
+
+After (year t + 1):
+
+- Municipality A intеgrated a non-municipal territory, such as a national park, forest, or uninhabited administrative zone, into its own territory. 
+- Municipality A did not change its name or id.
+
+### Visual overview
+
+<br/>
+
+<p style="text-align: center; font-weight: 600;font-size: 1.1rem; marin-top:30px;">Nature Integration</p>
+<div style="text-align: center;">
+<img src="img/appendix/nature.svg"
+style="width: 80%; height: auto; margin-top:5px;" 
+alt="merger diagram" />
+</div>
+<p style="text-align: center; font-weight: 400;font-size: 0.8rem; marin-top:10px;">The number of municipal units involved is indicated in brackets under each description.</p>
+
+### Example
+
+Since 2021, the municipality (Gemeinde in Germany) Kelheim (id 92730137137) integrated the non-municipal territory of Hienheimer Forst (forest) into its own territory. The municipality Kelheim retained both its name and id (source). The case was registered in the metadata dataset under the: de-n-8-2021-2022.
+
+<a href="documento.pdf" download class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
+Legal verification of the change
+<i class="bi bi-file-earmark-pdf-fill ms-1 me-1"></i>
+<i class="bi bi-download"></i>
+</a>
+
+<a href="https://example.com" target="_blank" class="btn btn-link d-flex align-items-center p-0 fs-6" style="color: #444444;">
+Visit Official Resource
+<i class="bi bi-box-arrow-up-right ms-1"></i>
+</a>
+
+### Map Plots
+
+
+```{python}
+
+#| label: build-merger-map
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+
+import folium
+import geopandas as gpd
+from branca.element import Element
+
+
+gdf = gpd.read_file("geo_files/merger_before.geojson").to_crs(epsg=4326)
+
+
+centroid = gdf.unary_union.centroid
+
+
+m = folium.Map(
+    location=[centroid.y, centroid.x],
+    zoom_start=13,
+    tiles=None
+)
+
+
+folium.TileLayer(
+    tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    attr="Esri",
+    name="Satellite (Esri)",
+    control=True
+).add_to(m)
+folium.TileLayer("OpenStreetMap", name="Classic", control=True).add_to(m)
+folium.TileLayer("CartoDB positron", name="Black & White", control=True).add_to(m)
+
+
+css = """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+</style>
+"""
+m.get_root().header.add_child(Element(css))
+
+
+geojson_tooltip = folium.features.GeoJsonTooltip(
+    fields=["year", "com_name", "com_id"],
+    aliases=["Year:", "Municipality:", "Municipality Id:"],
+    localize=True,
+    labels=True,
+    style=(
+        "box-shadow: 3px 3px 6px rgba(0,0,0,0.1); "
+        "z-index: 9999; "
+        "font-family: 'Source Sans 3', sans-serif; "
+        "font-size: 14px; "            
+        "backdrop-filter: blur(20px); "
+        "-webkit-backdrop-filter: blur(20px); "
+        "padding: 8px; "
+        "border: 1px solid rgba(255, 255, 255, 0.15); "
+        "box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); "
+        "color: #343A40;"
+        "line-height: 1; "
+        "background: #f7f9f9;"
+    ),
+    sticky=True
+)
+
+
+geo_layer = folium.GeoJson(
+    data=gdf,
+    name="Merger Before",
+    style_function=lambda feat: {
+        "color": "#333333",
+        "weight": 1.5,
+        "fillOpacity": .1
+    },
+    tooltip=geojson_tooltip
+)
+geo_layer.add_to(m)
+
+
+_ = folium.LayerControl().add_to(m)
+
+```
+
+
+::: {.panel-tabset}
+
+
+
+## Interactive map
+
+```{python}
+#| echo: false
+#| output: true
+m
+```
+
+
+## Static map
+
+<div style="display: flex; gap: 1em; justify-content: center; align-items: flex-start; margin: 0; padding: 0; width: 100%;">
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;"><strong>Before</strong></p>
+<img src="img/merger_before.svg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="Before Map"/>
+</div>
+<div style="flex: 1; text-align: center; margin: 0; padding: 0;">
+<br>
+<p style="margin: 0 0 0.25em 0; padding: 0;"><strong>After</strong></p>
+<img src="img/merger_after.jpg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="After Map"/>
+</div>
+</div>
+
+:::
+
+### How it is recorded in the data system
+
+
+## References
+
+[^1]: By **id** we mean code identifier of the municipality.
+  
+
