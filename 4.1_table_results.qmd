@@ -1,19 +1,24 @@
 ---
-title: "Classification of Municipal Changes in the EU (2014–2024)"
+title: "Classification of Municipal Changes in the EU since 2014"
 format: 
     html:
         csl: utils/apa.csl
         toc: true
         toc-depth: 4   
-    pdf:
-        csl: utils/apa.csl
+    
 bibliography: utils/references.bib
 jupyter: python3
 ---
- 
+
+Our comprehensive analysis of all municipal boundary changes in the EU between 2014 and 2024 has enabled us to identify eight principal categories of geographical change and 17 corresponding subcategories, along with a separate category capturing purely non-geographical changes. Each change category is conceptualized as a relational transformation between two temporal states: the configuration before the change and that which follows it. Transformations are classified according to whether municipalities were dissolved (i.e., ceased to exist as independent administrative units) or created (i.e., new administrative units emerged as a result of the change).
+
+More specifically, each case of transformation falls into one of four logical combinations: (1) municipalities are both created and dissolved; (2) municipalities are created but none are dissolved; (3) municipalities are dissolved but none are created; (4) municipalities are neither created nor dissolved. This logical structure serves as the foundation for our typology and allows for a systematic comparison across diverse national contexts.
+
+It is also important to clarify that given the absence of standardized terminology and consistent definitions in the existing literature—where terms describing municipal change are frequently used interchangeably—the typology proposed below represents our conceptualization of each change nature category, based largely on the legal definitions found in national legislation relevant to each case.
+
 ## Geographical changes
 
-### 1. Municipalities are created and dissolved [^1]
+### 1. Municipalities are both created and dissolved [^1]
 
 <div class="table-responsive">
 <table class="table table-borderless table-sm">
@@ -54,7 +59,7 @@ jupyter: python3
 </table>
 </div>
 
-### 2. Municipalities are created and are not dissolved
+### 2. Municipalities are created but none are dissolved
 
 <div class="table-responsive">
 <table class="table table-borderless table-sm">
@@ -93,7 +98,7 @@ jupyter: python3
 </table>
 </div>
 
-### 3. Municipalities are dissolved and are not created
+### 3. Municipalities are dissolved but none are created
 
 <div class="table-responsive">
 <table class="table table-borderless table-sm">
@@ -186,12 +191,17 @@ All four categories presented above represent situations where municipal boundar
 <td>The change of a municipality’s id.</td>
 </tr>
 <tr>
-<td>Change id</td>
-<td>The change of a municipality’s id.</td>
+<td>Change name + id</td>
+<td>The simultaneous change of both a municipality’s name and id.</td>
 </tr>
 </tbody>
 </table>
 </div>
+
+<br>
+<br>
+The proposed classification, together with a geospatial comparison of municipal boundaries, makes it possible to trace the history of each municipality in the EU from 2014 onward. In other words, following a panel data logic, this approach enables the longitudinal observation of each municipality, capturing not only annual cross-sectional snapshots but also the evolution of changes over time. For instance, we found that even a single type of change from the classification table can occur multiple times to the same municipality within a ten-year period. For example, in France, the municipality (commune) Les Trois Lacs changed its ID from 27676 to 27058 in 2021, and then reverted from 27058 back to 27676 in 2023 (these changes were due to the relocation of the administrative center of the municipality (le chef-lieu de la commune)). Similarly, the same municipality may undergo different types of changes in consecutive years—for instance, transferring part of its territory in one year and participating in a merger the following year. 
+ 
 
 ## Download table
 
@@ -201,6 +211,7 @@ Download table in PDF:
 <i class="bi bi-file-earmark-pdf-fill ms-1 me-1"></i>
 <i class="bi bi-download"></i>
 </a>
+
 
 
 ## Notes

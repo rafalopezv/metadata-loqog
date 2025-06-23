@@ -3,9 +3,42 @@ title: "Methodological Overview"
 format: 
     html:
         csl: utils/apa.csl
-    pdf:
-        csl: utils/apa.csl
+    
 bibliography: utils/references.bib
 jupyter: python3
 ---
 
+As stated earlier, this project aims to build the infrastructure needed to generate local-level time series from 2014 onward. It will also deliver novel information tied to current local boundaries.
+
+To guarantee temporal comparability, we have developed a methodological framework that pairs automated algorithms for detecting territorial changes with manual legal validation, ensuring spatial consistency across municipalities.
+
+We assume that all modifications to municipal boundaries can be recorded on an annual basis. Each yearly cycle is therefore reviewed with official maps: if no change is observed, the previous year’s data are replicated to maintain continuity.
+
+## Methodological Sequence {#sec-method-sequence}
+
+### Acquisition of Geographic Files
+
+For every pair of consecutive years (*t* and *t + 1*), we collect vector datasets (e.g., Shapefile, GeoJSON) containing municipal polygons. All files were exclusively retrieved from authorized national repositories, guaranteeing consistent and accurate geometry.
+
+### Automated Change Detection
+
+Specialized algorithms compare the polygons for years *t* and *t + 1*, classifying three types of transformations:
+
+- **Extinction** – a polygon disappears.  
+- **Emergence** – a polygon appears without a prior reference.  
+- **Reconfiguration** – mergers, splits, or boundary adjustments.  
+
+The detailed section explains the spatial criteria—minimum-area thresholds, topological adjacency tests, etc.
+
+### Manual Legal Verification
+
+Automated results are cross-checked against official legislation (laws, decrees, administrative resolutions) to verify:
+
+1. The category of change nature (see [Classification of Municipal Changes](4.1_table_results.html))
+2. The accuracy of elements involved (including the number of units involved, names, and dates)
+
+Each detected change is validated and linked to its legal instrument, providing documentary support.
+
+### Construction of a relational Database System
+
+These datasets serve as the landing stage of the previous steps and operate under the principle that the history of any municipality’s changes must be reconstructable. The first dataset contains geospatial files in which every municipal polygon is tagged with an internal identifier, making  municipalitys’ geographies trackable. The second dataset records the nature and characteristics of changes or stability, detailing how municipalities have evolved. The third contains the legal documentation supporting those changes, and the fourth enables NUTS (1–3) aggregation. Finally, the thematic data form a separate block, making the system fully relational and adaptable to varied user objectives.

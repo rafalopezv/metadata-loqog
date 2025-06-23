@@ -1,0 +1,10 @@
+year,country,region,count,percentage
+2016,Norway,merger,5,71.42857142857143
+2016,Norway,split,2,28.57142857142857
+2017,Norway,merger,16,33.33333333333333
+2017,Norway,non_geo,32,66.66666666666666
+2020,Norway,territoral_transfers,4,100
+2021,Norway,territoral_transfers,2,100
+2023,Norway,merger,12,5.106382978723404
+2023,Norway,non_geo,220,93.61702127659575
+2023,Norway,split,3,1.276595744680851

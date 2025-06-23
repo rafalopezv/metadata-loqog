@@ -1,10 +1,76 @@
 ---
-title: "Other Auxiliary Files"
+title: "Details of the Legal Datasets"
 format: 
   html:
     csl: utils/apa.csl
-  pdf:
-    csl: utils/apa.csl
+  
 bibliography: utils/references.bib
 jupyter: python3
 ---
+
+This section documents the dataset responsible for recording the legal evidence of the changes. 
+
+## Dataset snapshot
+
+| Item        | Description |
+|-------------|-------------|
+| File name   | `<country_2letter-code>_legal.csv`  |
+| Delivery    | Cumulative series (2014 – present) — one file for France that grows with each new change event |
+| CRS         | n/a (attribute table) — joins to geometry via the internal ID |
+| Primary key | `(munqog_code, year)` — composite key; guarantees one record per municipality-year |
+
+
+
+## Variable dictionary
+
+Below, each field is given a short heading followed by its definition. Where a field participates in the primary key, that fact is noted explicitly.
+
+### `year`
+**Type**: 4-digit INTEGER  
+**Description**: Calendar year in which the boundary event took legal effect. When no change occurs, identifies the annual snapshot this record belongs to.  
+**Example**: `2015`  
+**Constraints**: Ranges 2014 – present. **Part of the composite primary key**.
+
+### `original_code`
+**Type**: TEXT  
+**Description**: Official national municipality code as issued by the French source (INSEE code).  
+**Example**: `01001`  
+**Constraints**: Digits only; often begins with a leading zero, so treat as text.
+
+### `munqog_code`
+**Type**: TEXT  
+**Description**: Project’s internal municipality identifier—stable across years, enabling consistent tracking. For overseas municipalities, includes an `o` (e.g., `fr-o-97353`).  
+**Example**: `fr-01001`, `fr-o-97353`  
+**Constraints**: Unique per geography. **Part of the composite primary key**.
+
+### `case_id`
+**Type**: TEXT  
+**Description**: Identifier that groups all municipalities involved in the same legal act.  
+**Example**: `fr-m-14-2015-2016`  
+**Constraints**: Unique within France; nullable when no change is recorded.
+
+### `law_name`
+**Type**: TEXT  
+**Description**: Official title of the legal act  that enacted the boundary change.  
+**Example**: `Arrêté du 29 septembre 2015 portant création de la commune nouvelle d'Arboys en Bugey`  
+**Constraints**: Nullable when change is detected but law may lack an identifiable name.
+
+### `law_link`
+**Type**: TEXT  
+**Description**: URL to the official legal document on the Legifrance website.  
+**Example**: `https://www.legifrance.gouv.fr/eli/arrete/2015/9/29/INTB1525283A/jo/texte`  
+**Constraints**: Nullable when there is no legal online reference.
+
+### `law_file_name`
+**Type**: TEXT  
+**Description**: Name of the  file containing the legal document.  
+**Example**: `fr-m-14-2015-2016.pdf`  
+**Constraints**: Nullable when evidence is not downloadable or found.
+
+### `law_qog_url`
+**Type**: TEXT  
+**Description**: URL to the legal document as hosted by the Quality of Government Institute.  
+**Example**: `https://www.qogdata.pol.gu.se/loqog-documentation/legal/fr/fr-m-14-2015-2016.pdf`  
+
+### Notes on Missing Variables
+The `fr_legal.csv` dataset does not include fields such as `reference_year`, `cname`, `mun_name`, `original_code_years_cover`, `munqog_code_years_cover`, `recorded_change`, `change_nature`, `sub_change_nature`, `units_involved`, `change_name_description`, `change_code_description`, or `shape_area`, which are typically found in the `<country>_change_log.csv` dataset. (e.g., merger, split), refer to the [Classification of Municipal Changes Tables](4.1_table_results.html).

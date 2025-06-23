@@ -1,70 +1,79 @@
 project:
-  type: book
-  output-dir: _book
+  type: website
+  output-dir: _web
 
-book:
+serve:
+  port: 4321
+  watch: true
+
+website:
   title: "Local Quality of Government Project"
-  author: "QoG Data Team"
-  date: last-modified
 
-  chapters:
-    - index.qmd
-    - 1_summary.qmd
-    - 2_concept.qmd
-    - part: "Methodology"
-      chapters:
-        - 3.1_summary.qmd
-        - 3.2_unit.qmd
-        - 3.3_code.qmd
-        - 3.4_legal.qmd
-        - 3.5_data.qmd
-        - 3.6_exclusions.qmd
-    - part: "Results"
-      chapters:
-        - 4.1_table_results.qmd
-        - 4.2_merger.qmd
-        - 4.3_split.qmd
-        - 4.4_composite.qmd
-        - 4.5_demerger.qmd
-        - 4.6_separation.qmd
-        - 4.7_dissolution.qmd
-        - 4.8_nature.qmd
-        - 4.9_transfer.qmd
-        - 4.10_nongeo.qmd
-    - part: "Data"
-      chapters:
-        - 5.1_data-structure.qmd
-        - 5.2_linking-datasets.qmd
-        - 5.3_geographic-base.qmd
-        - 5.4_event-log.qmd
-        - 5.5_auxiliary-files.qmd
-        - 5.6_standards.qmd
-        - 5.7_use-cases.qmd
-        - 5.8_changelog.qmd
-        - 5.9_glossary.qmd
-    - 5_activities.qmd
-    - 6_project_status.qmd
-    - playground.qmd
-    - vis.qmd
+  page-navigation: true # back-to-top navigation (prev/next buttons)
+  reader-mode: true # clean reading layout
+  bread-crumbs: true # show breadcrumb path
 
-execute:
-  enabled: true
-  jupyter: python3
+  sidebar:
+    # logo: img/logo_blue.svg
+    style: "floating"
+    search: true
+    collapse-level: 2
+    contents:
+      - index.qmd
+      - 1_summary.qmd
+      - 2_concept.qmd
+      - section: "Methodology"
+        contents:
+          - 3.1_summary.qmd
+          - 3.2_unit.qmd
+          - 3.3_code.qmd
+          - 3.4_legal.qmd
+          - 3.5_data.qmd
+          - 3.6_exclusions.qmd
+      - section: "A new typology on border changes"
+        contents:
+          - section: 4.1_table_results.qmd
+            contents:
+              - 4.2_merger.qmd
+              - 4.3_split.qmd
+              - 4.4_composite.qmd
+              - 4.5_demerger.qmd
+              - 4.6_separation.qmd
+              - 4.7_dissolution.qmd
+              - 4.8_nature.qmd
+              - 4.9_transfer.qmd
+              - 4.10_nongeo.qmd
+          - 4.11.stats.qmd
+      - section: "Data"
+        contents:
+          - 5.1_data-structure.qmd
+          - 5.2_linking-datasets.qmd
+          - 5.3_geographic-base.qmd
+          - 5.4_event-log.qmd
+          - 5.5_auxiliary-files.qmd
+          - 5.6_standards.qmd
+          - 5.7_use-cases.qmd
+          # - 5.8_changelog.qmd
+      - section: "Use Cases"
+        contents:
+          - vis.qmd
+          - use_case_elections_france.qmd
+      - 5_activities.qmd
+      - 6_project_status.qmd
+      - section: "Demo & Downloads"
 
 format:
   html:
+    include-after-body: footer.html
     css: styles.css
     toc: true
-    toc-depth: 3
+    toc-depth: 4
     number-sections: false
     code-fold: false
     htmlwidgets: true
     prefer-html: true
-    download: ["pdf", "docx"]
+    highlight-style: pygments
 
-  pdf:
-    documentclass: book # use the LaTeX book class
-    toc: true # include a table of contents
-    number-sections: true # enable numbered headings
-
-  docx: {} # default Word output
+execute:
+  enabled: true
+  jupyter: python3

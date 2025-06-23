@@ -4,8 +4,7 @@ format:
     html:
         csl: utils/apa.csl
         css: styles.css
-    pdf:
-        csl: utils/apa.csl
+    
 bibliography: utils/references.bib
 jupyter: python3
 ---

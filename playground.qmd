@@ -1,7 +1,19 @@
 ---
 title: "Page for Victo's graph tests"
 jupyter: python3
+page-layout: full
+sidebar: false
+toc: false
 ---
+
+<div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; margin: 0; padding: 0; overflow: hidden; z-index: 0;">
+<iframe src="https://bol.voto/tm"
+style="width: 100%; height: 100%; border: none;"
+allowfullscreen
+loading="lazy"
+scrolling="no">
+</iframe>
+</div>
 
 This will be removed 
 

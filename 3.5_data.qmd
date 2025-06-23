@@ -3,9 +3,18 @@ title: "Data System"
 format: 
     html:
         csl: utils/apa.csl
-    pdf:
-        csl: utils/apa.csl
+    
 bibliography: utils/references.bib
 jupyter: python3
 ---
 
+The design of the dataset is founded on the principle of documenting both change and continuity in European municipal boundaries.  By capturing every merger, split, transfer, and dissolution alongside corresponding legal identifier shifts, we enable researchers to trace the full territorial and administrative evolution of any municipality from 2014 through 2024.  This comprehensive record‐keeping supports inquiries into questions such as “How have municipal borders in France evolved over the past decade?” or “When and why did a given municipality change its name but not its territory?”
+
+To achieve this, we have adopted a modular data architecture comprising three interlocking components, each published in open, non‐proprietary formats (GeoPackage, CSV, etc) to ensure full reproducibility and interoperability:
+	
+All municipal polygons are stored in a GeoPackage (.gpkg) layer, preserving geodetic accuracy and topological consistency.  This format supports high‐precision mapping and spatial analyses with standard GIS tools, free from proprietary constraints.
+	
+Every year‐on‐year change is recorded in a “long” table structure.  This module allows users to ask exactly when a merger or transfer took place in any municipality, and to quantify the frequency and types of changes over time. And a legal dataset accompanies with details of the legislation backing the changes.
+
+
+Because every  country follows the same three‐module schema, integrating new national case studies is as simple as appending their GeoPackage and CSV files.  This design guarantees scalability: as our project grows to encompass additional European nations, the unified structure remains intact, allowing seamless, cross‐national comparisons and longitudinal analyses of municipal governance and territorial change.

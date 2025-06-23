@@ -3,8 +3,202 @@ title: "Details of the Main Metadata"
 format: 
   html:
     csl: utils/apa.csl
-  pdf:
-    csl: utils/apa.csl
+  
 bibliography: utils/references.bib
 jupyter: python3
 ---
+
+This section documents the dataset responsible for recording changes — or the absence of changes — in municipal boundaries. When a change occurs, it indicates when and how it happened, and also stores additional attributes relevant to each change event. It complements the annual geometry layers described earlier.
+
+## Dataset snapshot
+
+
+| Item        | Description |
+|-------------|-------------|
+| File name   | `<country_iso>`_change_log.csv [^file] |
+| Delivery    | Cumulative series (2014 – present) — one file per country that grows with each new change event |
+| CRS         | n/a (attribute table) — joins to geometry via the internal ID |
+| Primary key | `(munqog_code, year)` — composite key; guarantees one record per municipality-year |
+
+[^file]: `<country_iso>` is the two-letter ISO 3166-1 alpha-2 code (e.g., *fr*, *de*). Example: `fr_change_log.csv`.
+
+## Variable dictionary
+
+Below, each field is given a short heading followed by its definition. Where a
+field participates in the primary key, that fact is noted explicitly.
+
+### `year`
+**Type**: 4-digit INTEGER  
+**Description**: Calendar year in which the boundary event took legal effect.
+When no change occurs, identifies the annual snapshot this record belongs to.  
+**Example**: `2015`  
+**Constraints**: Ranges 2014 – present. **Part of the composite primary key**.
+
+
+
+### `reference_year`
+**Type**: 4-digit INTEGER  
+**Description**: Companion year in the fixed two-year cycle that fully
+describes a change (see Code List A1).  
+**Example**: `2016`  
+**Constraints**: Null when there is no change.
+
+#### Code List `reference_year`
+Two complementary rows per change:
+
+| Row role         | Rule                                | Example values                         |
+|------------------|-------------------------------------|----------------------------------------|
+| **Event year**   | `reference_year = year + 1`         | `year = 2014` → `reference_year = 2015`|
+| **Geometry year**| `reference_year = year − 1`         | `year = 2015` → `reference_year = 2014`|
+
+
+### `cname`
+**Type**: TEXT  
+**Description**: Country name under the criteria used in the Quality of Government Institute data provision  
+**Example**: `France`  
+**Constraints**: See this [QoG codebook for details](https://www.qogdata.pol.gu.se/data/codebook_std_jan25.pdf)
+
+
+### `original_code`
+**Type**: TEXT  
+**Description**: Official national municipality code as issued by the country
+source.  
+**Example**: `01001`  
+**Constraints**: Digits only; often begins with a leading zero, so treat as
+text. **Part of the composite primary key** in geometry tables.
+
+
+
+### `munqog_code`
+**Type**: TEXT  
+**Description**: Project’s internal municipality identifier—stable across
+years, enabling consistent tracking.  
+**Example**: `fr-11080-1`  
+**Constraints**: Unique per geography. **Part of the composite primary key**. For France overseas municipalities, the code goes like this: `fr-o-97353`. Note the  `o` between `fr` and `97353`.  
+
+
+
+### `mun_name`
+**Type**: TEXT  
+**Description**: Municipality name exactly as provided in the source file.  
+**Example**: `Val De Lambronne`  
+**Constraints**: UTF-8; may include accents or special characters.
+
+
+
+### `original_code_years_cover`
+**Type**: INTEGER  
+**Description**: Total years the original national code was valid.  
+**Example**: `11`
+
+
+
+### `munqog_code_years_cover`
+**Type**: INTEGER  
+**Description**: Total years the internal ID is valid.  
+**Example**: `9`
+
+
+### `recorded_change`
+**Type**: BOOLEAN  
+**Description**: `TRUE` if any boundary event affected the municipality in
+`year`.  
+**Example**: `TRUE`  
+**Code list**: See A2.
+
+#### Code List `recorded_change`
+
+| Code  | Definition                                                      |
+|-------|-----------------------------------------------------------------|
+| TRUE  | A boundary event affected the municipality in this year.        |
+| FALSE | Municipality was unaffected in this year.                       |
+
+
+### `change_nature`
+**Type**: TEXT  
+**Description**: High-level category of change (e.g. *merger*).  
+**Constraints**: Nullable when `recorded_change` is `FALSE`. See joint Code List for `change_nature`
+ and `sub_change_nature`
+
+
+### `sub_change_nature`
+**Type**: TEXT  
+**Description**: Fine-grained subtype of change (e.g. *simple*).  
+**Constraints**: Nullable when `recorded_change` is `FALSE`. See joint Code List for `change_nature`
+ and `sub_change_nature`
+
+#### Code List `change_nature` & `sub_change_nature`
+
+This code list mimics exactly the [Classification of Municipal Changes Tables](4.1_table_results.html). You can refer it to get more details. In short, this represents how those concepts landed in the dataset
+
+
+| change_nature / sub-change_nature                  | Definition (summarised. Refered to [Classification of Municipal Changes Tables](4.1_table_results.html))                                                                         |
+|---------------------------------------------------|-------------------------------------------------------------------------------------|
+| merger/simple                                     | New municipality formed from two existing ones.                                     |
+| merger/multiple                                   | New municipality formed from more than two existing ones.                           |
+| split/simple                                      | One municipality dissolved into two new ones, none retains the original.            |
+| split/multiple                                    | One municipality dissolved into more than two new ones, none retains the original.  |
+| composite_restructuring                           | Simultaneous dissolutions and mergers forming new municipalities.                   |
+| de_merger/simple                                  | Re-establishment of one municipality to its pre-merge borders.                      |
+| de_merger/multiple                                | Re-establishment of multiple municipalities to their pre-merge borders.             |
+| separation/simple                                 | New municipality carved out from part of an existing one.                           |
+| separation/multiple                               | New municipality carved out from parts of multiple existing ones.                   |
+| dissolution                                       | Municipality dissolved, territory absorbed by existing ones.                        |
+| nature_integration/simple                         | Non-municipal land integrated into two existing municipalities.                     |
+| nature_integration/multiple                       | Non-municipal land integrated into more than two existing municipalities.           |
+| territorial_transfers/national_transfer            | Part of one municipality transferred to another without exchange.                   |
+| territorial_transfers/national_exchange            | One-time swap of territories between two municipalities within the same country.    |
+| territorial_transfers/international_transfer       | Part of one municipality transferred to another in a neighboring country.           |
+| territorial_transfers/international_Exchange       | One-time swap of territories between municipalities across national borders.        |
+| non_geo/change_name                               | Municipality’s name changed without boundary alteration.                            |
+| non_geo/change_id                                 | Municipality’s identifier changed without boundary alteration.                      |
+| non_geo/change_name_id                          | Both name and identifier changed without boundary alteration.                       |
+| no_change/no_change                          | No change recorded.                       |
+
+### `case_id`
+**Type**: TEXT  
+**Description**: Identifier that groups all municipalities involved in the same
+legal act.  
+**Example**: `fr-m-34-2015-2016`  
+**Constraints**: Unique within country; nullable when `recorded_change`
+is `FALSE`.
+
+
+
+### `units_involved`
+**Type**: INTEGER  
+**Description**: Number of municipalities involved in the case.  
+**Example**: `2`  
+**Constraints**: Null when `recorded_change` is `FALSE`.
+
+
+### `change_name_description`
+**Type**: TEXT  
+**Description**: Plain-language note if the *name* of the entity changed.  
+**Constraints**: Nullable when `recorded_change` is `FALSE`.
+
+
+### `change_code_description`
+**Type**: TEXT  
+**Description**: Plain-language note on ID inheritance or retention.  
+**Constraints**: Nullable when `recorded_change` is `FALSE`.
+
+
+### `shape_area`
+**Type**: FLOAT  
+**Description**: Area of the municipality in square metres (snapshot of event
+year).  
+**Example**: `7641150`  
+**Constraints**: Derived from the geometry layer if not provided by the original source.
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,10 +3,77 @@ title: "Code-Based Change Identification"
 format: 
     html:
         csl: utils/apa.csl
-    pdf:
-        csl: utils/apa.csl
+    
 bibliography: utils/references.bib
 jupyter: python3
 ---
 
 
+Geospatial data files were obtained from official repositories of EU countries and provided in various formats, including GeoPackage (GPKG), GeoJSON, Shapefile, and GML, among others. To ensure consistency and uniform projection, all files were converted to the GeoPackage format, reprojected to a common coordinate reference system (EPSG:3035), and uniformly encoded in UTF-8.
+
+During this phase, 11 standardized GeoPackage files were generated for each country to facilitate further analysis. Standardized attribute fields were introduced, including:
+
+- `mun_id`: local unique identifier of the municipality as provided by the official country source  
+- `mun_name`: name of the municipality  
+- `shape_area`: area of the municipality  
+- `year`: year corresponding to the shapefile data  
+
+To ensure geometric validity, all spatial geometries were validated. Where invalid geometries were detected, a small buffer of 0.01 units was applied to correct topological errors.
+
+Our spatial analysis—understood as the examination of spatial patterns, relationships, and processes across geographic space—focused on three principal types of municipal changes: **mergers**, **splits**, and **border changes** [@goodchild2004gis; @rey2022handbook].
+
+These changes were examined through year-pair comparisons over the 10-year period, enabling a longitudinal understanding of spatial evolution.
+
+## Merger Identification
+
+Municipal mergers were identified by detecting municipalities present in the previous year (pre-year, *t*) but absent in the subsequent year (post-year, *t + 1*). A decrease in the number of municipalities was considered an initial indicator of a potential merger. To confirm mergers, a spatial intersection analysis was conducted.
+
+Each potentially merged municipality was intersected with the new entities in *t + 1*, and the area of the intersection was calculated relative to the original municipality’s area in year *t* using the formula:
+
+$$
+IP = \left( \frac{I}{A_t} \right) \times 100, \quad VI = IP > 49
+$$
+
+Where:
+- *IP* is the percentage of intersection
+- *I* is the area of intersection
+- *A_t* is the original area in year *t*
+- *VI* denotes a valid intersection if *IP > 49*
+
+A threshold of 49% was applied to confirm that a substantial portion of the original municipality had merged. Comparative analysis in France, Italy, Germany, and Austria supported this threshold, which was further validated against administrative records.
+
+## Split Identification
+
+To identify municipal splits, we first looked for new `mun_id`s in year *t + 1* that were not present in *t*. Additionally, municipalities present in both years were examined for partial territory transfers that could indicate splits. The intersection analysis applied:
+
+$$
+IP = \left( \frac{I}{A_t} \right) \times 100, \quad VI = 1 < IP < 70
+$$
+
+This range was selected to:
+- Exclude small modifications (*IP < 1*)
+- Avoid overlap with mergers (*IP > 70*)
+
+Reverse checks (post-to-pre year) were used to identify all contributing units and to verify complex split cases.
+
+## Border Change Detection
+
+Border changes were detected among municipalities present in both years. Intersections with *IP < 1%* flagged candidates, and area changes were examined to determine whether municipalities had gained or lost territory:
+
+$$
+\text{diff} = A_{t+1} - A_t, \quad VI = IP < 1
+$$
+
+Where:
+- *A_{t+1}* is the area in year *t + 1*
+- *A_t* is the area in year *t*
+
+## Non-Geographical Changes
+
+Non-geographical changes included modifications to `mun_id` and `mun_name`. These were identified through direct comparison of IDs and names between the two geospatial files. Differences were recorded as name or ID changes. Further checks verified whether differing IDs or names referred to the same administrative entity.
+
+See bibliography below.
+
+## Python-Based Implementation and Public Code Access
+
+The geospatial processing described in this section was implemented using Python, leveraging libraries such as geopandas, shapely, and fiona for spatial operations and validation. The complete source code, along with documentation and examples, will be made publicly available in the project’s official repository in the coming months.

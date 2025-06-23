@@ -3,11 +3,81 @@ title: "Limitations"
 format: 
     html:
         csl: utils/apa.csl
-    pdf:
-        csl: utils/apa.csl
+    
 bibliography: utils/references.bib
 jupyter: python3
 ---
 
+## About limitations (Methodological Limitations)
 
+This section outlines several limitations of our geo-based approach. First, the geographical perspective prioritizes geometric evidence over legal documentation. As a result, certain legally recognized changes may be difficult—or even impossible—to detect through purely geographical methods. Our analysis relies on geospatial files of administrative boundaries obtained from official sources, which typically represent territorial divisions as of January 1 of a given year. However, changes to municipal boundaries are not always synchronized with the calendar year and may come into effect at different points of time throughout the year.
+
+A notable example illustrating this limitation is Latvia, where a major Administrative Territorial Reform (hereafter ATR) came into effect on July 1, 2021, reducing the number of municipalities from 119 to 43 [(VZD, 2021)](https://www.vzd.gov.lv/lv/jaunums/administrativi-teritoriala-reforma-latvija?utm_source=chatgpt.com). Firstly, in this case, relying on a single geospatial file for the entire year 2021 would result in a misrepresentation of the actual administrative landscape: from January 1 to June 30, Latvia had 119 municipalities; starting July 1, the number was reduced to 43 (see Table 1). Analyses that do not adequately account for such mid-year changes may lead to inaccuracies in spatial data interpretation and associated measurements.
+
+## Table 1. Total number of municipalities in Latvia in 2020–2021
+
+#### Table 1. Total number of municipalities in Latvia in 2020–2021
+
+<div class="table-responsive">
+<table class="table table-bordered table-sm" style="text-align: left;">
+  <thead>
+  <tr>
+    <th rowspan="2" style="text-align: center; vertical-align: middle;">Year</th>
+    <th rowspan="2" style="text-align: center; vertical-align: middle;">2020</th>
+    <th colspan="2" style="text-align: center; vertical-align: middle;">2021</th>
+  </tr>
+  <tr>
+    <th style="text-align: center; vertical-align: middle;">Before July 1</th>
+    <th style="text-align: center; vertical-align: middle;">After July 1</th>
+  </tr>
+</thead>
+  <tbody>
+    <tr>
+      <td>List of municipalities</td>
+      <td>
+        <pre style="margin: 0; background:transparent; font-family: inherit; font-size: inherit; color: #333333">
+            1. Ādažu novads
+            2. Aglonas novads
+            …
+            110. Zilupes novads
+            + 9 Republikas pilsētas
+        </pre>
+     </td>
+      <td>
+      <pre style="margin: 0; background:transparent; font-family: inherit; font-size: inherit; color: #333333; text-align: left;">
+        1. Ādažu novads
+        2. Aglonas novads
+        …<br>
+        110. Zilupes novads
+        + 9 Republikas pilsētas
+    </pre>
+      </td>
+      <td>
+      <pre style="margin: 0; background:transparent; font-family: inherit; font-size: inherit; color: #333333; text-align: left;">
+        1. Daugavpils valstspilsētas pašvaldība
+        …<br>
+        43. Varakļānu novads
+    </pre>
+      </td>
+    </tr>
+    <tr>
+      <td>Total number of municipalities</td>
+      <td>119</td>
+      <td>119</td>
+      <td>43</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<br>
+
+A similar issue to the Latvian case arises in other EU countries, where, for example, municipal mergers are legally enacted not at the beginning of a calendar year but during the course of it. For instance, by decree of the prefect of Jura dated 11 March 2016, the new municipality Vincent-Froideville was created through the merger of Vincent and Froideville, with the merger officially coming into force on 1 April 2016 rather than on 1 January 2017 [(Legifrance 2016)](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000032922638).
+
+However, our dataset for France only includes municipal boundary geospatial files as of 1 January of each year. As a result, our approach cannot capture territorial changes that come into effect partway through the year, such as the merger of Vincent and Froideville into Vincent-Froideville, which took effect on 1 April 2016. Approximately 4% of all municipal mergers in our French dataset fall into this category, where changes are implemented mid-year rather than at the start of the following calendar year. Such timing mismatches may lead to inaccuracies in identifying the correct administrative units during the year in which the change occurs. Taken together, all the cases presented underscore the temporal sensitivity inherent in administrative boundary data.
+
+The second limitation of our approach lies in the varying resolution of the municipal boundaries represented in the geospatial files. These discrepancies in spatial precision may lead to the erroneous identification of a change—resulting in a false positive—when, in reality, no administrative modification has occurred, and the discrepancy reflects only a technical or measurement inconsistency.
+
+For example, in France, out of more than a thousand cases of potential territory transfers between municipalities, we were able to legally confirm only 14 actual cases of territory transfers from one municipality to another (an example of such a transfer can be found [here](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038318928)). The remaining cases represent merely technical discrepancies in the geospatial files across different years.
+
+We recognize the limitations outlined above and have taken care to mitigate their impact. Despite these challenges, our approach provides a valuable and practical method for analyzing municipal boundary changes across countries and over comparable time periods. By combining geometric data with legal verification where possible, we offer a reliable framework for studying administrative boundary dynamics.
 

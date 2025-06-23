@@ -1,0 +1,595 @@
+---
+title: "Descriptive Statistics of the Change"
+format: 
+  html:
+    csl: utils/apa.csl
+bibliography: utils/references.bib
+jupyter: python3
+---
+
+In this section, we examine the frequency and variation of all identified municipal boundary changes, based on the classification introduced earlier: (1) for the EU as a whole and (2) for each EU member state individually. We begin by presenting the distribution of municipalities that have experienced boundary changes since 2014, compared to those that have not. We then provide a detailed breakdown of the share of each change type over the ten-year period using circular (ring) charts. Finally, we illustrate the annual distribution of each change type (e.g., mergers, territorial transfers) using line graphs.
+
+## 1. Number of Municipalities with Boundary Changes
+
+This area charts track the share of municipalities undergoing at least one boundary change each year from 2014 to 2024. The horizontal axis denotes calendar year and the vertical axis gives the number of changes. Hover your mouse on the plot to get more details.
+
+```{python}
+#| echo: false
+#| message: false
+#| warning: false
+
+import pandas as pd
+import plotly.express as px
+
+# 1) Carga tu CSV
+df = pd.read_csv("data/plot1.csv")
+
+# 2) Crea el área apilada (stacked area)
+fig = px.area(
+    df,
+    x="year",
+    y="count",
+    color="region",
+    title="",
+    template="simple_white",
+    line_shape="spline",     # suavizado de contorno
+    hover_data=["year", "region", "count", "percentage"],
+    labels={
+      "region": "Country",          # legend title + hover field
+      "count": "Number of Cases",   # hover field
+      "percentage": "% of Municipalities Changed",
+      "year": "Year"
+    }
+)
+
+# 3) Configura el stacking y el estilo de traza
+fig.update_traces(
+    stackgroup="one",      # todas las regiones comparten el mismo grupo de apilamiento
+    mode="none",           # sólo relleno, sin puntos
+    line=dict(width=1),    # contorno fino
+    opacity=0.8            # transparencia para ver las capas inferiores
+)
+
+# 4) Ajusta fuente, fondo y tooltip unificado
+fig.update_layout(
+    font=dict(
+        family="Source Sans Pro, serif",
+        size=14,
+        color="#333"
+    ),
+    paper_bgcolor="rgba(0,0,0,0)",   # transparente todo el lienzo
+    plot_bgcolor="rgba(0,0,0,0)",    # transparente detrás de la gráfica
+    hovermode="x unified"           # tooltip único al pasar por un año
+)
+
+# 5) Oculta la modebar y muestra
+fig.show(config={
+    "displayModeBar": False
+})
+```
+
+
+## 2. Distribution of Municipal Change Types
+The circular (ring) charts below display the distribution of municipal changes by type, as classified in the previous section, over the ten-year period: (1) for the EU as a whole and (2) for each EU member state. Each chart represents 100% of all municipal-level changes recorded between 2014 and 2024.
+
+::: {.panel-tabset}
+
+#### Total
+
+```{python}
+#| echo: false
+#| message: false
+#| warning: false
+
+import pandas as pd
+import plotly.express as px
+
+# 1) Carga tu CSV. Debe tener al menos dos columnas: 
+#    - category (la categoría para el pie)
+#    - value    (el valor numérico)
+df = pd.read_csv("data/p2_0.csv")
+
+# 2) Crea la dona directamente
+fig = px.pie(
+    df,
+    names="category",    # tu columna de categorías
+    values="value",      # tu columna de valores
+    hole=0.5,            # radio del agujero central
+    title=""  # ajusta el título a tu conveniencia
+)
+
+# 3) Pon texto dentro y ajusta el tooltip
+fig.update_traces(
+    textposition="inside",
+    textinfo="percent+label",
+    hoverinfo="label+percent+value"
+)
+
+# 4) Aplica un tema minimalista y fondo transparente
+fig.update_layout(
+    showlegend=False,
+    font=dict(family="Source Sans Pro, serif", size=14, color="#333"),
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    margin=dict(t=50, b=20, l=20, r=20)
+)
+
+# 5) Oculta la modebar
+fig.show(config={"displayModeBar": False})
+```
+
+#### France
+
+```{python}
+#| echo: false
+#| message: false
+#| warning: false
+
+import pandas as pd
+import plotly.express as px
+
+# 1) Carga tu CSV. Debe tener al menos dos columnas: 
+#    - category (la categoría para el pie)
+#    - value    (el valor numérico)
+df = pd.read_csv("data/p2_1.csv")
+
+# 2) Crea la dona directamente
+fig = px.pie(
+    df,
+    names="category",    # tu columna de categorías
+    values="value",      # tu columna de valores
+    hole=0.5,            # radio del agujero central
+    title=""  # ajusta el título a tu conveniencia
+)
+
+# 3) Pon texto dentro y ajusta el tooltip
+fig.update_traces(
+    textposition="inside",
+    textinfo="percent+label",
+    hoverinfo="label+percent+value"
+)
+
+# 4) Aplica un tema minimalista y fondo transparente
+fig.update_layout(
+    showlegend=False,
+    font=dict(family="Source Sans Pro, serif", size=14, color="#333"),
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    margin=dict(t=50, b=20, l=20, r=20)
+)
+
+# 5) Oculta la modebar
+fig.show(config={"displayModeBar": False})
+```
+
+#### Luxembourg
+
+```{python}
+
+#| echo: false
+#| message: false
+#| warning: false
+
+import pandas as pd
+import plotly.express as px
+
+# 1) Carga tu CSV. Debe tener al menos dos columnas: 
+#    - category (la categoría para el pie)
+#    - value    (el valor numérico)
+df = pd.read_csv("data/p2_2.csv")
+
+# 2) Crea la dona directamente
+fig = px.pie(
+    df,
+    names="category",    # tu columna de categorías
+    values="value",      # tu columna de valores
+    hole=0.5,            # radio del agujero central
+    title=""  # ajusta el título a tu conveniencia
+)
+
+# 3) Pon texto dentro y ajusta el tooltip
+fig.update_traces(
+    textposition="inside",
+    textinfo="percent+label",
+    hoverinfo="label+percent+value"
+)
+
+# 4) Aplica un tema minimalista y fondo transparente
+fig.update_layout(
+    showlegend=False,
+    font=dict(family="Source Sans Pro, serif", size=14, color="#333"),
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    margin=dict(t=50, b=20, l=20, r=20)
+)
+
+# 5) Oculta la modebar
+fig.show(config={"displayModeBar": False})
+```
+
+#### Latvia
+
+```{python}
+
+#| echo: false
+#| message: false
+#| warning: false
+
+import pandas as pd
+import plotly.express as px
+
+# 1) Carga tu CSV. Debe tener al menos dos columnas: 
+#    - category (la categoría para el pie)
+#    - value    (el valor numérico)
+df = pd.read_csv("data/p2_3.csv")
+
+# 2) Crea la dona directamente
+fig = px.pie(
+    df,
+    names="category",    # tu columna de categorías
+    values="value",      # tu columna de valores
+    hole=0.5,            # radio del agujero central
+  title=""  # ajusta el título a tu conveniencia
+)
+
+# 3) Pon texto dentro y ajusta el tooltip
+fig.update_traces(
+    textposition="inside",
+    textinfo="percent+label",
+    hoverinfo="label+percent+value"
+)
+
+# 4) Aplica un tema minimalista y fondo transparente
+fig.update_layout(
+    showlegend=False,
+    font=dict(family="Source Sans Pro, serif", size=14, color="#333"),
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    margin=dict(t=50, b=20, l=20, r=20)
+)
+
+# 5) Oculta la modebar
+fig.show(config={"displayModeBar": False})
+```
+
+#### Norway
+
+```{python}
+#| echo: false
+#| message: false
+#| warning: false
+
+import pandas as pd
+import plotly.express as px
+
+# 1) Carga tu CSV. Debe tener al menos dos columnas: 
+#    - category (la categoría para el pie)
+#    - value    (el valor numérico)
+df = pd.read_csv("data/p2_4.csv")
+
+# 2) Crea la dona directamente
+fig = px.pie(
+    df,
+    names="category",    # tu columna de categorías
+    values="value",      # tu columna de valores
+    hole=0.5,            # radio del agujero central
+    title=""  # ajusta el título a tu conveniencia
+)
+
+# 3) Pon texto dentro y ajusta el tooltip
+fig.update_traces(
+    textposition="inside",
+    textinfo="percent+label",
+    hoverinfo="label+percent+value"
+)
+
+# 4) Aplica un tema minimalista y fondo transparente
+fig.update_layout(
+    showlegend=False,
+    font=dict(family="Source Sans Pro, serif", size=14, color="#333"),
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    margin=dict(t=50, b=20, l=20, r=20)
+)
+
+# 5) Oculta la modebar
+fig.show(config={"displayModeBar": False})
+```
+
+:::
+
+## 3. Annual Distribution of Municipal Change Types
+The line graphs below illustrate the annual distribution of each type of municipal change (e.g., mergers, territorial transfers) over the ten-year period: (1) for the EU and (2) for each EU member state. The x-axis indicates the years (2014–2024), while the y-axis shows the number of cases for each type of change.
+
+::: {.panel-tabset}
+
+#### Total
+
+```{python}
+#| echo: false
+#| message: false
+#| warning: false
+
+import pandas as pd
+import plotly.express as px
+
+# 1) Carga tu CSV
+df = pd.read_csv("data/p3_0.csv")
+
+# 2) Crea el área apilada (stacked area)
+fig = px.area(
+    df,
+    x="year",
+    y="count",
+    color="region",
+    title="",
+    template="simple_white",
+    line_shape="spline",     # suavizado de contorno
+    hover_data=["year", "region", "count", "percentage"],
+    labels={
+      "region": "Change Nature",          # legend title + hover field
+      "count": "Number of Cases",   # hover field
+      "percentage": "% of Overall Municipalities",
+      "year": "Year"
+    }
+)
+
+# 3) Configura el stacking y el estilo de traza
+fig.update_traces(
+    stackgroup="one",      # todas las regiones comparten el mismo grupo de apilamiento
+    mode="none",           # sólo relleno, sin puntos
+    line=dict(width=1),    # contorno fino
+    opacity=0.8            # transparencia para ver las capas inferiores
+)
+
+# 4) Ajusta fuente, fondo y tooltip unificado
+fig.update_layout(
+    font=dict(
+        family="Source Sans Pro, serif",
+        size=14,
+        color="#333"
+    ),
+    paper_bgcolor="rgba(0,0,0,0)",   # transparente todo el lienzo
+    plot_bgcolor="rgba(0,0,0,0)",    # transparente detrás de la gráfica
+    hovermode="x unified"           # tooltip único al pasar por un año
+)
+
+# 5) Oculta la modebar y muestra
+fig.show(config={
+    "displayModeBar": False
+})
+```
+
+
+#### France
+
+```{python}
+#| echo: false
+#| message: false
+#| warning: false
+
+import pandas as pd
+import plotly.express as px
+
+# 1) Carga tu CSV
+df = pd.read_csv("data/p3_1.csv")
+
+# 2) Crea el área apilada (stacked area)
+fig = px.area(
+    df,
+    x="year",
+    y="count",
+    color="region",
+    title="",
+    template="simple_white",
+    line_shape="spline",     # suavizado de contorno
+    hover_data=["year", "region", "count", "percentage"],
+    labels={
+      "region": "Change Nature",          # legend title + hover field
+      "count": "Number of Cases",   # hover field
+      "percentage": "% of Overall Municipalities",
+      "year": "Year"
+    }
+)
+
+# 3) Configura el stacking y el estilo de traza
+fig.update_traces(
+    stackgroup="one",      # todas las regiones comparten el mismo grupo de apilamiento
+    mode="none",           # sólo relleno, sin puntos
+    line=dict(width=1),    # contorno fino
+    opacity=0.8            # transparencia para ver las capas inferiores
+)
+
+# 4) Ajusta fuente, fondo y tooltip unificado
+fig.update_layout(
+    font=dict(
+        family="Source Sans Pro, serif",
+        size=14,
+        color="#333"
+    ),
+    paper_bgcolor="rgba(0,0,0,0)",   # transparente todo el lienzo
+    plot_bgcolor="rgba(0,0,0,0)",    # transparente detrás de la gráfica
+    hovermode="x unified"           # tooltip único al pasar por un año
+)
+
+# 5) Oculta la modebar y muestra
+fig.show(config={
+    "displayModeBar": False
+})
+```
+
+#### Luxembourg
+
+```{python}
+#| echo: false
+#| message: false
+#| warning: false
+
+import pandas as pd
+import plotly.express as px
+
+# 1) Carga tu CSV
+df = pd.read_csv("data/p3_2.csv")
+
+# 2) Crea el área apilada (stacked area)
+fig = px.area(
+    df,
+    x="year",
+    y="count",
+    color="region",
+    title="",
+    template="simple_white",
+    line_shape="spline",     # suavizado de contorno
+    hover_data=["year", "region", "count", "percentage"],
+    labels={
+      "region": "Change Nature",          # legend title + hover field
+      "count": "Number of Cases",   # hover field
+      "percentage": "% of Overall Municipalities",
+      "year": "Year"
+    }
+)
+
+# 3) Configura el stacking y el estilo de traza
+fig.update_traces(
+    stackgroup="one",      # todas las regiones comparten el mismo grupo de apilamiento
+    mode="none",           # sólo relleno, sin puntos
+    line=dict(width=1),    # contorno fino
+    opacity=0.8            # transparencia para ver las capas inferiores
+)
+
+# 4) Ajusta fuente, fondo y tooltip unificado
+fig.update_layout(
+    font=dict(
+        family="Source Sans Pro, serif",
+        size=14,
+        color="#333"
+    ),
+    paper_bgcolor="rgba(0,0,0,0)",   # transparente todo el lienzo
+    plot_bgcolor="rgba(0,0,0,0)",    # transparente detrás de la gráfica
+    hovermode="x unified"           # tooltip único al pasar por un año
+)
+
+# 5) Oculta la modebar y muestra
+fig.show(config={
+    "displayModeBar": False
+})
+```
+
+#### Latvia
+
+```{python}
+
+#| echo: false
+#| message: false
+#| warning: false
+
+import pandas as pd
+import plotly.express as px
+
+# 1) Carga tu CSV
+df = pd.read_csv("data/p3_3.csv")
+
+# 2) Crea el área apilada (stacked area)
+fig = px.area(
+    df,
+    x="year",
+    y="count",
+    color="region",
+    title="",
+    template="simple_white",
+    line_shape="spline",     # suavizado de contorno
+    hover_data=["year", "region", "count", "percentage"],
+    labels={
+      "region": "Change Nature",          # legend title + hover field
+      "count": "Number of Cases",   # hover field
+      "percentage": "% of Overall Municipalities",
+      "year": "Year"
+    }
+)
+
+# 3) Configura el stacking y el estilo de traza
+fig.update_traces(
+    stackgroup="one",      # todas las regiones comparten el mismo grupo de apilamiento
+    mode="none",           # sólo relleno, sin puntos
+    line=dict(width=1),    # contorno fino
+    opacity=0.8            # transparencia para ver las capas inferiores
+)
+
+# 4) Ajusta fuente, fondo y tooltip unificado
+fig.update_layout(
+    font=dict(
+        family="Source Sans Pro, serif",
+        size=14,
+        color="#333"
+    ),
+    paper_bgcolor="rgba(0,0,0,0)",   # transparente todo el lienzo
+    plot_bgcolor="rgba(0,0,0,0)",    # transparente detrás de la gráfica
+    hovermode="x unified"           # tooltip único al pasar por un año
+)
+
+# 5) Oculta la modebar y muestra
+fig.show(config={
+    "displayModeBar": False
+})
+```
+
+#### Norway
+
+```{python}
+#| echo: false
+#| message: false
+#| warning: false
+
+import pandas as pd
+import plotly.express as px
+
+# 1) Carga tu CSV
+df = pd.read_csv("data/p3_4.csv")
+
+# 2) Crea el área apilada (stacked area)
+fig = px.area(
+    df,
+    x="year",
+    y="count",
+    color="region",
+    title="",
+    template="simple_white",
+    line_shape="spline",     # suavizado de contorno
+    hover_data=["year", "region", "count", "percentage"],
+    labels={
+      "region": "Change Nature",          # legend title + hover field
+      "count": "Number of Cases",   # hover field
+      "percentage": "% of Overall Municipalities",
+      "year": "Year"
+    }
+)
+
+# 3) Configura el stacking y el estilo de traza
+fig.update_traces(
+    stackgroup="one",      # todas las regiones comparten el mismo grupo de apilamiento
+    mode="none",           # sólo relleno, sin puntos
+    line=dict(width=1),    # contorno fino
+    opacity=0.8            # transparencia para ver las capas inferiores
+)
+
+# 4) Ajusta fuente, fondo y tooltip unificado
+fig.update_layout(
+    font=dict(
+        family="Source Sans Pro, serif",
+        size=14,
+        color="#333"
+    ),
+    paper_bgcolor="rgba(0,0,0,0)",   # transparente todo el lienzo
+    plot_bgcolor="rgba(0,0,0,0)",    # transparente detrás de la gráfica
+    hovermode="x unified"           # tooltip único al pasar por un año
+)
+
+# 5) Oculta la modebar y muestra
+fig.show(config={
+    "displayModeBar": False
+})
+```
+
+:::
+
+

@@ -1,0 +1,11 @@
+year,country,region,count,percentage
+2014,Luxemburg,merger,2,66.66666666666666
+2014,Luxemburg,non_geo,1,33.33333333333333
+2015,Luxemburg,merger,1,50
+2015,Luxemburg,non_geo,1,50
+2017,Luxemburg,merger,6,85.71428571428571
+2017,Luxemburg,non_geo,1,14.285714285714285
+2018,Luxemburg,merger,3,75
+2018,Luxemburg,non_geo,1,25
+2023,Luxemburg,merger,4,100
+2024,Luxemburg,merger,2,100

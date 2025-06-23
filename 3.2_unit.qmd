@@ -1,11 +1,21 @@
 ---
-title: "Definition of Unit of Analysis"
+title: "Municipality as Unit of Analysis"
 format: 
     html:
         csl: utils/apa.csl
-    pdf:
-        csl: utils/apa.csl
+    
 bibliography: utils/references.bib
 jupyter: python3
 ---
 
+Initially, the LoQoG project intended to use the established structure of **Local Administrative Units (LAUs)** across Europe (see [Eurostat](https://ec.europa.eu/eurostat/web/nuts/local-administrative-units)). In most countries, LAUs—particularly at the more disaggregated level—correspond to municipalities. While European countries do collect statistics at this level, there is no centralized service that harmonizes such data. Nevertheless, Eurostat maintains the LAU structure, which provides clearly defined and actively used borders and divisions. Across Europe, there are approximately **99,000 LAUs**. For example, Sweden is assigned **290 units** (its municipalities), whereas other countries have significantly more—for instance, **Germany** has around **11,000 municipalities**.
+
+However, further analysis revealed that, for some countries, LAU units do not correspond well to the objectives of the project. Instead, **municipalities** were identified as a more appropriate unit of analysis for the LoQoG project. For instance, in **Portugal**, from 2017, LAU no longer distinguishes between two levels (LAU 1 and LAU 2)[^1], but includes both municipalities (*municípios*) and smaller administrative units called *freguesias*. However, *freguesias* do not possess the same level of authority and independence as municipalities. Compared to other EU countries—where municipalities typically serve as the primary units of local government—*freguesias* are better understood as **subdivisions** of municipalities rather than as autonomous entities. Therefore, in the case of Portugal, **municipalities are a more appropriate unit of analysis** than LAUs.[^2]
+
+Discrepancies between LAU units and municipalities were also identified in other countries, such as **Ireland**, **Greece**, and **Cyprus**. In addition, in countries with more complex administrative structures, there are significant variations in the level of detail and the way administrative units are represented within the LAU framework. Therefore, we decided that the **primary units of analysis** in this project would be **municipalities**, rather than LAUs. In most countries, municipalities correspond directly to the LAU level, but in several cases, they do not. The selected units were also expected to provide **full territorial coverage** of each country. In some countries, we relied on **national experts** to determine the most appropriate units to include.
+
+
+
+[^1]: Since 2017, the European Union simplified the classification of Local Administrative Units (LAU). Instead of having two levels (LAU 1 and LAU 2), there is now a single LAU level covering all local administrative units. Source: [Eurostat](https://ec.europa.eu/eurostat/web/nuts/local-administrative-units)
+
+[^2]: Tavares, A. F., & Teles, F. (2018). *Deeply rooted but still striving for a role: The Portuguese freguesias under reform.* In *Sub-Municipal Governance in Europe: Decentralization Beyond the Municipal Tier* (pp. 193–209).

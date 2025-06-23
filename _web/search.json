@@ -1,0 +1,1146 @@
+[
+  {
+    "objectID": "playground.html",
+    "href": "playground.html",
+    "title": "Page for Victo’s graph tests",
+    "section": "",
+    "text": "This will be removed"
+  },
+  {
+    "objectID": "playground.html#static-map-example",
+    "href": "playground.html#static-map-example",
+    "title": "Page for Victo’s graph tests",
+    "section": "Static map example",
+    "text": "Static map example\n\n\n\nBefore\n\n\n\n\n\nAfter"
+  },
+  {
+    "objectID": "playground.html#interctive-map-example",
+    "href": "playground.html#interctive-map-example",
+    "title": "Page for Victo’s graph tests",
+    "section": "Interctive map example",
+    "text": "Interctive map example\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook"
+  },
+  {
+    "objectID": "myenv/lib/python3.12/site-packages/narwhals-1.43.0.dist-info/licenses/LICENSE.html",
+    "href": "myenv/lib/python3.12/site-packages/narwhals-1.43.0.dist-info/licenses/LICENSE.html",
+    "title": "Local Quality of Government Project",
+    "section": "",
+    "text": "MIT License\nCopyright (c) 2024, Marco Gorelli\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  {
+    "objectID": "myenv/lib/python3.12/site-packages/httpcore-1.0.9.dist-info/licenses/LICENSE.html",
+    "href": "myenv/lib/python3.12/site-packages/httpcore-1.0.9.dist-info/licenses/LICENSE.html",
+    "title": "Local Quality of Government Project",
+    "section": "",
+    "text": "Copyright © 2020, Encode OSS Ltd. All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+  },
+  {
+    "objectID": "myenv/lib/python3.12/site-packages/pyzmq-26.4.0.dist-info/licenses/LICENSE.html",
+    "href": "myenv/lib/python3.12/site-packages/pyzmq-26.4.0.dist-info/licenses/LICENSE.html",
+    "title": "Local Quality of Government Project",
+    "section": "",
+    "text": "BSD 3-Clause License\nCopyright (c) 2009-2012, Brian Granger, Min Ragan-Kelley\nAll rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+  },
+  {
+    "objectID": "myenv/lib/python3.12/site-packages/soupsieve-2.7.dist-info/licenses/LICENSE.html",
+    "href": "myenv/lib/python3.12/site-packages/soupsieve-2.7.dist-info/licenses/LICENSE.html",
+    "title": "Local Quality of Government Project",
+    "section": "",
+    "text": "MIT License\nCopyright (c) 2018 - 2025 Isaac Muse isaacmuse@gmail.com\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  {
+    "objectID": "3.1_summary.html",
+    "href": "3.1_summary.html",
+    "title": "Methodological Overview",
+    "section": "",
+    "text": "As stated earlier, this project aims to build the infrastructure needed to generate local-level time series from 2014 onward. It will also deliver novel information tied to current local boundaries.\nTo guarantee temporal comparability, we have developed a methodological framework that pairs automated algorithms for detecting territorial changes with manual legal validation, ensuring spatial consistency across municipalities.\nWe assume that all modifications to municipal boundaries can be recorded on an annual basis. Each yearly cycle is therefore reviewed with official maps: if no change is observed, the previous year’s data are replicated to maintain continuity.",
+    "crumbs": [
+      "Methodology",
+      "Methodological Overview"
+    ]
+  },
+  {
+    "objectID": "3.1_summary.html#sec-method-sequence",
+    "href": "3.1_summary.html#sec-method-sequence",
+    "title": "Methodological Overview",
+    "section": "Methodological Sequence",
+    "text": "Methodological Sequence\n\nAcquisition of Geographic Files\nFor every pair of consecutive years (t and t + 1), we collect vector datasets (e.g., Shapefile, GeoJSON) containing municipal polygons. All files were exclusively retrieved from authorized national repositories, guaranteeing consistent and accurate geometry.\n\n\nAutomated Change Detection\nSpecialized algorithms compare the polygons for years t and t + 1, classifying three types of transformations:\n\nExtinction – a polygon disappears.\n\nEmergence – a polygon appears without a prior reference.\n\nReconfiguration – mergers, splits, or boundary adjustments.\n\nThe detailed section explains the spatial criteria—minimum-area thresholds, topological adjacency tests, etc.\n\n\nManual Legal Verification\nAutomated results are cross-checked against official legislation (laws, decrees, administrative resolutions) to verify:\n\nThe category of change nature (see Classification of Municipal Changes)\nThe accuracy of elements involved (including the number of units involved, names, and dates)\n\nEach detected change is validated and linked to its legal instrument, providing documentary support.\n\n\nConstruction of a relational Database System\nThese datasets serve as the landing stage of the previous steps and operate under the principle that the history of any municipality’s changes must be reconstructable. The first dataset contains geospatial files in which every municipal polygon is tagged with an internal identifier, making municipalitys’ geographies trackable. The second dataset records the nature and characteristics of changes or stability, detailing how municipalities have evolved. The third contains the legal documentation supporting those changes, and the fourth enables NUTS (1–3) aggregation. Finally, the thematic data form a separate block, making the system fully relational and adaptable to varied user objectives.",
+    "crumbs": [
+      "Methodology",
+      "Methodological Overview"
+    ]
+  },
+  {
+    "objectID": "5.4_event-log.html",
+    "href": "5.4_event-log.html",
+    "title": "Details of the Main Metadata",
+    "section": "",
+    "text": "This section documents the dataset responsible for recording changes — or the absence of changes — in municipal boundaries. When a change occurs, it indicates when and how it happened, and also stores additional attributes relevant to each change event. It complements the annual geometry layers described earlier.",
+    "crumbs": [
+      "Data",
+      "Details of the Main Metadata"
+    ]
+  },
+  {
+    "objectID": "5.4_event-log.html#dataset-snapshot",
+    "href": "5.4_event-log.html#dataset-snapshot",
+    "title": "Details of the Main Metadata",
+    "section": "Dataset snapshot",
+    "text": "Dataset snapshot\n\n\n\n\n\n\n\nItem\nDescription\n\n\n\n\nFile name\n&lt;country_iso&gt;_change_log.csv 1\n\n\nDelivery\nCumulative series (2014 – present) — one file per country that grows with each new change event\n\n\nCRS\nn/a (attribute table) — joins to geometry via the internal ID\n\n\nPrimary key\n(munqog_code, year) — composite key; guarantees one record per municipality-year",
+    "crumbs": [
+      "Data",
+      "Details of the Main Metadata"
+    ]
+  },
+  {
+    "objectID": "5.4_event-log.html#variable-dictionary",
+    "href": "5.4_event-log.html#variable-dictionary",
+    "title": "Details of the Main Metadata",
+    "section": "Variable dictionary",
+    "text": "Variable dictionary\nBelow, each field is given a short heading followed by its definition. Where a field participates in the primary key, that fact is noted explicitly.\n\nyear\nType: 4-digit INTEGER\nDescription: Calendar year in which the boundary event took legal effect. When no change occurs, identifies the annual snapshot this record belongs to.\nExample: 2015\nConstraints: Ranges 2014 – present. Part of the composite primary key.\n\n\nreference_year\nType: 4-digit INTEGER\nDescription: Companion year in the fixed two-year cycle that fully describes a change (see Code List A1).\nExample: 2016\nConstraints: Null when there is no change.\n\nCode List reference_year\nTwo complementary rows per change:\n\n\n\n\n\n\n\n\nRow role\nRule\nExample values\n\n\n\n\nEvent year\nreference_year = year + 1\nyear = 2014 → reference_year = 2015\n\n\nGeometry year\nreference_year = year − 1\nyear = 2015 → reference_year = 2014\n\n\n\n\n\n\ncname\nType: TEXT\nDescription: Country name under the criteria used in the Quality of Government Institute data provision\nExample: France\nConstraints: See this QoG codebook for details\n\n\noriginal_code\nType: TEXT\nDescription: Official national municipality code as issued by the country source.\nExample: 01001\nConstraints: Digits only; often begins with a leading zero, so treat as text. Part of the composite primary key in geometry tables.\n\n\nmunqog_code\nType: TEXT\nDescription: Project’s internal municipality identifier—stable across years, enabling consistent tracking.\nExample: fr-11080-1\nConstraints: Unique per geography. Part of the composite primary key. For France overseas municipalities, the code goes like this: fr-o-97353. Note the o between fr and 97353.\n\n\nmun_name\nType: TEXT\nDescription: Municipality name exactly as provided in the source file.\nExample: Val De Lambronne\nConstraints: UTF-8; may include accents or special characters.\n\n\noriginal_code_years_cover\nType: INTEGER\nDescription: Total years the original national code was valid.\nExample: 11\n\n\nmunqog_code_years_cover\nType: INTEGER\nDescription: Total years the internal ID is valid.\nExample: 9\n\n\nrecorded_change\nType: BOOLEAN\nDescription: TRUE if any boundary event affected the municipality in year.\nExample: TRUE\nCode list: See A2.\n\nCode List recorded_change\n\n\n\n\n\n\n\nCode\nDefinition\n\n\n\n\nTRUE\nA boundary event affected the municipality in this year.\n\n\nFALSE\nMunicipality was unaffected in this year.\n\n\n\n\n\n\nchange_nature\nType: TEXT\nDescription: High-level category of change (e.g. merger).\nConstraints: Nullable when recorded_change is FALSE. See joint Code List for change_nature and sub_change_nature\n\n\nsub_change_nature\nType: TEXT\nDescription: Fine-grained subtype of change (e.g. simple).\nConstraints: Nullable when recorded_change is FALSE. See joint Code List for change_nature and sub_change_nature\n\nCode List change_nature & sub_change_nature\nThis code list mimics exactly the Classification of Municipal Changes Tables. You can refer it to get more details. In short, this represents how those concepts landed in the dataset\n\n\n\nchange_nature / sub-change_nature\nDefinition (summarised. Refered to Classification of Municipal Changes Tables)\n\n\n\n\nmerger/simple\nNew municipality formed from two existing ones.\n\n\nmerger/multiple\nNew municipality formed from more than two existing ones.\n\n\nsplit/simple\nOne municipality dissolved into two new ones, none retains the original.\n\n\nsplit/multiple\nOne municipality dissolved into more than two new ones, none retains the original.\n\n\ncomposite_restructuring\nSimultaneous dissolutions and mergers forming new municipalities.\n\n\nde_merger/simple\nRe-establishment of one municipality to its pre-merge borders.\n\n\nde_merger/multiple\nRe-establishment of multiple municipalities to their pre-merge borders.\n\n\nseparation/simple\nNew municipality carved out from part of an existing one.\n\n\nseparation/multiple\nNew municipality carved out from parts of multiple existing ones.\n\n\ndissolution\nMunicipality dissolved, territory absorbed by existing ones.\n\n\nnature_integration/simple\nNon-municipal land integrated into two existing municipalities.\n\n\nnature_integration/multiple\nNon-municipal land integrated into more than two existing municipalities.\n\n\nterritorial_transfers/national_transfer\nPart of one municipality transferred to another without exchange.\n\n\nterritorial_transfers/national_exchange\nOne-time swap of territories between two municipalities within the same country.\n\n\nterritorial_transfers/international_transfer\nPart of one municipality transferred to another in a neighboring country.\n\n\nterritorial_transfers/international_Exchange\nOne-time swap of territories between municipalities across national borders.\n\n\nnon_geo/change_name\nMunicipality’s name changed without boundary alteration.\n\n\nnon_geo/change_id\nMunicipality’s identifier changed without boundary alteration.\n\n\nnon_geo/change_name_id\nBoth name and identifier changed without boundary alteration.\n\n\nno_change/no_change\nNo change recorded.\n\n\n\n\n\n\ncase_id\nType: TEXT\nDescription: Identifier that groups all municipalities involved in the same legal act.\nExample: fr-m-34-2015-2016\nConstraints: Unique within country; nullable when recorded_change is FALSE.\n\n\nunits_involved\nType: INTEGER\nDescription: Number of municipalities involved in the case.\nExample: 2\nConstraints: Null when recorded_change is FALSE.\n\n\nchange_name_description\nType: TEXT\nDescription: Plain-language note if the name of the entity changed.\nConstraints: Nullable when recorded_change is FALSE.\n\n\nchange_code_description\nType: TEXT\nDescription: Plain-language note on ID inheritance or retention.\nConstraints: Nullable when recorded_change is FALSE.\n\n\nshape_area\nType: FLOAT\nDescription: Area of the municipality in square metres (snapshot of event year).\nExample: 7641150\nConstraints: Derived from the geometry layer if not provided by the original source.",
+    "crumbs": [
+      "Data",
+      "Details of the Main Metadata"
+    ]
+  },
+  {
+    "objectID": "5.4_event-log.html#footnotes",
+    "href": "5.4_event-log.html#footnotes",
+    "title": "Details of the Main Metadata",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n&lt;country_iso&gt; is the two-letter ISO 3166-1 alpha-2 code (e.g., fr, de). Example: fr_change_log.csv.↩︎",
+    "crumbs": [
+      "Data",
+      "Details of the Main Metadata"
+    ]
+  },
+  {
+    "objectID": "3.2_unit.html",
+    "href": "3.2_unit.html",
+    "title": "Municipality as Unit of Analysis",
+    "section": "",
+    "text": "Initially, the LoQoG project intended to use the established structure of Local Administrative Units (LAUs) across Europe (see Eurostat). In most countries, LAUs—particularly at the more disaggregated level—correspond to municipalities. While European countries do collect statistics at this level, there is no centralized service that harmonizes such data. Nevertheless, Eurostat maintains the LAU structure, which provides clearly defined and actively used borders and divisions. Across Europe, there are approximately 99,000 LAUs. For example, Sweden is assigned 290 units (its municipalities), whereas other countries have significantly more—for instance, Germany has around 11,000 municipalities.\nHowever, further analysis revealed that, for some countries, LAU units do not correspond well to the objectives of the project. Instead, municipalities were identified as a more appropriate unit of analysis for the LoQoG project. For instance, in Portugal, from 2017, LAU no longer distinguishes between two levels (LAU 1 and LAU 2)1, but includes both municipalities (municípios) and smaller administrative units called freguesias. However, freguesias do not possess the same level of authority and independence as municipalities. Compared to other EU countries—where municipalities typically serve as the primary units of local government—freguesias are better understood as subdivisions of municipalities rather than as autonomous entities. Therefore, in the case of Portugal, municipalities are a more appropriate unit of analysis than LAUs.2\nDiscrepancies between LAU units and municipalities were also identified in other countries, such as Ireland, Greece, and Cyprus. In addition, in countries with more complex administrative structures, there are significant variations in the level of detail and the way administrative units are represented within the LAU framework. Therefore, we decided that the primary units of analysis in this project would be municipalities, rather than LAUs. In most countries, municipalities correspond directly to the LAU level, but in several cases, they do not. The selected units were also expected to provide full territorial coverage of each country. In some countries, we relied on national experts to determine the most appropriate units to include.",
+    "crumbs": [
+      "Methodology",
+      "Municipality as Unit of Analysis"
+    ]
+  },
+  {
+    "objectID": "3.2_unit.html#footnotes",
+    "href": "3.2_unit.html#footnotes",
+    "title": "Municipality as Unit of Analysis",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nSince 2017, the European Union simplified the classification of Local Administrative Units (LAU). Instead of having two levels (LAU 1 and LAU 2), there is now a single LAU level covering all local administrative units. Source: Eurostat↩︎\nTavares, A. F., & Teles, F. (2018). Deeply rooted but still striving for a role: The Portuguese freguesias under reform. In Sub-Municipal Governance in Europe: Decentralization Beyond the Municipal Tier (pp. 193–209).↩︎",
+    "crumbs": [
+      "Methodology",
+      "Municipality as Unit of Analysis"
+    ]
+  },
+  {
+    "objectID": "4.7_dissolution.html",
+    "href": "4.7_dissolution.html",
+    "title": "Dissolution",
+    "section": "",
+    "text": "The dissolution of one municipality and the distribution of its territory among two municipalities, neither of which is newly created. The original municipality ceases to exist as a legal-administrative entity.",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Dissolution"
+    ]
+  },
+  {
+    "objectID": "4.7_dissolution.html#references",
+    "href": "4.7_dissolution.html#references",
+    "title": "Dissolution",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Dissolution"
+    ]
+  },
+  {
+    "objectID": "4.7_dissolution.html#footnotes",
+    "href": "4.7_dissolution.html#footnotes",
+    "title": "Dissolution",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nBy id we mean code identifier of the municipality.↩︎",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Dissolution"
+    ]
+  },
+  {
+    "objectID": "4_results.html",
+    "href": "4_results.html",
+    "title": "Results",
+    "section": "",
+    "text": "DiagramStatic mapInteractive map\n\n\n\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter\n\n\n\n\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook"
+  },
+  {
+    "objectID": "4_results.html#classification-table-plots-real-maps",
+    "href": "4_results.html#classification-table-plots-real-maps",
+    "title": "Results",
+    "section": "",
+    "text": "DiagramStatic mapInteractive map\n\n\n\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter\n\n\n\n\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook"
+  },
+  {
+    "objectID": "4_results.html#citations",
+    "href": "4_results.html#citations",
+    "title": "Results",
+    "section": "Citations",
+    "text": "Citations\nThis is a sentence with a footnote1.\nHere’s another sentence with a longer footnote explanation2."
+  },
+  {
+    "objectID": "4_results.html#bibliography",
+    "href": "4_results.html#bibliography",
+    "title": "Results",
+    "section": "Bibliography",
+    "text": "Bibliography\nLater, we will explore how this idea has evolved over time (Smith, 2020, p. 42)."
+  },
+  {
+    "objectID": "4_results.html#footnotes",
+    "href": "4_results.html#footnotes",
+    "title": "Results",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThis is a direct quote in APA format.↩︎\nThis is a longer footnote with more detail. You can write multiple lines here, and it will render properly at the bottom of the page or document, depending on the output format.↩︎"
+  },
+  {
+    "objectID": "4.3_split.html",
+    "href": "4.3_split.html",
+    "title": "Split",
+    "section": "",
+    "text": "The dissolution of one municipality, whose territory is divided among two newly established municipalities, neither of which retains the legal or administrative aspects of the original entity.\n\n\n\nBefore (year t):\n\nMunicipality A (with id 11) exists as a separate entity with its own name, id, and territory\n\nAfter (year t + 1):\n\nMunicipality A was dissolved.\nMunicipalities B and C were created, covering the territory of Municipality A.\nMunicipalities B and C have their own names and ids, or one of them retains Municipality A’s id.\n\n\n\n\n\n\nSimple Split\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\n\nSince 2020, the municipality (dímos in Greece) of Lesvos (id 5301) has been dissolved. Two new municipalities were created in its place: Dytiki Lesvos (id 5302) and Mytilini (id 5301), covering the entire territory of the former municipality of Lesvos. Dytiki Lesvos received a new id, while the id of Mytilini was retained from the former municipality of Lesvos (source). The case was registered in the metadata dataset under the id: gr-s-4-2019-2020.\n Legal verification of the change   \n Visit Official Resource  \n\n\n\n\nInteractive mapStatic map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Split"
+    ]
+  },
+  {
+    "objectID": "4.3_split.html#simple-split",
+    "href": "4.3_split.html#simple-split",
+    "title": "Split",
+    "section": "",
+    "text": "The dissolution of one municipality, whose territory is divided among two newly established municipalities, neither of which retains the legal or administrative aspects of the original entity.\n\n\n\nBefore (year t):\n\nMunicipality A (with id 11) exists as a separate entity with its own name, id, and territory\n\nAfter (year t + 1):\n\nMunicipality A was dissolved.\nMunicipalities B and C were created, covering the territory of Municipality A.\nMunicipalities B and C have their own names and ids, or one of them retains Municipality A’s id.\n\n\n\n\n\n\nSimple Split\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\n\nSince 2020, the municipality (dímos in Greece) of Lesvos (id 5301) has been dissolved. Two new municipalities were created in its place: Dytiki Lesvos (id 5302) and Mytilini (id 5301), covering the entire territory of the former municipality of Lesvos. Dytiki Lesvos received a new id, while the id of Mytilini was retained from the former municipality of Lesvos (source). The case was registered in the metadata dataset under the id: gr-s-4-2019-2020.\n Legal verification of the change   \n Visit Official Resource  \n\n\n\n\nInteractive mapStatic map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Split"
+    ]
+  },
+  {
+    "objectID": "4.3_split.html#multiple-split",
+    "href": "4.3_split.html#multiple-split",
+    "title": "Split",
+    "section": "Multiple Split",
+    "text": "Multiple Split\n\nDefinition\nThe dissolution of one municipality, whose territory is divided among more than two newly established municipalities, none of which retains legal or administrative aspects of the original entity.\n\n\nImplication of the change\nBefore (year t):\n\nMunicipality A (with id 1) exists as a separate entity with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipality A was dissolved.\nMunicipalities B, C, and D were created, covering the territory of Municipality A.\nMunicipalities B, C, and D have their own names/ids, or one of them retains Municipality A’s id.\n\n\n\nVisual overview\n\n\nMultiple Split\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\nExample\nSince 2020, the municipality (dímos in Greece) of Kefalonia (id 3501) has been dissolved. Three new municipalities were created in its place: Lixouri (id 3502), Sami (id 3503), and Argostoli (id 3501), covering the entire territory of the former municipality of Kefalonia. Lixouri and Sami received new ids, while the id of Argostoli was retained from the former municipality of Kefalonia. The case was registered in the metadata dataset under the id: gr-s-3-2019-2020.\n\n\nMap Plots\n\nInteracive MapStatic Map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Split"
+    ]
+  },
+  {
+    "objectID": "4.3_split.html#references",
+    "href": "4.3_split.html#references",
+    "title": "Split",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Split"
+    ]
+  },
+  {
+    "objectID": "4.3_split.html#footnotes",
+    "href": "4.3_split.html#footnotes",
+    "title": "Split",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nBy id we mean code identifier of the municipality.↩︎",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Split"
+    ]
+  },
+  {
+    "objectID": "4.2_merger.html",
+    "href": "4.2_merger.html",
+    "title": "Merger",
+    "section": "",
+    "text": "The creation of a new municipality whose territory results from the union of two pre-existing municipalities.\n\n\n\nBefore (year t):\n\nMunicipalities A (with id 11) and B (with id 2) exist as separate entities, each with its own name, code, and territory.\n\nAfter (year t + 1):\n\nMunicipalities A and B were dissolved.\nMunicipality C was created, covering the combined territory of Municipalities A and B.\nMunicipality C either carries forward one predecessor’s name/id or receives a new name/id.\n\n\n\n\n\n\nSimple Merger\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\n\nBased on our cross-country analysis, we identified several configurations in how newly formed municipalities—created through simple mergers—are assigned names and ids. Specifically, we observed four common combinations: (a) a new name with an inherited id, (b) an inherited name with an inherited id, (c) an inherited name with a new id, and (d) a new name with a new id. Below we present illustrative examples from different EU countries for each case.\n\n\nThe case occured in 2015 and it was noticeable in 2016.\nThe new municipality (Commune in France) Val de Lambronne (id 11080) was created through the merger of the municipalities Caudeval (id 11080) and Gueytes-et-Labastide (id 11171). The name Val de Lambronne is new, and the id was inherited from the municipality of Caudeval. The case was registered in the metadata dataset under the id: fr-m-34-2015-2016.\n Legal verification of the change   \n Visit Official Resource  \n\n\n\nThe case took place in 2014 and it was noticeable in 2015.\nThe new municipality (Commune in Luxembourg) Wiltz (id 0807) was created through the merger of the municipalities Wiltz (id 0807) and Eschweiler (id 0803). Both the name and id were inherited from the former Wiltz municipality. The case was registered in the metadata dataset under the id: fr-m-34-2015-2016.\nIn some case, the inherited name of a new municipality formed after a merger sometimes consists of a combination of the names of the municipalities involved, separated by a hyphen. For example, the municipality (Commune in France) Clux-Villeneuve (id 71138) was created through the merger of the municipalities Clux (id 71138) and La Villeneuve (id 71578). The name is new—formed by combining the names of the merged entities—while the id was inherited from Clux (Case id: fr-m-10-2014-2015). Similarly, the municipality (Commune in Luxembourg) Rosport-Mompach (id 1006) was created through the merger of the municipalities Rosport (id 1007) and Mompach (id 1006). The name combines the names of both former municipalities, and the id was inherited from Mompach. Case id: lu-m-4-2017-2018\n Legal verification of the change   \n Visit Official Resource  \n\n\n\nThe case took place in 2017 and it was noticeable in 2018.\nThe new municipality (Kommune in Norway) Larvik (id 0712) was created through the merger of the municipalities Larvik (id 0709) and Lardal (id 0728). The name Larvik is inherited from the former Larvik municipality, and the id 0712 was new . The case was registered in the metadata dataset under the id: no-m-2-2017-2018\n Legal verification of the change   \n Visit Official Resource  \n\n\n\nThe case occured in 2017 and it was noticeable in 2018.\nThe new municipality (Kommune in Norway) Indre Fosen (id 5054) was created through the merger of the municipalities Leksvik (id 1718) and Rissa (id 1624). Both the name and the id are new (source).Case id: no-m-6-2017-2018\n Legal verification of the change   \n Visit Official Resource  \n\n\n\n\nThe visual example is based on the Norwegian case: d. New name with a new id\n\nInteractive mapStatic map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncname\nyear\noriginal_code\nmunqog_code\nmun_name\ngeom\n\n\n\n\nNorway\n2017\n1624\nno-1624\nRissa\nhere goes the geometry\n\n\nNorway\n2017\n1718\nno-1718\nLeksvik\nhere goes the geometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncname\nyear\noriginal_code\nmunqog_code\nmun_name\ngeom\n\n\n\n\nNorway\n2018\n5054\nno-5054\nIndre Fosen\nhere goes the geometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncname\nyear\nreference_year\noriginal_code\nmunqog_code\nmun_name\ngeom\noriginal_code_years\nmunqog_code_years\nrecorded_change\nchange_nature\nsub_change_nature\ncase_id\nunits_involved\nchange_name_description\nchange_code_description\nshape_area\n\n\n\n\nNorway\n2018\n2018\n5054\nno-5054\n“Indre Fosen”\nhere goes the geometry\n4\n7\nTRUE\nmerger\nsimple\nno-m-6-2017-2018\n2\nnew_name\nnew_code\n1 131 532\n\n\nNorway\n2017\n2018\n1624\nno-1624\nRissa\nhere goes the geometry\n4\n7\nTRUE\nmerger\nsimple\nno-m-6-2017-2018\n2\nname_will_cease_existance\ncode_will_cease_existance\n121 331\n\n\nNorway\n2017\n2017\n1718\nno-1718\nLeksvik\nhere goes the geometry\n4\n7\nTRUE\nmerger\nsimple\nno-m-6-2017-2018\n2\nname_will_cease_existance\ncode_will_cease_existance\n1 010 201\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\noriginal_code\nmunqog_code\ncase_id\nlaw_name\nlaw_link\nlaw_file_name\nlaw_qog_url\n\n\n\n\n2018\n5054\nno-5054\nno-m-6-2017-2018\nLAW-2001-06-15-70\nhttps://lovdata.no/dokument/LF/forskrift/2016-06-17-695?q=LEKSVIK\nno-m-6-2017-2018.pdf\nhttps://www.qogdata.pol.gu.se/loqog-documentation/legal/no/no-m-6-2017-2018.pdf\n\n\n2017\n1624\nno-1624\nno-m-6-2017-2018\nLAW-2001-06-15-70\nhttps://lovdata.no/dokument/LF/forskrift/2016-06-17-695?q=LEKSVIK\nno-m-6-2017-2018.pdf\nhttps://www.qogdata.pol.gu.se/loqog-documentation/legal/no/no-m-6-2017-2018.pdf\n\n\n2017\n1718\nno-1718\nno-m-6-2017-2018\nLAW-2001-06-15-70\nhttps://lovdata.no/dokument/LF/forskrift/2016-06-17-695?q=LEKSVIK\nno-m-6-2017-2018.pdf\nhttps://www.qogdata.pol.gu.se/loqog-documentation/legal/no/no-m-6-2017-2018.pdf",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Merger"
+    ]
+  },
+  {
+    "objectID": "4.2_merger.html#simple-merger",
+    "href": "4.2_merger.html#simple-merger",
+    "title": "Merger",
+    "section": "",
+    "text": "The creation of a new municipality whose territory results from the union of two pre-existing municipalities.\n\n\n\nBefore (year t):\n\nMunicipalities A (with id 11) and B (with id 2) exist as separate entities, each with its own name, code, and territory.\n\nAfter (year t + 1):\n\nMunicipalities A and B were dissolved.\nMunicipality C was created, covering the combined territory of Municipalities A and B.\nMunicipality C either carries forward one predecessor’s name/id or receives a new name/id.\n\n\n\n\n\n\nSimple Merger\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\n\nBased on our cross-country analysis, we identified several configurations in how newly formed municipalities—created through simple mergers—are assigned names and ids. Specifically, we observed four common combinations: (a) a new name with an inherited id, (b) an inherited name with an inherited id, (c) an inherited name with a new id, and (d) a new name with a new id. Below we present illustrative examples from different EU countries for each case.\n\n\nThe case occured in 2015 and it was noticeable in 2016.\nThe new municipality (Commune in France) Val de Lambronne (id 11080) was created through the merger of the municipalities Caudeval (id 11080) and Gueytes-et-Labastide (id 11171). The name Val de Lambronne is new, and the id was inherited from the municipality of Caudeval. The case was registered in the metadata dataset under the id: fr-m-34-2015-2016.\n Legal verification of the change   \n Visit Official Resource  \n\n\n\nThe case took place in 2014 and it was noticeable in 2015.\nThe new municipality (Commune in Luxembourg) Wiltz (id 0807) was created through the merger of the municipalities Wiltz (id 0807) and Eschweiler (id 0803). Both the name and id were inherited from the former Wiltz municipality. The case was registered in the metadata dataset under the id: fr-m-34-2015-2016.\nIn some case, the inherited name of a new municipality formed after a merger sometimes consists of a combination of the names of the municipalities involved, separated by a hyphen. For example, the municipality (Commune in France) Clux-Villeneuve (id 71138) was created through the merger of the municipalities Clux (id 71138) and La Villeneuve (id 71578). The name is new—formed by combining the names of the merged entities—while the id was inherited from Clux (Case id: fr-m-10-2014-2015). Similarly, the municipality (Commune in Luxembourg) Rosport-Mompach (id 1006) was created through the merger of the municipalities Rosport (id 1007) and Mompach (id 1006). The name combines the names of both former municipalities, and the id was inherited from Mompach. Case id: lu-m-4-2017-2018\n Legal verification of the change   \n Visit Official Resource  \n\n\n\nThe case took place in 2017 and it was noticeable in 2018.\nThe new municipality (Kommune in Norway) Larvik (id 0712) was created through the merger of the municipalities Larvik (id 0709) and Lardal (id 0728). The name Larvik is inherited from the former Larvik municipality, and the id 0712 was new . The case was registered in the metadata dataset under the id: no-m-2-2017-2018\n Legal verification of the change   \n Visit Official Resource  \n\n\n\nThe case occured in 2017 and it was noticeable in 2018.\nThe new municipality (Kommune in Norway) Indre Fosen (id 5054) was created through the merger of the municipalities Leksvik (id 1718) and Rissa (id 1624). Both the name and the id are new (source).Case id: no-m-6-2017-2018\n Legal verification of the change   \n Visit Official Resource  \n\n\n\n\nThe visual example is based on the Norwegian case: d. New name with a new id\n\nInteractive mapStatic map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncname\nyear\noriginal_code\nmunqog_code\nmun_name\ngeom\n\n\n\n\nNorway\n2017\n1624\nno-1624\nRissa\nhere goes the geometry\n\n\nNorway\n2017\n1718\nno-1718\nLeksvik\nhere goes the geometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncname\nyear\noriginal_code\nmunqog_code\nmun_name\ngeom\n\n\n\n\nNorway\n2018\n5054\nno-5054\nIndre Fosen\nhere goes the geometry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncname\nyear\nreference_year\noriginal_code\nmunqog_code\nmun_name\ngeom\noriginal_code_years\nmunqog_code_years\nrecorded_change\nchange_nature\nsub_change_nature\ncase_id\nunits_involved\nchange_name_description\nchange_code_description\nshape_area\n\n\n\n\nNorway\n2018\n2018\n5054\nno-5054\n“Indre Fosen”\nhere goes the geometry\n4\n7\nTRUE\nmerger\nsimple\nno-m-6-2017-2018\n2\nnew_name\nnew_code\n1 131 532\n\n\nNorway\n2017\n2018\n1624\nno-1624\nRissa\nhere goes the geometry\n4\n7\nTRUE\nmerger\nsimple\nno-m-6-2017-2018\n2\nname_will_cease_existance\ncode_will_cease_existance\n121 331\n\n\nNorway\n2017\n2017\n1718\nno-1718\nLeksvik\nhere goes the geometry\n4\n7\nTRUE\nmerger\nsimple\nno-m-6-2017-2018\n2\nname_will_cease_existance\ncode_will_cease_existance\n1 010 201\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\noriginal_code\nmunqog_code\ncase_id\nlaw_name\nlaw_link\nlaw_file_name\nlaw_qog_url\n\n\n\n\n2018\n5054\nno-5054\nno-m-6-2017-2018\nLAW-2001-06-15-70\nhttps://lovdata.no/dokument/LF/forskrift/2016-06-17-695?q=LEKSVIK\nno-m-6-2017-2018.pdf\nhttps://www.qogdata.pol.gu.se/loqog-documentation/legal/no/no-m-6-2017-2018.pdf\n\n\n2017\n1624\nno-1624\nno-m-6-2017-2018\nLAW-2001-06-15-70\nhttps://lovdata.no/dokument/LF/forskrift/2016-06-17-695?q=LEKSVIK\nno-m-6-2017-2018.pdf\nhttps://www.qogdata.pol.gu.se/loqog-documentation/legal/no/no-m-6-2017-2018.pdf\n\n\n2017\n1718\nno-1718\nno-m-6-2017-2018\nLAW-2001-06-15-70\nhttps://lovdata.no/dokument/LF/forskrift/2016-06-17-695?q=LEKSVIK\nno-m-6-2017-2018.pdf\nhttps://www.qogdata.pol.gu.se/loqog-documentation/legal/no/no-m-6-2017-2018.pdf",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Merger"
+    ]
+  },
+  {
+    "objectID": "4.2_merger.html#multiple-merger",
+    "href": "4.2_merger.html#multiple-merger",
+    "title": "Merger",
+    "section": "Multiple Merger",
+    "text": "Multiple Merger\n\nDefinition\nThe creation of a new municipality whose territory results from the union of more than two pre-existing municipalities.\n\n\nImplication of the change\nBefore (year t):\n\nMunicipalities A (with id 1), B (with id 2), and C (with id 3) exist as separate entities, each with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipalities A, B, and C were dissolved.\nMunicipality D was created, covering the combined territory of Municipalities A, B, and C.\nMunicipality D either carries forward one predecessor’s name/id or receives a new name/id.\n\n\n\nVisual overview\n\n\nMultiple Merger\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\nExamples\nBased on our cross-country analysis, we identified several configurations in how newly formed municipalities—created through simple mergers—are assigned names and ids. Specifically, we observed four common combinations: (a) a new name with an inherited id, (b) an inherited name with an inherited id, (c) an inherited name with a new id, and (d) a new name with a new id. Below we present illustrative examples from different EU countries for each case.\n\na. New name with an inherited id\nThe case occured in 2016 and it was noticeable in 2017.\nThe new municipality (Commune in France) Les Trois Châteaux (id 39378) was created through the merger of the municipalities L’Aubépin (id 39023), Chazelles (id 39135), and Nanc-lès-Saint-Amour (id 39378). The name is new, while the id was inherited from Nanc-lès-Saint-Amour . The case was registered in the metadata dataset under the id: fr-m-430-2016-2017.\n Legal verification of the change   \n Visit Official Resource  \n\n\nb.Inherited name and id\nThe case took place in 2014 and it was noticeable in 2015.\nThe new municipality (Gemeinde in Germany) Friedland (id 130715152035) was created through the merger of the municipalities Eichhorst (id 130715152031), Glienke (id 130715152040) and Friedland (id 130715152035). Both the name and id were inherited from the former Friedland municipality. The case was registered in the metadata dataset under the id: de-m-10-2014-2015\n Legal verification of the change   \n Visit Official Resource  \n\n\nc.Inherited name with a new id\nThe case took place in 2014 and it was noticeable in 2015.\nThe new municipality (Gemeinde in Austria) Bad Mitterndorf (id 61255) was created through the merger of the municipalities Bad Mitterndorf (id 61226), Pichl-Kainisch (id 61233), and Tauplitz (id 61245). The name was inherited from Bad Mitterndorf, while the id is new. The case was registered in the metadata dataset under the id: at-m-33-2014-2015\n Legal verification of the change   \n Visit Official Resource  \n\n\nd. New name with a new id\nThe case occured in 2018 and it was noticeable in 2019.\nThe new municipality (Gemeente in Belgium) Lievegem (id 44085) was created through the merger of the municipalities Waarschoot (id 44072), Lovendegem (id 44036), and Zomergem (id 44080). Both the name and the id are new. The case was registered in the metadata dataset under the id:: be-m-4-2018-2019\n Legal verification of the change   \n Visit Official Resource  \n\n\n\nMap Plots\n\n\nHow it is recorded in the data system",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Merger"
+    ]
+  },
+  {
+    "objectID": "4.2_merger.html#references",
+    "href": "4.2_merger.html#references",
+    "title": "Merger",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Merger"
+    ]
+  },
+  {
+    "objectID": "4.2_merger.html#footnotes",
+    "href": "4.2_merger.html#footnotes",
+    "title": "Merger",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nBy id we mean code identifier of the municipality.↩︎",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Merger"
+    ]
+  },
+  {
+    "objectID": "4.9_transfer.html",
+    "href": "4.9_transfer.html",
+    "title": "Territorial Transfers",
+    "section": "",
+    "text": "The transfer of part of the territory of one municipality to another, without receiving territory in return, within the same country.\n\n\n\nBefore (year t):\n\nMunicipalities A (with id 11) and B (with id 2) exist as separate entities, each with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipality A transferred one part of its territory to Municipality B, without receiving any territory in return, within the same country.\nMunicipality A and B didn’t change their names or ids.\n\n\n\n\n\n\nNational Transfer\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\n\nSince 2017, the municipality (kommune in Norway) of Stokke (id 5301) transferred one part of its territory to municipality Tønsberg (id 0704), without receiving territory in return, within the same country. Municipalities Stokke and Tønsberg retained both its name and id (source). The case was registered in the metadata dataset under the id: no-t-1-2016-2017.\n Legal verification of the change   \n Visit Official Resource  \n\n\n\n\nInteractive mapStatic map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Territorial Transfers"
+    ]
+  },
+  {
+    "objectID": "4.9_transfer.html#national-transfer",
+    "href": "4.9_transfer.html#national-transfer",
+    "title": "Territorial Transfers",
+    "section": "",
+    "text": "The transfer of part of the territory of one municipality to another, without receiving territory in return, within the same country.\n\n\n\nBefore (year t):\n\nMunicipalities A (with id 11) and B (with id 2) exist as separate entities, each with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipality A transferred one part of its territory to Municipality B, without receiving any territory in return, within the same country.\nMunicipality A and B didn’t change their names or ids.\n\n\n\n\n\n\nNational Transfer\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\n\nSince 2017, the municipality (kommune in Norway) of Stokke (id 5301) transferred one part of its territory to municipality Tønsberg (id 0704), without receiving territory in return, within the same country. Municipalities Stokke and Tønsberg retained both its name and id (source). The case was registered in the metadata dataset under the id: no-t-1-2016-2017.\n Legal verification of the change   \n Visit Official Resource  \n\n\n\n\nInteractive mapStatic map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Territorial Transfers"
+    ]
+  },
+  {
+    "objectID": "4.9_transfer.html#national-exchange",
+    "href": "4.9_transfer.html#national-exchange",
+    "title": "Territorial Transfers",
+    "section": "National Exchange",
+    "text": "National Exchange\n\nDefinition\nThe one-time exchange of territories between two municipalities within the same country.\n\n\nImplication of the change\nBefore (year t):\n\nMunicipalities A (with id 1) and B (with id 2) exist as separate entities, each with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipality A transferred part of its territory to Municipality B and, at the same time, received part of Municipality B’s territory in return, within the same country.\nMunicipality A and B didn’t change their names or ids.\n\n\n\nVisual overview\n\n\nNational Exchange\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\nExample\nSince 2021, the municipality (gmina in Poland) Świdnica (id 0809072) transferred one part of its territory to municipality Zielona Góra (id 0862011), and, at the same time, received part of Municipality Zielona Góra’s territory (id 0862011) in return. Municipalities Świdnica and Zielona Góra (id 0862011) retained both its name and id (source). The case was registered in the metadata dataset under: pl-t-32-2020-2021.\n Legal verification of the change   \n Visit Official Resource  \n\n\nMap Plots\n\nInteracive MapStatic Map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Territorial Transfers"
+    ]
+  },
+  {
+    "objectID": "4.9_transfer.html#international-transfer",
+    "href": "4.9_transfer.html#international-transfer",
+    "title": "Territorial Transfers",
+    "section": "International Transfer",
+    "text": "International Transfer\n\nDefinition\nThe transfer of part of the territory of one municipality from one country to another municipality in a neighboring country, without receiving territory in return.\n\n\nImplication of the change\nBefore (year t):\n\nMunicipalities A (with id 1) and B (with id 2) exist as separate entities, each with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipality A from one country transferred part of its territory to Municipality B in a neighboring country, without receiving any territory in return.\nMunicipality A and B didn’t change their names or ids.\n\n\n\nVisual overview\n\n\nInternational Transfer\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\nExample\nSince 2021, the municipality (gmina in Poland) Świdnica (id 0809072) transferred one part of its territory to municipality Zielona Góra (id 0862011), and, at the same time, received part of Municipality Zielona Góra’s territory (id 0862011) in return. Municipalities Świdnica and Zielona Góra (id 0862011) retained both its name and id (source). The case was registered in the metadata dataset under: pl-t-32-2020-2021.\n Legal verification of the change   \n Visit Official Resource  \n\n\nMap Plots\n\nInteracive MapStatic Map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Territorial Transfers"
+    ]
+  },
+  {
+    "objectID": "4.9_transfer.html#international-exchnage",
+    "href": "4.9_transfer.html#international-exchnage",
+    "title": "Territorial Transfers",
+    "section": "International Exchnage",
+    "text": "International Exchnage\n\nDefinition\nThe one-time exchange of territories between two municipalities from neighboring countries.\n\n\nImplication of the change\nBefore (year t):\n\nMunicipalities A (with id 1) and B (with id 2) exist as separate entities, each with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipality A from one country transferred part of its territory to Municipality B from a neighboring country and, at the same time, received part of Municipality B’s territory in return.\nMunicipality A and B didn’t change their names or ids.\n\n\n\nVisual overview\n\n\nInternational Exchange\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\nExample\nSince 2021, the municipality (gmina in Poland) Świdnica (id 0809072) transferred one part of its territory to municipality Zielona Góra (id 0862011), and, at the same time, received part of Municipality Zielona Góra’s territory (id 0862011) in return. Municipalities Świdnica and Zielona Góra (id 0862011) retained both its name and id (source).\nSince 2019, a part of settlement Pince-Marof from municipality Lendava (id 059) was eliminated from the national territory of the Republic of Slovenia and joined the national territory of the Republic of Croatia, while parts of settlements Pince-Marof and Brezovec were eliminated from the national territory of the Republic of Croatia and joined the national territory of the Republic of Slovenia. The case was registered in the metadata dataset under: sl-t-25-2018-2019.\n Legal verification of the change   \n Visit Official Resource  \n\n\nMap Plots\n\nInteracive MapStatic Map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Territorial Transfers"
+    ]
+  },
+  {
+    "objectID": "4.9_transfer.html#references",
+    "href": "4.9_transfer.html#references",
+    "title": "Territorial Transfers",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Territorial Transfers"
+    ]
+  },
+  {
+    "objectID": "4.9_transfer.html#footnotes",
+    "href": "4.9_transfer.html#footnotes",
+    "title": "Territorial Transfers",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nBy id we mean code identifier of the municipality.↩︎",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Territorial Transfers"
+    ]
+  },
+  {
+    "objectID": "5.3_geographic-base.html",
+    "href": "5.3_geographic-base.html",
+    "title": "Details of the Geographic Datasets",
+    "section": "",
+    "text": "This document explains the structure, conventions, and recommended usage patterns for the geospatial dataset containig the polygons for the municipalities (see Municipalities as Units of Analysis) of the 32 countries covered in the project. It assumes no formal GIS background—only that you can install and execute common tools like QGIS or the R sf / Python geopandas libraries.\nA separate GeoPackage will be published for each country-year. At launch the project spans 11 reference years (2014 – 2024), which means 354 files (32 countries × 11 years) will be released. Each subsequent year, one additional file per country will be added to extend the time series.",
+    "crumbs": [
+      "Data",
+      "Details of the Geographic Datasets"
+    ]
+  },
+  {
+    "objectID": "5.3_geographic-base.html#dataset-snapshot",
+    "href": "5.3_geographic-base.html#dataset-snapshot",
+    "title": "Details of the Geographic Datasets",
+    "section": "Dataset snapshot",
+    "text": "Dataset snapshot\n\n\n\nItem\nDescription\n\n\n\n\nCoverage\n32 European countries (see Contry LProject Status)\n\n\nTime span\n2014 – latest validated release\n\n\nUpdate cycle\nAnnual (Q1)\n\n\nFile format\nGeoPackage (.gpkg)\n\n\nProjection\nETRS89 / LAEA Europe — EPSG:30351\n\n\nUnits\nMetres\n\n\nEncoding\nUTF-8\n\n\nFile name\n&lt;country_iso&gt;mun&lt;yyyy&gt;.gpkg 2",
+    "crumbs": [
+      "Data",
+      "Details of the Geographic Datasets"
+    ]
+  },
+  {
+    "objectID": "5.3_geographic-base.html#accessing-geospatial-files",
+    "href": "5.3_geographic-base.html#accessing-geospatial-files",
+    "title": "Details of the Geographic Datasets",
+    "section": "Accessing Geospatial Files",
+    "text": "Accessing Geospatial Files\nThe LoQoG geospatial datasets provides access to geospatial and municipal data through two distinct methods: a user-friendly download interface and a structured server-based folder system. This section outlines the organization of the server-based access method, including the folder structure, file naming conventions, and an example for accessing data for Norway.\n\nServer-Based File Access\nThe LoQoG geospatial dataset are hosted on the server at https://www.qogdata.pol.gu.se/loqog-documentation. The files are organized in a hierarchical folder structure designed to facilitate access to geospatial data for European municipalities. The folder path follows this pattern:\n\nBase URL: https://www.qogdata.pol.gu.se/loqog-documentation\nData Directory: /data\nGeospatial Directory: /geo\nCountry Code: /[cc], where [cc] represents the two-letter country code (in lowercase) for a European country, following the ISO 3166-1 alpha-2 standard (e.g., no for Norway).\nFile Name: [cc]_mun_2014.gpkg, where [cc] is the country code and _mun_2014.gpkg indicates the municipal geospatial data for the year 2014 in GeoPackage format.\n\nThus, the full path to a country’s municipal data file is:\nhttps://www.qogdata.pol.gu.se/loqog-documentation/data/geo/no_mun_2014.gpkg",
+    "crumbs": [
+      "Data",
+      "Details of the Geographic Datasets"
+    ]
+  },
+  {
+    "objectID": "5.3_geographic-base.html#variable-dictionary",
+    "href": "5.3_geographic-base.html#variable-dictionary",
+    "title": "Details of the Geographic Datasets",
+    "section": "Variable dictionary",
+    "text": "Variable dictionary\n\nyear\nType: 4-digit INTEGER\nDescription: Four-digit reference year that identifies the annual snapshot to which this geometry record belongs\nExample: 2014\nConstraints: Ranges 2014 – 2024. Part of the composite primary key (used for joins with other tables).\n\n\ncname\nType: TEXT\nDescription: Country name under the criteria used in the Quality of Government Institute data provision\nExample: France\nConstraints: See this QoG codebook for details\n\n\noriginal_code\nType: TEXT\nDescription: Official national municipality code as issued by the country source\nExample: 01001\nConstraints: Digits only; often begins with a leading zero, so treat as text to preserve that zero and ensure reliable joins. Part of the composite primary key.\n\n\nmunqog_code\nType: TEXT\nDescription: Project’s stable identifier that remains constant across years, enabling the same geography to be traced through time\nExample: fr-01015-1\nConstraints: Format &lt;ISO&gt;-&lt;original_code&gt;-&lt;revision&gt;\n* Begins with the two-letter ISO country code\n* Continues with the unchanged original municipal code\n* Ends with a revision counter that increments when boundaries change\nPart of the composite primary key.\n\n\nmun_name\nType: TEXT\nDescription: Original municipality name exactly as provided in the source geospatial file\nExample: L'Abergement-Clémenciat\nConstraints: UTF-8; may include accents and special characters.\n\n\ngeonames_id\nType: INTEGER\nDescription: Alternative name ID from GeoNames\nExample: 6612157\nConstraints: Value taken directly from https://www.geonames.org.\n\n\nalternate_names\nType: TEXT\nDescription: Alternative municipality name from GeoNames\nExample: L'Abergement-Clemenciat\nConstraints: None.\n\n\ngeom\nType: MULTIPOLYGON\nDescription: Boundary geometry in EPSG 3035\nExample: —\nConstraints: Not NULL.",
+    "crumbs": [
+      "Data",
+      "Details of the Geographic Datasets"
+    ]
+  },
+  {
+    "objectID": "5.3_geographic-base.html#rationale-behind-choosing-gpkgfile-format",
+    "href": "5.3_geographic-base.html#rationale-behind-choosing-gpkgfile-format",
+    "title": "Details of the Geographic Datasets",
+    "section": "Rationale behind choosing gpkgfile format",
+    "text": "Rationale behind choosing gpkgfile format\n\n\n\nFeature\nGeoPackage\nShapefile\nGeoParquet\n\n\n\n\nMulti-layer single file3\n✔️\n✖️ (many files)\nn/a\n\n\nUnicode & long field names4\n✔️\n✖️\n✔️\n\n\nAttribute type safety5\n✔️\n✖️\n✔️\n\n\nWidespread GIS support\n✔️\n✔️\n✔️ (growing)\n\n\nSpatial index included6\n✔️\n✖️\n✔️\n\n\nOpen standard (OGC)7\n✔️\n✖️\n✔️",
+    "crumbs": [
+      "Data",
+      "Details of the Geographic Datasets"
+    ]
+  },
+  {
+    "objectID": "5.3_geographic-base.html#test-our-code-examples",
+    "href": "5.3_geographic-base.html#test-our-code-examples",
+    "title": "Details of the Geographic Datasets",
+    "section": "Test Our Code Examples",
+    "text": "Test Our Code Examples\nGeoPackages for four representative countries, spanning the ten-year window 2014 – 2024, are hosted on the project servers. The example R and Python scripts load these files directly over, so you can reproduce every step without first saving any data locally and litearrly runninf the codes as they are. Later sections show how to download the full dataset if needed; this section is meant only as a quick, hands-on demonstration of the concepts introduced above.\n\nAccesing a file and plotting some polygons\n\nR code\n# Load necessary libraries or install them firstly if you do not have them\nlibrary(tidyverse)\nlibrary(sf)\nlibrary(ggthemes)\n\n# URL to the file\nurl &lt;- \"https://www.qogdata.pol.gu.se/loqog-documentation/data/geo/fr_mun_2014.gpkg\"\n\n# Read the GPKG file directly from the URL\ndestfile &lt;- tempfile(fileext = \".gpkg\")\n\n# Download it\n# mode = \"wb\" is critical on Windows so you get the raw bytes, not text\ndownload.file(url, destfile, mode = \"wb\")\n\n# 4) Read it with sf\nmun &lt;- st_read(destfile)\n\n# Check the projection (CRS), it should be 3035\nst_crs(mun)\n\n# Arrange by mungog_code and plot the first 200 municipalities\nmun %&gt;% \n  arrange(munqog_code) %&gt;%\n  slice(1:200) %&gt;%\n  ggplot() +\n  geom_sf() +\n  theme_map() +\n  labs(title = \"First 200 French Municipalities (2014)\", subtitle = \"Sorted by mungog_code\")\n\n# View the dataset in the viewer\nView(municipalities_sorted)\n\n\nPython code\nimport geopandas as gpd\nimport matplotlib.pyplot as plt\n\n# URL to the GPKG file\nurl = \"https://www.qogdata.pol.gu.se/loqog-documentation/data/geo/fr_mun_2014.gpkg\"\n\n# Read the GeoPackage directly from the URL\nmunicipalities = gpd.read_file(url)\n\n# Check the projection (CRS)\nprint(\"CRS:\", municipalities.crs)\n\n# Sort by 'mungog_code' and take the first 200\nmunicipalities_sorted = municipalities.sort_values(\"mungog_code\").head(200)\n\n# Plot\nmunicipalities_sorted.plot()\nplt.title(\"First 200 French Municipalities (2014)\\nSorted by mungog_code\")\nplt.axis(\"off\")\nplt.show()\n\n# Show first rows in viewer-style output\nmunicipalities_sorted.head()\nYou should see this results with the R code\n\n\n\nDowloand all files for all years for one country",
+    "crumbs": [
+      "Data",
+      "Details of the Geographic Datasets"
+    ]
+  },
+  {
+    "objectID": "5.3_geographic-base.html#r-code-1",
+    "href": "5.3_geographic-base.html#r-code-1",
+    "title": "Details of the Geographic Datasets",
+    "section": "R code",
+    "text": "R code\n# This shows how to dowaload all the geo fiels for France from R directly\n\n# base url for accessing files (see Accessing Geospatial Files)\nurl &lt;- \"https://www.qogdata.pol.gu.se/loqog-documentation/data/geo/fr_mun_\"\n\n# generate links\n(links &lt;- paste0(url, 2014:2024, \".gpkg\"))\n\n# function to access the files\nread_remote_gpkg &lt;- function(url) {\n  tmp &lt;- tempfile(fileext = \".gpkg\")\n  download.file(url, tmp, mode = \"wb\")\n  st_read(tmp, quiet = TRUE)\n}\n\n# Download them and store them in a list\nmaps[14:24] &lt;- map(links, read_remote_gpkg)\n\n# Extract and inspect the French map for 2020\nmaps[[20]] %&gt;% \n  head %&gt;% \n  view()",
+    "crumbs": [
+      "Data",
+      "Details of the Geographic Datasets"
+    ]
+  },
+  {
+    "objectID": "5.3_geographic-base.html#footnotes",
+    "href": "5.3_geographic-base.html#footnotes",
+    "title": "Details of the Geographic Datasets",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nETRS89 / LAEA Europe (EPSG:3035) is the standard equal-area projection endorsed by Eurostat. It preserves surface-area comparability across the continent and aligns with the 1 km EU grid.↩︎\nThe country code is the two-letter ISO 3166-1 alpha-2 identifier (e.g., fr, de) listed in the Eurostat glossary of country codes. The year component is a four-digit calendar year. Combining these elements yields file names such as fr_mun_2014.gpkg.↩︎\nStores several vector/​raster layers in one portable container instead of scattering multiple auxiliary files.↩︎\nSupports accents, non-Latin scripts, and field names longer than 10 characters (Shapefile limit).↩︎\nPreserves numeric and date types instead of forcing everything to plain text.↩︎\nComes with a built-in index so software can pan/zoom large datasets quickly with no extra steps.↩︎\nSpecification maintained by the Open Geospatial Consortium, ensuring long-term openness and interoperability.↩︎",
+    "crumbs": [
+      "Data",
+      "Details of the Geographic Datasets"
+    ]
+  },
+  {
+    "objectID": "4.6_separation.html",
+    "href": "4.6_separation.html",
+    "title": "Separation",
+    "section": "",
+    "text": "The creation of a new municipality through the separation of a part of the territory from one municipality, which continues to exist.\n\n\n\nBefore (year t):\n\nMunicipality A (with id 11) exists as a separate entity with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipality B was created by separating a part of the territory from Municipality A, which continues to exist.\nMunicipality B has its own name and id.\n\n\n\n\n\n\nSimple Separation\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\n\nSince 2021, the new municipality (comune in Italy) Misiliscemi (id 081025) was created through the separation of part of the territory from the municipality of Trapani (id 081021), which continues to exist. The municipality Trapani retained both its name and id. The municipality Misiliscemi has a new name and a new id. Case id: The case was registered in the metadata dataset under the id: it-se-2-2020-2021.\n Legal verification of the change   \n Visit Official Resource  \n\n\n\n\nInteractive mapStatic map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Separation"
+    ]
+  },
+  {
+    "objectID": "4.6_separation.html#simple-separation-seccesion",
+    "href": "4.6_separation.html#simple-separation-seccesion",
+    "title": "Separation",
+    "section": "",
+    "text": "The creation of a new municipality through the separation of a part of the territory from one municipality, which continues to exist.\n\n\n\nBefore (year t):\n\nMunicipality A (with id 11) exists as a separate entity with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipality B was created by separating a part of the territory from Municipality A, which continues to exist.\nMunicipality B has its own name and id.\n\n\n\n\n\n\nSimple Separation\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\n\nSince 2021, the new municipality (comune in Italy) Misiliscemi (id 081025) was created through the separation of part of the territory from the municipality of Trapani (id 081021), which continues to exist. The municipality Trapani retained both its name and id. The municipality Misiliscemi has a new name and a new id. Case id: The case was registered in the metadata dataset under the id: it-se-2-2020-2021.\n Legal verification of the change   \n Visit Official Resource  \n\n\n\n\nInteractive mapStatic map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Separation"
+    ]
+  },
+  {
+    "objectID": "4.6_separation.html#multiple-separation",
+    "href": "4.6_separation.html#multiple-separation",
+    "title": "Separation",
+    "section": "Multiple Separation",
+    "text": "Multiple Separation\n\nDefinition\nThe creation of a new municipality through the separation of a part of the territory from more than one municipality, all of which continue to exist.\n\n\nImplication of the change\nBefore (year t):\n\nMunicipalities A (with id 1) and B (with id 2) exist as separate entities, each with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipality C was created by separating a part of the territory from Municipalities A and B, which continue to exist.\nMunicipality C has its own name and id.\n\n\n\nVisual overview\n\n\nMultiple Separation\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\nExample\nSince 2021, the new municipality (comune in Italy) Mappano (id 001316) was created through the separation of parts of the territory from four existing municipalities: Borgaro Torinese (id 001028), Caselle Torinese (id 001063), Leini (id 001130), and Settimo Torinese (id 001265), all of which continue to exist with their original names and ids. The municipality Mappano has a new name and a new id (source). The case was registered in the metadata dataset under: it-se-1-2017-2018\n Legal verification of the change   \n Visit Official Resource  \n\n\nMap Plots\n\nInteracive MapStatic Map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Separation"
+    ]
+  },
+  {
+    "objectID": "4.6_separation.html#references",
+    "href": "4.6_separation.html#references",
+    "title": "Separation",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Separation"
+    ]
+  },
+  {
+    "objectID": "4.6_separation.html#footnotes",
+    "href": "4.6_separation.html#footnotes",
+    "title": "Separation",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nBy id we mean code identifier of the municipality.↩︎",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Separation"
+    ]
+  },
+  {
+    "objectID": "2_concept.html",
+    "href": "2_concept.html",
+    "title": "Conceptual approach",
+    "section": "",
+    "text": "The literature identifies various types of municipal changes, which can be broadly categorized into geographical and non-geographical changes. Geographical changes involve modifications to municipal boundaries, non-geographical changes, by contrast, affect the legal identifiers of municipalities—such as names or administrative codes—without altering their physical boundaries. In some cases, such non-geographical changes occur independently, with no accompanying changes to the municipality’s territory. For instance, municipalities may undergo name changes to reflect historical, cultural, or political factors, or experience adjustments to their official registry codes. These constitute purely non-geographical changes, as the territorial extent remains constant while the legal attributes are updated (see Figure 1). Conversely, geographical boundaries may change while the municipality’s legal identifiers remain unchanged. A typical example of such purely geographical changes is a territorial transfer. In some cases, however, geographical and non-geographical changes occur simultaneously—for example, during municipal mergers or splits, where a change in boundary (geo) coincides with a change in name or administrative code (non-geo).\n\n\n\n\n\n\n\n\nFigure 1: Intersection of geo and non-geo changes of the municipalities\n\n\n\n\n\nTo date, only a limited number of studies explicitly distinguish between geographical (i.e., boundary‐related) changes and non‐geographical modifications of municipalities in their analyses (Goerlich & Ruiz, 2018; Kociuba & Kociuba, 2023). In most cases, researchers focus on a single type of municipal change—typically within the context of a specific territorial reform—without differentiating between changes to boundaries and changes to legal identifiers. Moreover, due to the diversity of procedures and forms that municipal changes can take, most existing studies are confined to a single country, and in some cases, even to a single administrative unit within that country (see (Blesse & Baskaran, 2016; Heinisch et al., 2018; Strebel, 2018)).\nThus, some papers focus exclusively on mergers processes: for example, in the Netherlands (Allers & Geertsema, 2016), Denmark (Blom-Hansen et al., 2016; Hansen et al., 2014), Finland (Harjunen et al., 2021; Moisio & Uusitalo, 2013), Norway (Solvang et al., 2025), etc. Others research papers are devoted only to the splits processes: for example, in Sweden (Brink, 2004; Erlingsson et al., 2024), Slovenia (Bačlija Brajnik & Lavtar, 2021), Czech Republic (Lysek, 2021), Bulgaria, Croatia and Poland (Swianiewicz et al., 2024). Some studies examine municipal mergers and splits across multiple countries (Klausen, 2024; Swianiewicz, 2019), but such cross‐national research remains uncommon. Similarly, only a few studies consider both mergers and splits within a single country, for example in Hungary (Dobos, 2021). However, comprehensive analyses covering both types of changes simultaneously remain relatively uncommon.\nAt the same time, the majority of the papers mentioned above do not focus on analyzing the changes within municipalities themselves, but rather on the causes for these changes or their consequences or effects (see Figure 2 ). As for the causes of such changes, researchers have investigated factors such as financial incentives (Strebel, 2018), the degree of voluntariness—whether changes were initiated by municipalities themselves or imposed top‐down by higher levels of government (see (Blom-Hansen et al., 2016; Swianiewicz et al., 2022)), internal dissatisfaction within municipalities (Bačlija Brajnik & Lavtar, 2021), etc. With respect to consequences, studies have explored the impact of changes on local government spending, taxation, and service provision (Allers & Geertsema, 2016; Blom-Hansen et al., 2016; Erlingsson et al., 2024; Hansen et al., 2014), performance of local governments (Swianiewicz et al., 2024), political representation (Harjunen et al., 2021), voter turnout in local elections (Heinisch et al., 2018), trust in local politicians (Solvang et al., 2025), etc. A few studies attempt to address both the factors beyond the change and their potential consequences (e.g., (Swianiewicz, 2019)).\n\n\n\n\n\n\n\n\nFigure 2: How we can understand the process of change: from causes to consequences.\n\n\n\n\n\nThis project aims to provide a comprehensive analysis of all identifiable types of municipal‐level changes across EU countries during the period 2014–2024. Our approach relies on the systematic comparison of municipal shapefiles from official country sources, offering a novel geo‐based method for detecting and classifying these changes. While we do not seek to explore the underlying causes or motivations for each type of change, nor their broader consequences, our analysis enables a comparative assessment of the scale and distribution of these changes—both within individual countries and across the EU as a whole.\nOne of the main challenges we encountered was the absence of a unified and widely accepted typology of municipal changes in the academic literature. While some attempts have been made to address this gap—most notably in the contexts of Poland, Spain and the Czech Republic (Goerlich & Ruiz, 2018; Kociuba & Kociuba, 2023; Pászto et al., 2020)—they remain limited in scope. Thus, among the three studies listed above, the study by Goerlich and Ruiz (2018) is particularly relevant to our project, as it proposes a typology of boundary changes in Spanish municipalities between two points in time and distinguishes between territorial and non‐territorial changes. However, this approach has certain limitations. First, it is based on a single‐country case study, which limits its ability to capture the full range of municipal changes that may occur across different EU countries. Second, the temporal scope of the analysis (1842–2001) restricts its relevance for understanding more recent developments and complicates systematic cross‐national comparisons.\nOur project addresses these limitations by developing a harmonized typology of municipal changes that can be applied across EU member states and over a consistent time frame. This typology may serve as a foundation for more systematic, comparative studies of municipal restructuring across the EU. To date, no comprehensive source has been identified that captures the full range of municipal changes (geographical and non‐geographical) that have occurred in EU countries over the past decade. Moreover, there is a lack of harmonized data that would allow for a detailed examination of how such changes are distributed. This gap in the literature limits the capacity for systematic and comparative assessments of municipal transformations at the EU level.\nThis project seeks to address this gap through two main objectives. First, it introduces a new classification that systematically categorizes municipal changes in the EU since 2014. This classification encompasses both territorial changes and non‐territorial changes, including name changes and updates to administrative codes. Second, the project applies this classification to all EU countries to illustrate the distribution and frequency of these changes across them.",
+    "crumbs": [
+      "Conceptual approach"
+    ]
+  },
+  {
+    "objectID": "2_concept.html#the-local-map-of-eu-history-of-municipal-borders-for-comparative-research",
+    "href": "2_concept.html#the-local-map-of-eu-history-of-municipal-borders-for-comparative-research",
+    "title": "Conceptual approach",
+    "section": "",
+    "text": "The literature identifies various types of municipal changes, which can be broadly categorized into geographical and non-geographical changes. Geographical changes involve modifications to municipal boundaries, non-geographical changes, by contrast, affect the legal identifiers of municipalities—such as names or administrative codes—without altering their physical boundaries. In some cases, such non-geographical changes occur independently, with no accompanying changes to the municipality’s territory. For instance, municipalities may undergo name changes to reflect historical, cultural, or political factors, or experience adjustments to their official registry codes. These constitute purely non-geographical changes, as the territorial extent remains constant while the legal attributes are updated (see Figure 1). Conversely, geographical boundaries may change while the municipality’s legal identifiers remain unchanged. A typical example of such purely geographical changes is a territorial transfer. In some cases, however, geographical and non-geographical changes occur simultaneously—for example, during municipal mergers or splits, where a change in boundary (geo) coincides with a change in name or administrative code (non-geo).\n\n\n\n\n\n\n\n\nFigure 1: Intersection of geo and non-geo changes of the municipalities\n\n\n\n\n\nTo date, only a limited number of studies explicitly distinguish between geographical (i.e., boundary‐related) changes and non‐geographical modifications of municipalities in their analyses (Goerlich & Ruiz, 2018; Kociuba & Kociuba, 2023). In most cases, researchers focus on a single type of municipal change—typically within the context of a specific territorial reform—without differentiating between changes to boundaries and changes to legal identifiers. Moreover, due to the diversity of procedures and forms that municipal changes can take, most existing studies are confined to a single country, and in some cases, even to a single administrative unit within that country (see (Blesse & Baskaran, 2016; Heinisch et al., 2018; Strebel, 2018)).\nThus, some papers focus exclusively on mergers processes: for example, in the Netherlands (Allers & Geertsema, 2016), Denmark (Blom-Hansen et al., 2016; Hansen et al., 2014), Finland (Harjunen et al., 2021; Moisio & Uusitalo, 2013), Norway (Solvang et al., 2025), etc. Others research papers are devoted only to the splits processes: for example, in Sweden (Brink, 2004; Erlingsson et al., 2024), Slovenia (Bačlija Brajnik & Lavtar, 2021), Czech Republic (Lysek, 2021), Bulgaria, Croatia and Poland (Swianiewicz et al., 2024). Some studies examine municipal mergers and splits across multiple countries (Klausen, 2024; Swianiewicz, 2019), but such cross‐national research remains uncommon. Similarly, only a few studies consider both mergers and splits within a single country, for example in Hungary (Dobos, 2021). However, comprehensive analyses covering both types of changes simultaneously remain relatively uncommon.\nAt the same time, the majority of the papers mentioned above do not focus on analyzing the changes within municipalities themselves, but rather on the causes for these changes or their consequences or effects (see Figure 2 ). As for the causes of such changes, researchers have investigated factors such as financial incentives (Strebel, 2018), the degree of voluntariness—whether changes were initiated by municipalities themselves or imposed top‐down by higher levels of government (see (Blom-Hansen et al., 2016; Swianiewicz et al., 2022)), internal dissatisfaction within municipalities (Bačlija Brajnik & Lavtar, 2021), etc. With respect to consequences, studies have explored the impact of changes on local government spending, taxation, and service provision (Allers & Geertsema, 2016; Blom-Hansen et al., 2016; Erlingsson et al., 2024; Hansen et al., 2014), performance of local governments (Swianiewicz et al., 2024), political representation (Harjunen et al., 2021), voter turnout in local elections (Heinisch et al., 2018), trust in local politicians (Solvang et al., 2025), etc. A few studies attempt to address both the factors beyond the change and their potential consequences (e.g., (Swianiewicz, 2019)).\n\n\n\n\n\n\n\n\nFigure 2: How we can understand the process of change: from causes to consequences.\n\n\n\n\n\nThis project aims to provide a comprehensive analysis of all identifiable types of municipal‐level changes across EU countries during the period 2014–2024. Our approach relies on the systematic comparison of municipal shapefiles from official country sources, offering a novel geo‐based method for detecting and classifying these changes. While we do not seek to explore the underlying causes or motivations for each type of change, nor their broader consequences, our analysis enables a comparative assessment of the scale and distribution of these changes—both within individual countries and across the EU as a whole.\nOne of the main challenges we encountered was the absence of a unified and widely accepted typology of municipal changes in the academic literature. While some attempts have been made to address this gap—most notably in the contexts of Poland, Spain and the Czech Republic (Goerlich & Ruiz, 2018; Kociuba & Kociuba, 2023; Pászto et al., 2020)—they remain limited in scope. Thus, among the three studies listed above, the study by Goerlich and Ruiz (2018) is particularly relevant to our project, as it proposes a typology of boundary changes in Spanish municipalities between two points in time and distinguishes between territorial and non‐territorial changes. However, this approach has certain limitations. First, it is based on a single‐country case study, which limits its ability to capture the full range of municipal changes that may occur across different EU countries. Second, the temporal scope of the analysis (1842–2001) restricts its relevance for understanding more recent developments and complicates systematic cross‐national comparisons.\nOur project addresses these limitations by developing a harmonized typology of municipal changes that can be applied across EU member states and over a consistent time frame. This typology may serve as a foundation for more systematic, comparative studies of municipal restructuring across the EU. To date, no comprehensive source has been identified that captures the full range of municipal changes (geographical and non‐geographical) that have occurred in EU countries over the past decade. Moreover, there is a lack of harmonized data that would allow for a detailed examination of how such changes are distributed. This gap in the literature limits the capacity for systematic and comparative assessments of municipal transformations at the EU level.\nThis project seeks to address this gap through two main objectives. First, it introduces a new classification that systematically categorizes municipal changes in the EU since 2014. This classification encompasses both territorial changes and non‐territorial changes, including name changes and updates to administrative codes. Second, the project applies this classification to all EU countries to illustrate the distribution and frequency of these changes across them.",
+    "crumbs": [
+      "Conceptual approach"
+    ]
+  },
+  {
+    "objectID": "4.4_composite.html",
+    "href": "4.4_composite.html",
+    "title": "Composite Restructuring",
+    "section": "",
+    "text": "The simultaneous dissolution of one or multiple municipalities and the merger of their entire or partial territories, along with other pre-existing municipalities, into newly created municipalities.\n\n\n\nBefore (year t):\n\nMunicipality A (with id 11), B (with id 2), C (with id 3), D (with id 4), and E (with id 5) exist as separate entities, each with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipality A was dissolved. Part of its territory participated in a merger to create a new Municipality F, while another part participated in a merger to create a new Municipality G.\nMunicipalities B and C were dissolved.\nMunicipality F was created, covering the combined territory of Municipalities B and C, and a part of territory from Municipality A.\nMunicipality F either retains one predecessor’s name/od or receives a new name/id.\nMunicipalities D and E were dissolved.\nMunicipality G was created, covering the combined territory of Municipalities D and E, and another part of territory from Municipality A.\nMunicipality G either retains one predecessor’s name/od or receives a new name/id.\n\n\n\n\n\n\nSimple Split\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\n\nSince 2018, the municipality Palupera (vald in Estonia, id 0582) was dissolved, and its entire territory was divided between two newly created municipalities: Elva (id 0171) and Otepää (id 0557), each receiving 7 villages. At the same time, the new municipality Elva vald (id 0171) was created through the merger of the municipalities Elva linn (id 0170), Konguta vald (id 0331), Puhja vald (id 0605), Rannu vald (id 0666), Rõngu vald (id 0694), and part of the former Palupera municipality (7 villages) (source). The new municipality Otepää vald (id 0557) was created through the merger of the municipalities Otepää vald (id 0636), part of Puka vald (id 0608), Sangaste vald (id 0724), and the remaining part of Palupera municipality (7 villages). The case was registered in the metadata dataset under the id: ee-cr-1-2017-2018.\n Legal verification of the change   \n Visit Official Resource  \n\n\n\n\nInteractive mapStatic map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Composite Restructuring"
+    ]
+  },
+  {
+    "objectID": "4.4_composite.html#simple-split",
+    "href": "4.4_composite.html#simple-split",
+    "title": "Composite Restructuring",
+    "section": "",
+    "text": "The simultaneous dissolution of one or multiple municipalities and the merger of their entire or partial territories, along with other pre-existing municipalities, into newly created municipalities.\n\n\n\nBefore (year t):\n\nMunicipality A (with id 11), B (with id 2), C (with id 3), D (with id 4), and E (with id 5) exist as separate entities, each with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipality A was dissolved. Part of its territory participated in a merger to create a new Municipality F, while another part participated in a merger to create a new Municipality G.\nMunicipalities B and C were dissolved.\nMunicipality F was created, covering the combined territory of Municipalities B and C, and a part of territory from Municipality A.\nMunicipality F either retains one predecessor’s name/od or receives a new name/id.\nMunicipalities D and E were dissolved.\nMunicipality G was created, covering the combined territory of Municipalities D and E, and another part of territory from Municipality A.\nMunicipality G either retains one predecessor’s name/od or receives a new name/id.\n\n\n\n\n\n\nSimple Split\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\n\nSince 2018, the municipality Palupera (vald in Estonia, id 0582) was dissolved, and its entire territory was divided between two newly created municipalities: Elva (id 0171) and Otepää (id 0557), each receiving 7 villages. At the same time, the new municipality Elva vald (id 0171) was created through the merger of the municipalities Elva linn (id 0170), Konguta vald (id 0331), Puhja vald (id 0605), Rannu vald (id 0666), Rõngu vald (id 0694), and part of the former Palupera municipality (7 villages) (source). The new municipality Otepää vald (id 0557) was created through the merger of the municipalities Otepää vald (id 0636), part of Puka vald (id 0608), Sangaste vald (id 0724), and the remaining part of Palupera municipality (7 villages). The case was registered in the metadata dataset under the id: ee-cr-1-2017-2018.\n Legal verification of the change   \n Visit Official Resource  \n\n\n\n\nInteractive mapStatic map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Composite Restructuring"
+    ]
+  },
+  {
+    "objectID": "4.4_composite.html#references",
+    "href": "4.4_composite.html#references",
+    "title": "Composite Restructuring",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Composite Restructuring"
+    ]
+  },
+  {
+    "objectID": "4.4_composite.html#footnotes",
+    "href": "4.4_composite.html#footnotes",
+    "title": "Composite Restructuring",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nBy id we mean code identifier of the municipality.↩︎",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Composite Restructuring"
+    ]
+  },
+  {
+    "objectID": "4.11.stats.html",
+    "href": "4.11.stats.html",
+    "title": "Descriptive Statistics of the Change",
+    "section": "",
+    "text": "In this section, we examine the frequency and variation of all identified municipal boundary changes, based on the classification introduced earlier: (1) for the EU as a whole and (2) for each EU member state individually. We begin by presenting the distribution of municipalities that have experienced boundary changes since 2014, compared to those that have not. We then provide a detailed breakdown of the share of each change type over the ten-year period using circular (ring) charts. Finally, we illustrate the annual distribution of each change type (e.g., mergers, territorial transfers) using line graphs.",
+    "crumbs": [
+      "A new typology on border changes",
+      "Descriptive Statistics of the Change"
+    ]
+  },
+  {
+    "objectID": "4.11.stats.html#number-of-municipalities-with-boundary-changes",
+    "href": "4.11.stats.html#number-of-municipalities-with-boundary-changes",
+    "title": "Descriptive Statistics of the Change",
+    "section": "1. Number of Municipalities with Boundary Changes",
+    "text": "1. Number of Municipalities with Boundary Changes\nThis area charts track the share of municipalities undergoing at least one boundary change each year from 2014 to 2024. The horizontal axis denotes calendar year and the vertical axis gives the number of changes. Hover your mouse on the plot to get more details.",
+    "crumbs": [
+      "A new typology on border changes",
+      "Descriptive Statistics of the Change"
+    ]
+  },
+  {
+    "objectID": "4.11.stats.html#distribution-of-municipal-change-types",
+    "href": "4.11.stats.html#distribution-of-municipal-change-types",
+    "title": "Descriptive Statistics of the Change",
+    "section": "2. Distribution of Municipal Change Types",
+    "text": "2. Distribution of Municipal Change Types\nThe circular (ring) charts below display the distribution of municipal changes by type, as classified in the previous section, over the ten-year period: (1) for the EU as a whole and (2) for each EU member state. Each chart represents 100% of all municipal-level changes recorded between 2014 and 2024.\n\nTotalFranceLuxembourgLatviaNorway",
+    "crumbs": [
+      "A new typology on border changes",
+      "Descriptive Statistics of the Change"
+    ]
+  },
+  {
+    "objectID": "4.11.stats.html#annual-distribution-of-municipal-change-types",
+    "href": "4.11.stats.html#annual-distribution-of-municipal-change-types",
+    "title": "Descriptive Statistics of the Change",
+    "section": "3. Annual Distribution of Municipal Change Types",
+    "text": "3. Annual Distribution of Municipal Change Types\nThe line graphs below illustrate the annual distribution of each type of municipal change (e.g., mergers, territorial transfers) over the ten-year period: (1) for the EU and (2) for each EU member state. The x-axis indicates the years (2014–2024), while the y-axis shows the number of cases for each type of change.\n\nTotalFranceLuxembourgLatviaNorway",
+    "crumbs": [
+      "A new typology on border changes",
+      "Descriptive Statistics of the Change"
+    ]
+  },
+  {
+    "objectID": "3.6_exclusions.html",
+    "href": "3.6_exclusions.html",
+    "title": "Limitations",
+    "section": "",
+    "text": "This section outlines several limitations of our geo-based approach. First, the geographical perspective prioritizes geometric evidence over legal documentation. As a result, certain legally recognized changes may be difficult—or even impossible—to detect through purely geographical methods. Our analysis relies on geospatial files of administrative boundaries obtained from official sources, which typically represent territorial divisions as of January 1 of a given year. However, changes to municipal boundaries are not always synchronized with the calendar year and may come into effect at different points of time throughout the year.\nA notable example illustrating this limitation is Latvia, where a major Administrative Territorial Reform (hereafter ATR) came into effect on July 1, 2021, reducing the number of municipalities from 119 to 43 (VZD, 2021). Firstly, in this case, relying on a single geospatial file for the entire year 2021 would result in a misrepresentation of the actual administrative landscape: from January 1 to June 30, Latvia had 119 municipalities; starting July 1, the number was reduced to 43 (see Table 1). Analyses that do not adequately account for such mid-year changes may lead to inaccuracies in spatial data interpretation and associated measurements.",
+    "crumbs": [
+      "Methodology",
+      "Limitations"
+    ]
+  },
+  {
+    "objectID": "3.6_exclusions.html#about-limitations-methodological-limitations",
+    "href": "3.6_exclusions.html#about-limitations-methodological-limitations",
+    "title": "Limitations",
+    "section": "",
+    "text": "This section outlines several limitations of our geo-based approach. First, the geographical perspective prioritizes geometric evidence over legal documentation. As a result, certain legally recognized changes may be difficult—or even impossible—to detect through purely geographical methods. Our analysis relies on geospatial files of administrative boundaries obtained from official sources, which typically represent territorial divisions as of January 1 of a given year. However, changes to municipal boundaries are not always synchronized with the calendar year and may come into effect at different points of time throughout the year.\nA notable example illustrating this limitation is Latvia, where a major Administrative Territorial Reform (hereafter ATR) came into effect on July 1, 2021, reducing the number of municipalities from 119 to 43 (VZD, 2021). Firstly, in this case, relying on a single geospatial file for the entire year 2021 would result in a misrepresentation of the actual administrative landscape: from January 1 to June 30, Latvia had 119 municipalities; starting July 1, the number was reduced to 43 (see Table 1). Analyses that do not adequately account for such mid-year changes may lead to inaccuracies in spatial data interpretation and associated measurements.",
+    "crumbs": [
+      "Methodology",
+      "Limitations"
+    ]
+  },
+  {
+    "objectID": "3.6_exclusions.html#table-1.-total-number-of-municipalities-in-latvia-in-20202021",
+    "href": "3.6_exclusions.html#table-1.-total-number-of-municipalities-in-latvia-in-20202021",
+    "title": "Limitations",
+    "section": "Table 1. Total number of municipalities in Latvia in 2020–2021",
+    "text": "Table 1. Total number of municipalities in Latvia in 2020–2021\n\nTable 1. Total number of municipalities in Latvia in 2020–2021\n\n\n\n\n\nYear\n\n\n2020\n\n\n2021\n\n\n\n\nBefore July 1\n\n\nAfter July 1\n\n\n\n\n\n\nList of municipalities\n\n\n            1. Ādažu novads\n            2. Aglonas novads\n            …\n            110. Zilupes novads\n            + 9 Republikas pilsētas\n        \n\n\n        1. Ādažu novads\n        2. Aglonas novads\n        …\n        110. Zilupes novads\n        + 9 Republikas pilsētas\n    \n\n\n        1. Daugavpils valstspilsētas pašvaldība\n        …\n        43. Varakļānu novads\n    \n\n\n\n\nTotal number of municipalities\n\n\n119\n\n\n119\n\n\n43\n\n\n\n\n\n\nA similar issue to the Latvian case arises in other EU countries, where, for example, municipal mergers are legally enacted not at the beginning of a calendar year but during the course of it. For instance, by decree of the prefect of Jura dated 11 March 2016, the new municipality Vincent-Froideville was created through the merger of Vincent and Froideville, with the merger officially coming into force on 1 April 2016 rather than on 1 January 2017 (Legifrance 2016).\nHowever, our dataset for France only includes municipal boundary geospatial files as of 1 January of each year. As a result, our approach cannot capture territorial changes that come into effect partway through the year, such as the merger of Vincent and Froideville into Vincent-Froideville, which took effect on 1 April 2016. Approximately 4% of all municipal mergers in our French dataset fall into this category, where changes are implemented mid-year rather than at the start of the following calendar year. Such timing mismatches may lead to inaccuracies in identifying the correct administrative units during the year in which the change occurs. Taken together, all the cases presented underscore the temporal sensitivity inherent in administrative boundary data.\nThe second limitation of our approach lies in the varying resolution of the municipal boundaries represented in the geospatial files. These discrepancies in spatial precision may lead to the erroneous identification of a change—resulting in a false positive—when, in reality, no administrative modification has occurred, and the discrepancy reflects only a technical or measurement inconsistency.\nFor example, in France, out of more than a thousand cases of potential territory transfers between municipalities, we were able to legally confirm only 14 actual cases of territory transfers from one municipality to another (an example of such a transfer can be found here). The remaining cases represent merely technical discrepancies in the geospatial files across different years.\nWe recognize the limitations outlined above and have taken care to mitigate their impact. Despite these challenges, our approach provides a valuable and practical method for analyzing municipal boundary changes across countries and over comparable time periods. By combining geometric data with legal verification where possible, we offer a reliable framework for studying administrative boundary dynamics.",
+    "crumbs": [
+      "Methodology",
+      "Limitations"
+    ]
+  },
+  {
+    "objectID": "3.5_data.html",
+    "href": "3.5_data.html",
+    "title": "Data System",
+    "section": "",
+    "text": "The design of the dataset is founded on the principle of documenting both change and continuity in European municipal boundaries. By capturing every merger, split, transfer, and dissolution alongside corresponding legal identifier shifts, we enable researchers to trace the full territorial and administrative evolution of any municipality from 2014 through 2024. This comprehensive record‐keeping supports inquiries into questions such as “How have municipal borders in France evolved over the past decade?” or “When and why did a given municipality change its name but not its territory?”\nTo achieve this, we have adopted a modular data architecture comprising three interlocking components, each published in open, non‐proprietary formats (GeoPackage, CSV, etc) to ensure full reproducibility and interoperability:\nAll municipal polygons are stored in a GeoPackage (.gpkg) layer, preserving geodetic accuracy and topological consistency. This format supports high‐precision mapping and spatial analyses with standard GIS tools, free from proprietary constraints.\nEvery year‐on‐year change is recorded in a “long” table structure. This module allows users to ask exactly when a merger or transfer took place in any municipality, and to quantify the frequency and types of changes over time. And a legal dataset accompanies with details of the legislation backing the changes.\nBecause every country follows the same three‐module schema, integrating new national case studies is as simple as appending their GeoPackage and CSV files. This design guarantees scalability: as our project grows to encompass additional European nations, the unified structure remains intact, allowing seamless, cross‐national comparisons and longitudinal analyses of municipal governance and territorial change.",
+    "crumbs": [
+      "Methodology",
+      "Data System"
+    ]
+  },
+  {
+    "objectID": "3.4_legal.html",
+    "href": "3.4_legal.html",
+    "title": "Legal Verification of Changes",
+    "section": "",
+    "text": "For each change in municipal boundaries, we identified an official legal document verifying that the change had occurred. In the case of France, this was accomplished via the Légifrance portal, which allows municipal changes to be traced by searching for the municipality’s name and the relevant year. In other countries, the process was more complex. For example, in Italy, although the Gazzetta Ufficiale serves as the primary official source, its search functionality is frequently unreliable. In such instances, it proved more effective to consult the websites of individual regional administrations. For example, in the Lombardy region, relevant legislative acts can be retrieved through the advanced search function of the Lombardia portal.\nBased on the results of the previous step, we first analyzed the identified cases of mergers, splits, border changes, and non-geographical changes. As an initial stage of verification, we assessed whether the observed change was consistent with legal definitions. For example, we examined whether a case classified as a split was in fact a split or rather a dissolution process, whereby a municipality is dissolved and its entire territory is redistributed among existing municipalities, without the creation of any new ones, as would occur in a typical split. Similarly, some border changes could in fact be territorial transfers or territorial exchanges or involve more complex scenarios in which a dissolution and a merger occur simultaneously. In such instances, we categorized the case as composite restructuring (see Appendix for the full typology of all identified cases).\nOnce the type of change was established and an official document confirming a change was identified, we proceeded with a three-step legal verification process. First, we assessed whether the number of units involved in the territorial change, as indicated in the geospatial files, corresponded to that specified in the official legislative sources. Second, we verified whether the names of municipalities in the geospatial files matched those used in the legal documents. Third, we identified and recorded the official date marking the change. All retrieved official documents were saved in PDF format, labeled with corresponding municipality identifiers, and archived to enable subsequent searches by identifier.\nIn cases where inconsistencies were identified, we submitted clarification requests in the appropriate national language to the relevant authorities at the country level. For example, in France, such queries were directed to the National Institute of Statistics and Economic Studies (INSEE) and the administrators of the data.gouv.fr portal, which is responsible for the dissemination of official public data.",
+    "crumbs": [
+      "Methodology",
+      "Legal Verification of Changes"
+    ]
+  },
+  {
+    "objectID": "5.1_data-structure.html",
+    "href": "5.1_data-structure.html",
+    "title": "Data Structure Overview",
+    "section": "",
+    "text": "The data architecture rests on three guiding principles: (i) alignment with the project’s overarching research goals; (ii) maximum flexibility for users to attach their own variables and merge the datasets they need; and (iii) seamless interoperability with the European Union’s territorial hierarchy (NUTS levels 1–3).\nTo honor those principles, the project is released as a file-based system: users download self-contained GeoPackage or CSV files instead of connecting to a live server. The bundle comprises four normalized, tabular tables—conventional rows-and-columns structures—that form a relational whole, stitched together by stable shared keys. This design lets analysts retrieve only the layers they need, join them rapidly, and aggregate results to any NUTS level if desired.\nFunctionally, the tables serve four complementary roles: (1) storing the annual geometries, (2) tracking the temporal stability or change of each municipality, (3) documenting the legal instruments that authorize those changes, and (4) connecting local units to NUTS levels 1–3.\nThese four datasets are complemented by a fifth block, conceived not as a single dataset but as an extensible “bucket” for thematic add-ons—procurement records, electoral returns, satellite-derived indicators, and so forth. Since these thematic files inherit the same stable keys, they merge seamlessly with the geographical core, preserving the relational integrity of the entire system.\nAll four tables follow a long (“tidy”) layout: each row holds one, and only one, observation with its contextual identifiers, while every column represents a single, well-defined attribute (Wickham, 2014).\nThe sheer volume of information provides an additional, practical argument for a file-based, relational architecture. Consider France: across the eleven reference years 2014–2024, we maintain 388,317 municipal polygons—roughly 35,000 per year. Even when stored as efficient GeoPackage layers, the complete French stack already occupies 2,582,448,132 bytes (≈ 2.58 GB), or about 6,650 bytes per polygon. Scaled to all 32 countries, each new annual release adds on the order of one gigabyte of geometry, before any thematic attributes are attached. By keeping the geometry, change-tracking, legal provenance, and NUTS concordance in separate but inter-linked tables, we avoid a single monolithic file, minimize redundancy, and ensure that each layer streams quickly in Python, Julia, R, or any other analytics environment. In short, the project is a living, ever-growing asset, and maintaining lean, easily joined files is not a convenience—it is a necessity.",
+    "crumbs": [
+      "Data",
+      "Data Structure Overview"
+    ]
+  },
+  {
+    "objectID": "5.1_data-structure.html#sec-data-principles",
+    "href": "5.1_data-structure.html#sec-data-principles",
+    "title": "Data Structure Overview",
+    "section": "",
+    "text": "The data architecture rests on three guiding principles: (i) alignment with the project’s overarching research goals; (ii) maximum flexibility for users to attach their own variables and merge the datasets they need; and (iii) seamless interoperability with the European Union’s territorial hierarchy (NUTS levels 1–3).\nTo honor those principles, the project is released as a file-based system: users download self-contained GeoPackage or CSV files instead of connecting to a live server. The bundle comprises four normalized, tabular tables—conventional rows-and-columns structures—that form a relational whole, stitched together by stable shared keys. This design lets analysts retrieve only the layers they need, join them rapidly, and aggregate results to any NUTS level if desired.\nFunctionally, the tables serve four complementary roles: (1) storing the annual geometries, (2) tracking the temporal stability or change of each municipality, (3) documenting the legal instruments that authorize those changes, and (4) connecting local units to NUTS levels 1–3.\nThese four datasets are complemented by a fifth block, conceived not as a single dataset but as an extensible “bucket” for thematic add-ons—procurement records, electoral returns, satellite-derived indicators, and so forth. Since these thematic files inherit the same stable keys, they merge seamlessly with the geographical core, preserving the relational integrity of the entire system.\nAll four tables follow a long (“tidy”) layout: each row holds one, and only one, observation with its contextual identifiers, while every column represents a single, well-defined attribute (Wickham, 2014).\nThe sheer volume of information provides an additional, practical argument for a file-based, relational architecture. Consider France: across the eleven reference years 2014–2024, we maintain 388,317 municipal polygons—roughly 35,000 per year. Even when stored as efficient GeoPackage layers, the complete French stack already occupies 2,582,448,132 bytes (≈ 2.58 GB), or about 6,650 bytes per polygon. Scaled to all 32 countries, each new annual release adds on the order of one gigabyte of geometry, before any thematic attributes are attached. By keeping the geometry, change-tracking, legal provenance, and NUTS concordance in separate but inter-linked tables, we avoid a single monolithic file, minimize redundancy, and ensure that each layer streams quickly in Python, Julia, R, or any other analytics environment. In short, the project is a living, ever-growing asset, and maintaining lean, easily joined files is not a convenience—it is a necessity.",
+    "crumbs": [
+      "Data",
+      "Data Structure Overview"
+    ]
+  },
+  {
+    "objectID": "5.1_data-structure.html#datasets-purpose-and-temporality",
+    "href": "5.1_data-structure.html#datasets-purpose-and-temporality",
+    "title": "Data Structure Overview",
+    "section": "Dataset’s Purpose and Temporality",
+    "text": "Dataset’s Purpose and Temporality\n\n\n\n\n\nDataset\n\n\nPurpose and scope\n\n\nTemporal packaging\n\n\n\n\n\n\nGeographical dataset\n\n\nStores the official polygon or multipolygon footprint of every municipality for a given reference year. Each feature carries (a) the municipality’s original national code and (b) the project’s permanent internal identifier.\n\n\nAnnual layer\n\n\n\n\nStandardized local code and change tracking dataset\n\n\nFlags whether a municipality underwent a boundary event in a particular year or a non-geographical one, classifies the event, tracks the full lifespan of every internal and official identifier, and groups related alterations under a common case_id.\n\n\nCumulative series\n\n\n\n\nLegal source register\n\n\nCatalogues the legal acts that authorize each change, providing the act title, official reference URL, and a persistent URL to the downloadable document.\n\n\nCumulative series\n\n\n\n\nNUTS concordance\n\n\nMaps every municipal identifier (by year) to its corresponding NUTS-3, NUTS-2, and NUTS-1 levels, enabling users to aggregate results seamlessly to higher territorial tiers.\n\n\nAnnual layer\n\n\n\n\n\nThe following section provides a field-by-field description of each table, including data types and value domains. Then, another section demonstrates how to join the tables in practice and aggregate results to higher territorial tiers.",
+    "crumbs": [
+      "Data",
+      "Data Structure Overview"
+    ]
+  },
+  {
+    "objectID": "1_summary.html",
+    "href": "1_summary.html",
+    "title": "Project overview",
+    "section": "",
+    "text": "What the project is about",
+    "crumbs": [
+      "Project overview"
+    ]
+  },
+  {
+    "objectID": "4.8_nature.html",
+    "href": "4.8_nature.html",
+    "title": "Nature Integration",
+    "section": "",
+    "text": "The integration of a previously non-municipal territory, such as a national park, forest, or uninhabited administrative zone, into one already existing municipality.",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Nature Integration"
+    ]
+  },
+  {
+    "objectID": "4.8_nature.html#references",
+    "href": "4.8_nature.html#references",
+    "title": "Nature Integration",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Nature Integration"
+    ]
+  },
+  {
+    "objectID": "4.8_nature.html#footnotes",
+    "href": "4.8_nature.html#footnotes",
+    "title": "Nature Integration",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nBy id we mean code identifier of the municipality.↩︎",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Nature Integration"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "What is the first time vistors will see\nInstitutional information?",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "5_activities.html",
+    "href": "5_activities.html",
+    "title": "Current activities",
+    "section": "",
+    "text": "What the team is doing currently\n\nPapers\nConferences",
+    "crumbs": [
+      "Current activities"
+    ]
+  },
+  {
+    "objectID": "4.1_table_results.html",
+    "href": "4.1_table_results.html",
+    "title": "Classification of Municipal Changes in the EU since 2014",
+    "section": "",
+    "text": "Our comprehensive analysis of all municipal boundary changes in the EU between 2014 and 2024 has enabled us to identify eight principal categories of geographical change and 17 corresponding subcategories, along with a separate category capturing purely non-geographical changes. Each change category is conceptualized as a relational transformation between two temporal states: the configuration before the change and that which follows it. Transformations are classified according to whether municipalities were dissolved (i.e., ceased to exist as independent administrative units) or created (i.e., new administrative units emerged as a result of the change).\nMore specifically, each case of transformation falls into one of four logical combinations: (1) municipalities are both created and dissolved; (2) municipalities are created but none are dissolved; (3) municipalities are dissolved but none are created; (4) municipalities are neither created nor dissolved. This logical structure serves as the foundation for our typology and allows for a systematic comparison across diverse national contexts.\nIt is also important to clarify that given the absence of standardized terminology and consistent definitions in the existing literature—where terms describing municipal change are frequently used interchangeably—the typology proposed below represents our conceptualization of each change nature category, based largely on the legal definitions found in national legislation relevant to each case.",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014"
+    ]
+  },
+  {
+    "objectID": "4.1_table_results.html#geographical-changes",
+    "href": "4.1_table_results.html#geographical-changes",
+    "title": "Classification of Municipal Changes in the EU since 2014",
+    "section": "Geographical changes",
+    "text": "Geographical changes\n\n1. Municipalities are both created and dissolved 1\n\n\n\n\n\nChange\n\n\nSub-Change\n\n\nExplanation\n\n\n\n\n\n\nMerger\n\n\nSimple\n\n\nThe creation of a new municipality whose territory results from the union of two pre-existing municipalities.\n\n\n\n\nMultiple 2\n\n\nThe creation of a new municipality whose territory results from the union of more than two pre-existing municipalities.\n\n\n\n\nSplit 3\n\n\nSimple\n\n\nThe dissolution of one municipality, whose territory is divided among two newly established municipalities, neither of which retains the legal or administrative aspects of the original entity.\n\n\n\n\nMultiple\n\n\nThe dissolution of one municipality, whose territory is divided among more than two newly established municipalities, none of which retains legal or administrative aspects of the original entity.\n\n\n\n\n\n\nComposite restructuring 4\n\n\n\n\nThe simultaneous dissolution of one or multiple municipalities and the merger of their entire or partial territories, along with other pre-existing municipalities, into newly created municipalities.\n\n\n\n\n\n\n\n2. Municipalities are created but none are dissolved\n\n\n\n\n\nChange\n\n\nSub-Change\n\n\nExplanation\n\n\n\n\n\n\nDe-Merger 5\n\n\nSimple\n\n\nThe re-establishment of one municipality that had previously participated in a merger (either simple or multiple) into a new, separate municipality whose territory exactly matches its original boundaries prior to the merger, thereby fully reversing the territorial effects of its inclusion in that merger\n\n\n\n\nMultiple\n\n\nThe re-establishment of more than one municipality that had previously participated in a merger (either simple or multiple) into a new, separate municipalities whose territories exactly match their original boundaries prior to the merger, thereby fully reversing the territorial effects of its inclusion in that merger.\n\n\n\n\nSeparation (secession) 6\n\n\nSimple\n\n\nThe creation of a new municipality through the separation of a part of the territory from one municipality, which continues to exist.\n\n\n\n\nMultiple\n\n\nThe creation of a new municipality through the separation of a part of the territory from more than one municipality, all of which continue to exist.\n\n\n\n\n\n\n\n\n\n3. Municipalities are dissolved but none are created\n\n\n\n\n\nChange\n\n\nSub-Change\n\n\nExplanation\n\n\n\n\n\n\nDissolution 7\n\n\nSimple\n\n\nThe dissolution of one municipality and the distribution of its territory among two municipalities, neither of which is newly created. The original municipality ceases to exist as a legal-administrative entity.\n\n\n\n\n\n\n\n\n4. Municipalities are neither created nor dissolved\n\n\n\n\n\nChange\n\n\nSub-Change\n\n\nExplanation\n\n\n\n\n\n\nNature integration\n\n\nsimple\n\n\nThe integration of a previously non-municipal territory, such as a national park, forest, or uninhabited administrative zone, into two existing municipalities.\n\n\n\n\nmultiple\n\n\nThe integration of a previously non-municipal territory, such as a national park, forest, or uninhabited administrative zone, into more than two existing municipalities.\n\n\n\n\nTerritorial transfer\n\n\nNational Transfer\n\n\nThe transfer of part of the territory of one municipality to another, without receiving territory in return, within the same country.\n\n\n\n\nNational Exchange\n\n\nThe one-time exchange of territories between two municipalities within the same country.\n\n\n\n\nInternational Transfer\n\n\nThe transfer of part of the territory of one municipality from one country to another municipality in a neighboring country, without receiving territory in return.\n\n\n\n\nInternational Exchange\n\n\nThe one-time exchange of territories between two municipalities from neighboring countries.",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014"
+    ]
+  },
+  {
+    "objectID": "4.1_table_results.html#non-geographical-changes",
+    "href": "4.1_table_results.html#non-geographical-changes",
+    "title": "Classification of Municipal Changes in the EU since 2014",
+    "section": "Non-geographical changes",
+    "text": "Non-geographical changes\nAll four categories presented above represent situations where municipal boundaries are changing. However, sometimes geographical changes occur simultaneously with changes in the municipalities’ legal identifiers (such as code, name, or both). Typical examples include mergers or splits, where boundary changes are accompanied by the municipality’s name or code changes. Sometimes the geographical boundaries of a municipality change, while its legal identifiers remain the same. Typical examples include all territorial transfer situations. And sometimes, municipalities’ boundaries may remain unchanged while its legal identifiers are modified. We have classified these situations into the following category:\n\n\n\n\n\nChange\n\n\nSub-Change\n\n\nExplanation\n\n\n\n\n\n\nNon-geo\n\n\nChange name\n\n\nThe change of a municipality’s name.\n\n\n\n\nChange id\n\n\nThe change of a municipality’s id.\n\n\n\n\nChange name + id\n\n\nThe simultaneous change of both a municipality’s name and id.\n\n\n\n\n\n  The proposed classification, together with a geospatial comparison of municipal boundaries, makes it possible to trace the history of each municipality in the EU from 2014 onward. In other words, following a panel data logic, this approach enables the longitudinal observation of each municipality, capturing not only annual cross-sectional snapshots but also the evolution of changes over time. For instance, we found that even a single type of change from the classification table can occur multiple times to the same municipality within a ten-year period. For example, in France, the municipality (commune) Les Trois Lacs changed its ID from 27676 to 27058 in 2021, and then reverted from 27058 back to 27676 in 2023 (these changes were due to the relocation of the administrative center of the municipality (le chef-lieu de la commune)). Similarly, the same municipality may undergo different types of changes in consecutive years—for instance, transferring part of its territory in one year and participating in a merger the following year.",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014"
+    ]
+  },
+  {
+    "objectID": "4.1_table_results.html#download-table",
+    "href": "4.1_table_results.html#download-table",
+    "title": "Classification of Municipal Changes in the EU since 2014",
+    "section": "Download table",
+    "text": "Download table\n  Download table in PDF:",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014"
+    ]
+  },
+  {
+    "objectID": "4.1_table_results.html#notes",
+    "href": "4.1_table_results.html#notes",
+    "title": "Classification of Municipal Changes in the EU since 2014",
+    "section": "Notes",
+    "text": "Notes",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014"
+    ]
+  },
+  {
+    "objectID": "4.1_table_results.html#footnotes",
+    "href": "4.1_table_results.html#footnotes",
+    "title": "Classification of Municipal Changes in the EU since 2014",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nWe consider each change category as a relationship between two points in time — the situation before and after the change — and classify transformations based on whether municipalities were dissolved (i.e., ceased to exist as independent administrative units) or created (i.e., new administrative units were formed as a result of the change).↩︎\nThe distinguishing factor from a simple merger is explicitly quantitative (more than two pre-existing municipalities involved), reflecting increased administrative, political, social, and economic complexity due to negotiations among multiple governing authorities.↩︎\nThe dissolved municipality ceases to exist in legal and administrative terms. Unlike dissolution, all resulting municipalities are new creations, regardless of whether they retain parts of the name, code, or territory. Unlike separation (secession), no part of the original unit is recognized as its legal continuation.↩︎\nThe key feature is that no resulting municipality is pre-existing (all are established as part of the merger process, and some are composed of parts of previously dissolved municipalities).↩︎\nThis conceptual framework is designed for a study specifically tracking territorial changes in municipalities across Europe within a defined 10-year period (2014–2024). Events falling partially or fully outside this period, although potentially meeting conceptual definitions, are explicitly noted but classified separately due to the temporal constraints of the current project.↩︎\nThe key criterion is the identification of legal or administrative acts of creation. Separation (secession) occurs when the relevant legislation explicitly establishes one or more new municipalities while affirming the continuity of the remaining original municipality. Continuity can be inferred when the remaining entity is not replaced, regardless of whether it retains the same name or administrative code. In cases where legal records are unclear or unavailable, territorial majority may be used as a secondary criterion: if the remaining municipality retains more than 50% of the original area, it may be treated as the continuation of the original unit. This approach ensures consistency across jurisdictions, even where naming conventions or coding systems vary.↩︎\nUnlike split, no new municipalities are created.↩︎",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014"
+    ]
+  },
+  {
+    "objectID": "4.5_demerger.html",
+    "href": "4.5_demerger.html",
+    "title": "De-merger",
+    "section": "",
+    "text": "The re-establishment of one municipality that had previously participated in a merger (either simple or multiple) into a new, separate municipality whose territory exactly matches its original boundaries prior to the merger, thereby fully reversing the territorial effects of its inclusion in that merger.\n\n\n\nEven before (year t-1):\n\nMunicipalities A (with id 11), B (with id 2), C (with id 3), and D (with id 4) exist as separate entities, each with its own name, id, and territory.\n\nBefore (year t):\n\nMunicipalities A, B, C, and D were dissolved.\nMunicipality E was created, covering the combined territory of Municipalities A, B, C and D.\nMunicipality E either retains one predecessor’s name/id or receives a new name/id.\n\nAfter (year t + 1):\n\nMunicipality C was re-established as a new, separate municipality whose territory exactly matches its original boundaries prior to the merger (year t - 1)\nMunicipality E, from (year t + 1), combines only territories of Municipalities A, B and D.\n\n\n\n\n\n\nSimple De-merger\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\n\nFrom 2019, the new municipality (commune in France) Les Hauts-Talican (id 60054) was formed by the merger of the municipalities Beaumont-les-Nonains (id 60054), Neuville-Garnier (id 60455), and Villotran (id 60694). The name was new, and the id was inherited from Beaumont-les-Nonains. However, from 2024, the municipality Beaumont-lès-Nonains is re-established as a new, separate municipality whose territory exactly matches its original boundaries prior to the merger. It reverts to its previous name, Beaumont-les-Nonains, and resumes the id 60054. The municipality Les Hauts-Talican, now consisting only of the former municipalities Neuville-Garnier and Villotran (from year t + 1), conserves the name Les Hauts-Talican but adopts a new id, 60694, inherited from Villotran. The case was registered in the metadata dataset under the id: fr-dm-1-2019-2024.\n Legal verification of the change   \n Visit Official Resource  \n\n\n\n\nInteractive mapStatic map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "De-merger"
+    ]
+  },
+  {
+    "objectID": "4.5_demerger.html#simple-de-merger",
+    "href": "4.5_demerger.html#simple-de-merger",
+    "title": "De-merger",
+    "section": "",
+    "text": "The re-establishment of one municipality that had previously participated in a merger (either simple or multiple) into a new, separate municipality whose territory exactly matches its original boundaries prior to the merger, thereby fully reversing the territorial effects of its inclusion in that merger.\n\n\n\nEven before (year t-1):\n\nMunicipalities A (with id 11), B (with id 2), C (with id 3), and D (with id 4) exist as separate entities, each with its own name, id, and territory.\n\nBefore (year t):\n\nMunicipalities A, B, C, and D were dissolved.\nMunicipality E was created, covering the combined territory of Municipalities A, B, C and D.\nMunicipality E either retains one predecessor’s name/id or receives a new name/id.\n\nAfter (year t + 1):\n\nMunicipality C was re-established as a new, separate municipality whose territory exactly matches its original boundaries prior to the merger (year t - 1)\nMunicipality E, from (year t + 1), combines only territories of Municipalities A, B and D.\n\n\n\n\n\n\nSimple De-merger\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\n\nFrom 2019, the new municipality (commune in France) Les Hauts-Talican (id 60054) was formed by the merger of the municipalities Beaumont-les-Nonains (id 60054), Neuville-Garnier (id 60455), and Villotran (id 60694). The name was new, and the id was inherited from Beaumont-les-Nonains. However, from 2024, the municipality Beaumont-lès-Nonains is re-established as a new, separate municipality whose territory exactly matches its original boundaries prior to the merger. It reverts to its previous name, Beaumont-les-Nonains, and resumes the id 60054. The municipality Les Hauts-Talican, now consisting only of the former municipalities Neuville-Garnier and Villotran (from year t + 1), conserves the name Les Hauts-Talican but adopts a new id, 60694, inherited from Villotran. The case was registered in the metadata dataset under the id: fr-dm-1-2019-2024.\n Legal verification of the change   \n Visit Official Resource  \n\n\n\n\nInteractive mapStatic map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "De-merger"
+    ]
+  },
+  {
+    "objectID": "4.5_demerger.html#multiple-de-merger",
+    "href": "4.5_demerger.html#multiple-de-merger",
+    "title": "De-merger",
+    "section": "Multiple De-merger",
+    "text": "Multiple De-merger\n\nDefinition\nThe re-establishment of more than one municipality that had previously participated in a merger (either simple or multiple) into a new, separate municipalities whose territories exactly match their original boundaries prior to the merger, thereby fully reversing the territorial effects of its inclusion in that merger.\n\n\nImplication of the change\nEven before (year t-1):\n\nMunicipalities A (with id 1), B (with id 2), C (with id 3), and D (with id 4) exist as separate entities, each with its own name, id, and territory.\n\nBefore (year t):\n\nMunicipalities A, B, C, D were dissolved.\nMunicipality E was created, covering the combined territory of Municipalities A, B, C and D.\nMunicipality E either retains one predecessor’s name/od or receives a new name/id.\n\nAfter (year t + 1):\n\nMunicipalities A and C were re-established as new, separate municipalities whose territory exactly match their original boundaries prior to the merger (year t - 1)\nMunicipality E, from (year t + 1), combines only territories of Municipalities B and D.\n\n\n\nVisual overview\n\n\nMultiple De-merger\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\nExample\nSince 2016, the new municipality (commune in France) L’Essarts-en-Bocage (id 85084) was formed by the merger of the municipalities Les Essarts (id 85084), Le Boulogne (id 85030), L’Oie (id 85165), and Sainte-Florence (id 85212). The name was new, and the id was inherited from Les Essarts. However, since 2024, two municipalities — (1) L’Oie and (2) Sainte-Florence — are re-established as new, separate municipalities whose territories exactly match their original boundaries prior to the merger. They revert to their previous names and ids. The municipality L’Essarts-en-Bocage, now consisting only of the former municipalities Les Essarts and Le Boulogne (from year t + 1), retains the name L’Essarts-en-Bocage and the id 85084, inherited originally from Les Essarts. The case was registered in the metadata dataset under: fr-dm-2-2016-2024\n Legal verification of the change   \n Visit Official Resource  \n\n\nMap Plots\n\nInteracive MapStatic Map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "De-merger"
+    ]
+  },
+  {
+    "objectID": "4.5_demerger.html#references",
+    "href": "4.5_demerger.html#references",
+    "title": "De-merger",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "De-merger"
+    ]
+  },
+  {
+    "objectID": "4.5_demerger.html#footnotes",
+    "href": "4.5_demerger.html#footnotes",
+    "title": "De-merger",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nBy id we mean code identifier of the municipality.↩︎",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "De-merger"
+    ]
+  },
+  {
+    "objectID": "5.5_auxiliary-files.html",
+    "href": "5.5_auxiliary-files.html",
+    "title": "Details of the Legal Datasets",
+    "section": "",
+    "text": "This section documents the dataset responsible for recording the legal evidence of the changes.",
+    "crumbs": [
+      "Data",
+      "Details of the Legal Datasets"
+    ]
+  },
+  {
+    "objectID": "5.5_auxiliary-files.html#dataset-snapshot",
+    "href": "5.5_auxiliary-files.html#dataset-snapshot",
+    "title": "Details of the Legal Datasets",
+    "section": "Dataset snapshot",
+    "text": "Dataset snapshot\n\n\n\n\n\n\n\nItem\nDescription\n\n\n\n\nFile name\n&lt;country_2letter-code&gt;_legal.csv\n\n\nDelivery\nCumulative series (2014 – present) — one file for France that grows with each new change event\n\n\nCRS\nn/a (attribute table) — joins to geometry via the internal ID\n\n\nPrimary key\n(munqog_code, year) — composite key; guarantees one record per municipality-year",
+    "crumbs": [
+      "Data",
+      "Details of the Legal Datasets"
+    ]
+  },
+  {
+    "objectID": "5.5_auxiliary-files.html#variable-dictionary",
+    "href": "5.5_auxiliary-files.html#variable-dictionary",
+    "title": "Details of the Legal Datasets",
+    "section": "Variable dictionary",
+    "text": "Variable dictionary\nBelow, each field is given a short heading followed by its definition. Where a field participates in the primary key, that fact is noted explicitly.\n\nyear\nType: 4-digit INTEGER\nDescription: Calendar year in which the boundary event took legal effect. When no change occurs, identifies the annual snapshot this record belongs to.\nExample: 2015\nConstraints: Ranges 2014 – present. Part of the composite primary key.\n\n\noriginal_code\nType: TEXT\nDescription: Official national municipality code as issued by the French source (INSEE code).\nExample: 01001\nConstraints: Digits only; often begins with a leading zero, so treat as text.\n\n\nmunqog_code\nType: TEXT\nDescription: Project’s internal municipality identifier—stable across years, enabling consistent tracking. For overseas municipalities, includes an o (e.g., fr-o-97353).\nExample: fr-01001, fr-o-97353\nConstraints: Unique per geography. Part of the composite primary key.\n\n\ncase_id\nType: TEXT\nDescription: Identifier that groups all municipalities involved in the same legal act.\nExample: fr-m-14-2015-2016\nConstraints: Unique within France; nullable when no change is recorded.\n\n\nlaw_name\nType: TEXT\nDescription: Official title of the legal act that enacted the boundary change.\nExample: Arrêté du 29 septembre 2015 portant création de la commune nouvelle d'Arboys en Bugey\nConstraints: Nullable when change is detected but law may lack an identifiable name.\n\n\nlaw_link\nType: TEXT\nDescription: URL to the official legal document on the Legifrance website.\nExample: https://www.legifrance.gouv.fr/eli/arrete/2015/9/29/INTB1525283A/jo/texte\nConstraints: Nullable when there is no legal online reference.\n\n\nlaw_file_name\nType: TEXT\nDescription: Name of the file containing the legal document.\nExample: fr-m-14-2015-2016.pdf\nConstraints: Nullable when evidence is not downloadable or found.\n\n\nlaw_qog_url\nType: TEXT\nDescription: URL to the legal document as hosted by the Quality of Government Institute.\nExample: https://www.qogdata.pol.gu.se/loqog-documentation/legal/fr/fr-m-14-2015-2016.pdf\n\n\nNotes on Missing Variables\nThe fr_legal.csv dataset does not include fields such as reference_year, cname, mun_name, original_code_years_cover, munqog_code_years_cover, recorded_change, change_nature, sub_change_nature, units_involved, change_name_description, change_code_description, or shape_area, which are typically found in the &lt;country&gt;_change_log.csv dataset. (e.g., merger, split), refer to the Classification of Municipal Changes Tables.",
+    "crumbs": [
+      "Data",
+      "Details of the Legal Datasets"
+    ]
+  },
+  {
+    "objectID": "4.10_nongeo.html",
+    "href": "4.10_nongeo.html",
+    "title": "Non Geographical Changes",
+    "section": "",
+    "text": "The change of a municipality’s name, while its boundaries remain unchanged.\n\n\n\nBefore (year t):\n\nMunicipality A (with id 11) exists as a separate entity with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipality A changed its name from A to B without changing its id.\n\n\n\n\n\n\nChanged Name\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\n\nSince 2016, the municipality (Gemeinde in Austria) Großlobming (id 62039) change name from Großlobming to Lobmingtal without changing its id (source). The case was registered in the metadata dataset under the id: at-l-7-2015-2016.\n Legal verification of the change   \n Visit Official Resource  \n\n\n\n\nInteractive mapStatic map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Non Geographical Changes"
+    ]
+  },
+  {
+    "objectID": "4.10_nongeo.html#changed-name",
+    "href": "4.10_nongeo.html#changed-name",
+    "title": "Non Geographical Changes",
+    "section": "",
+    "text": "The change of a municipality’s name, while its boundaries remain unchanged.\n\n\n\nBefore (year t):\n\nMunicipality A (with id 11) exists as a separate entity with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipality A changed its name from A to B without changing its id.\n\n\n\n\n\n\nChanged Name\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\n\nSince 2016, the municipality (Gemeinde in Austria) Großlobming (id 62039) change name from Großlobming to Lobmingtal without changing its id (source). The case was registered in the metadata dataset under the id: at-l-7-2015-2016.\n Legal verification of the change   \n Visit Official Resource  \n\n\n\n\nInteractive mapStatic map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Non Geographical Changes"
+    ]
+  },
+  {
+    "objectID": "4.10_nongeo.html#changed-id",
+    "href": "4.10_nongeo.html#changed-id",
+    "title": "Non Geographical Changes",
+    "section": "Changed Id",
+    "text": "Changed Id\n\nDefinition\nThe change of a municipality’s id, while its boundaries remained unchanged.\n\n\nImplication of the change\nBefore (year t):\n\nMunicipality A (with id 1) exist as separate entity with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipality A changed its id from 1 to 2 without changing its name.\n\n\n\nVisual overview\n\n\nChange Id\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\nExample\nSince 2021, the municipality (novads in Latvia) Varaknu changed its id from LV0701800 to LV0055000 without changing its name. The case was registered in the metadata dataset under the id: lv-l-14-2020-2021.\n Legal verification of the change   \n Visit Official Resource  \n\n\nMap Plots\n\nInteracive MapStatic Map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Non Geographical Changes"
+    ]
+  },
+  {
+    "objectID": "4.10_nongeo.html#changed-name-and-id",
+    "href": "4.10_nongeo.html#changed-name-and-id",
+    "title": "Non Geographical Changes",
+    "section": "Changed Name and Id",
+    "text": "Changed Name and Id\n\nDefinition\nThe change of a municipality’s name and id, while its boundaries remained unchanged.\n\n\nImplication of the change\nBefore (year t):\n\nMunicipality A (with id 1) exists as a separate entity each with its own name, id, and territory.\n\nAfter (year t + 1):\n\nMunicipality A changed its name from A to B and its id from 1 to 2.\n\n\n\nVisual overview\n\n\nChanged Name and Id\n\n\n\n\n\nThe number of municipal units involved is indicated in brackets under each description.\n\n\n\nExample\nSince 2017, the municipality (Gemeinde in Germany) Harz (Landkreis Osterode) (id 31569501501) changed its name from Harz (Landkreis Osterode) to Harz (Landkreis Götttingen) and id from 31569501501 to 31599501501 (source). The case was registered in the metadata dataset under the id: de-l-342-2016-2017.\n Legal verification of the change   \n Visit Official Resource  \n\n\nMap Plots\n\nInteracive MapStatic Map\n\n\n\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\n\n\n\n\n\nBefore\n\n\n\n\n\n\nAfter",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Non Geographical Changes"
+    ]
+  },
+  {
+    "objectID": "4.10_nongeo.html#references",
+    "href": "4.10_nongeo.html#references",
+    "title": "Non Geographical Changes",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Non Geographical Changes"
+    ]
+  },
+  {
+    "objectID": "4.10_nongeo.html#footnotes",
+    "href": "4.10_nongeo.html#footnotes",
+    "title": "Non Geographical Changes",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nBy id we mean code identifier of the municipality.↩︎",
+    "crumbs": [
+      "A new typology on border changes",
+      "Classification of Municipal Changes in the EU since 2014",
+      "Non Geographical Changes"
+    ]
+  },
+  {
+    "objectID": "3.3_code.html",
+    "href": "3.3_code.html",
+    "title": "Code-Based Change Identification",
+    "section": "",
+    "text": "Geospatial data files were obtained from official repositories of EU countries and provided in various formats, including GeoPackage (GPKG), GeoJSON, Shapefile, and GML, among others. To ensure consistency and uniform projection, all files were converted to the GeoPackage format, reprojected to a common coordinate reference system (EPSG:3035), and uniformly encoded in UTF-8.\nDuring this phase, 11 standardized GeoPackage files were generated for each country to facilitate further analysis. Standardized attribute fields were introduced, including:\nTo ensure geometric validity, all spatial geometries were validated. Where invalid geometries were detected, a small buffer of 0.01 units was applied to correct topological errors.\nOur spatial analysis—understood as the examination of spatial patterns, relationships, and processes across geographic space—focused on three principal types of municipal changes: mergers, splits, and border changes (Goodchild & Haining, 2004; Rey & Franklin, 2022).\nThese changes were examined through year-pair comparisons over the 10-year period, enabling a longitudinal understanding of spatial evolution.",
+    "crumbs": [
+      "Methodology",
+      "Code-Based Change Identification"
+    ]
+  },
+  {
+    "objectID": "3.3_code.html#merger-identification",
+    "href": "3.3_code.html#merger-identification",
+    "title": "Code-Based Change Identification",
+    "section": "Merger Identification",
+    "text": "Merger Identification\nMunicipal mergers were identified by detecting municipalities present in the previous year (pre-year, t) but absent in the subsequent year (post-year, t + 1). A decrease in the number of municipalities was considered an initial indicator of a potential merger. To confirm mergers, a spatial intersection analysis was conducted.\nEach potentially merged municipality was intersected with the new entities in t + 1, and the area of the intersection was calculated relative to the original municipality’s area in year t using the formula:\n\\[\nIP = \\left( \\frac{I}{A_t} \\right) \\times 100, \\quad VI = IP &gt; 49\n\\]\nWhere: - IP is the percentage of intersection - I is the area of intersection - A_t is the original area in year t - VI denotes a valid intersection if IP &gt; 49\nA threshold of 49% was applied to confirm that a substantial portion of the original municipality had merged. Comparative analysis in France, Italy, Germany, and Austria supported this threshold, which was further validated against administrative records.",
+    "crumbs": [
+      "Methodology",
+      "Code-Based Change Identification"
+    ]
+  },
+  {
+    "objectID": "3.3_code.html#split-identification",
+    "href": "3.3_code.html#split-identification",
+    "title": "Code-Based Change Identification",
+    "section": "Split Identification",
+    "text": "Split Identification\nTo identify municipal splits, we first looked for new mun_ids in year t + 1 that were not present in t. Additionally, municipalities present in both years were examined for partial territory transfers that could indicate splits. The intersection analysis applied:\n\\[\nIP = \\left( \\frac{I}{A_t} \\right) \\times 100, \\quad VI = 1 &lt; IP &lt; 70\n\\]\nThis range was selected to: - Exclude small modifications (IP &lt; 1) - Avoid overlap with mergers (IP &gt; 70)\nReverse checks (post-to-pre year) were used to identify all contributing units and to verify complex split cases.",
+    "crumbs": [
+      "Methodology",
+      "Code-Based Change Identification"
+    ]
+  },
+  {
+    "objectID": "3.3_code.html#border-change-detection",
+    "href": "3.3_code.html#border-change-detection",
+    "title": "Code-Based Change Identification",
+    "section": "Border Change Detection",
+    "text": "Border Change Detection\nBorder changes were detected among municipalities present in both years. Intersections with IP &lt; 1% flagged candidates, and area changes were examined to determine whether municipalities had gained or lost territory:\n\\[\n\\text{diff} = A_{t+1} - A_t, \\quad VI = IP &lt; 1\n\\]\nWhere: - A_{t+1} is the area in year t + 1 - A_t is the area in year t",
+    "crumbs": [
+      "Methodology",
+      "Code-Based Change Identification"
+    ]
+  },
+  {
+    "objectID": "3.3_code.html#non-geographical-changes",
+    "href": "3.3_code.html#non-geographical-changes",
+    "title": "Code-Based Change Identification",
+    "section": "Non-Geographical Changes",
+    "text": "Non-Geographical Changes\nNon-geographical changes included modifications to mun_id and mun_name. These were identified through direct comparison of IDs and names between the two geospatial files. Differences were recorded as name or ID changes. Further checks verified whether differing IDs or names referred to the same administrative entity.\nSee bibliography below.",
+    "crumbs": [
+      "Methodology",
+      "Code-Based Change Identification"
+    ]
+  },
+  {
+    "objectID": "3.3_code.html#python-based-implementation-and-public-code-access",
+    "href": "3.3_code.html#python-based-implementation-and-public-code-access",
+    "title": "Code-Based Change Identification",
+    "section": "Python-Based Implementation and Public Code Access",
+    "text": "Python-Based Implementation and Public Code Access\nThe geospatial processing described in this section was implemented using Python, leveraging libraries such as geopandas, shapely, and fiona for spatial operations and validation. The complete source code, along with documentation and examples, will be made publicly available in the project’s official repository in the coming months.",
+    "crumbs": [
+      "Methodology",
+      "Code-Based Change Identification"
+    ]
+  },
+  {
+    "objectID": "myenv/lib/python3.12/site-packages/idna-3.10.dist-info/LICENSE.html",
+    "href": "myenv/lib/python3.12/site-packages/idna-3.10.dist-info/LICENSE.html",
+    "title": "Local Quality of Government Project",
+    "section": "",
+    "text": "BSD 3-Clause License\nCopyright (c) 2013-2024, Kim Davies and contributors. All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+  },
+  {
+    "objectID": "myenv/lib/python3.12/site-packages/numpy/random/LICENSE.html",
+    "href": "myenv/lib/python3.12/site-packages/numpy/random/LICENSE.html",
+    "title": "NCSA Open Source License",
+    "section": "",
+    "text": "This software is dual-licensed under the The University of Illinois/NCSA Open Source License (NCSA) and The 3-Clause BSD License\n\nNCSA Open Source License\nCopyright (c) 2019 Kevin Sheppard. All rights reserved.\nDeveloped by: Kevin Sheppard (kevin.sheppard@economics.ox.ac.uk, kevin.k.sheppard@gmail.com) http://www.kevinsheppard.com\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal with the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimers.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimers in the documentation and/or other materials provided with the distribution.\nNeither the names of Kevin Sheppard, nor the names of any contributors may be used to endorse or promote products derived from this Software without specific prior written permission.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.\n\n\n3-Clause BSD License\nCopyright (c) 2019 Kevin Sheppard. All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\nComponents\nMany parts of this module have been derived from original sources, often the algorithm’s designer. Component licenses are located with the component code."
+  },
+  {
+    "objectID": "myenv/lib/python3.12/site-packages/httpx-0.28.1.dist-info/licenses/LICENSE.html",
+    "href": "myenv/lib/python3.12/site-packages/httpx-0.28.1.dist-info/licenses/LICENSE.html",
+    "title": "Local Quality of Government Project",
+    "section": "",
+    "text": "Copyright © 2019, Encode OSS Ltd. All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+  }
+]

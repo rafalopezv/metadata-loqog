@@ -3,9 +3,15 @@ title: "Legal Verification of Changes"
 format: 
     html:
         csl: utils/apa.csl
-    pdf:
-        csl: utils/apa.csl
+    
 bibliography: utils/references.bib
 jupyter: python3
 ---
 
+For each change in municipal boundaries, we identified an official legal document verifying that the change had occurred. In the case of France, this was accomplished via the [Légifrance](https://www.legifrance.gouv.fr/) portal, which allows municipal changes to be traced by searching for the municipality’s name and the relevant year. In other countries, the process was more complex. For example, in Italy, although the [Gazzetta Ufficiale](https://www.gazzettaufficiale.it/) serves as the primary official source, its search functionality is frequently unreliable. In such instances, it proved more effective to consult the websites of individual regional administrations. For example, in the Lombardy region, relevant legislative acts can be retrieved through the advanced search function of the [Lombardia portal](https://normelombardia.consiglio.regione.lombardia.it/normelombardia/Accessibile/main.aspx?view=ricercaavanzata).
+
+Based on the results of the previous step, we first analyzed the identified cases of mergers, splits, border changes, and non-geographical changes. As an initial stage of verification, we assessed whether the observed change was consistent with legal definitions. For example, we examined whether a case classified as a split was in fact a split or rather a dissolution process, whereby a municipality is dissolved and its entire territory is redistributed among existing municipalities, without the creation of any new ones, as would occur in a typical split. Similarly, some border changes could in fact be territorial transfers or territorial exchanges or involve more complex scenarios in which a dissolution and a merger occur simultaneously. In such instances, we categorized the case as composite restructuring (see Appendix for the full typology of all identified cases).
+
+Once the type of change was established and an official document confirming a change was identified, we proceeded with a three-step legal verification process. First, we assessed whether the number of units involved in the territorial change, as indicated in the geospatial files, corresponded to that specified in the official legislative sources. Second, we verified whether the names of municipalities in the geospatial files matched those used in the legal documents. Third, we identified and recorded the official date marking the change. All retrieved official documents were saved in PDF format, labeled with corresponding municipality identifiers, and archived to enable subsequent searches by identifier.
+
+In cases where inconsistencies were identified, we submitted clarification requests in the appropriate national language to the relevant authorities at the country level. For example, in France, such queries were directed to the National Institute of Statistics and Economic Studies (INSEE) and the administrators of the [data.gouv.fr portal](https://www.data.gouv.fr/fr/), which is responsible for the dissemination of official public data.

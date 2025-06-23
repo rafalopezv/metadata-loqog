@@ -3,8 +3,59 @@ title: "Data Structure Overview"
 format: 
   html:
     csl: utils/apa.csl
-  pdf:
-    csl: utils/apa.csl
+  
 bibliography: utils/references.bib
 jupyter: python3
 ---
+
+## Data Principles {#sec-data-principles}
+
+The data architecture rests on three guiding principles: (i) alignment with the project’s overarching research goals; (ii) maximum flexibility for users to attach their own variables and merge the datasets they need; and (iii) seamless interoperability with the European Union’s territorial hierarchy ([NUTS](https://ec.europa.eu/eurostat/web/nuts/background) levels 1–3).
+
+To honor those principles, the project is released as a file-based system: users download self-contained GeoPackage or CSV files instead of connecting to a live server. The bundle comprises four normalized, tabular tables—conventional rows-and-columns structures—that form a relational whole, stitched together by stable shared keys. This design lets analysts retrieve only the layers they need, join them rapidly, and aggregate results to any NUTS level if desired.
+
+Functionally, the tables serve four complementary roles: (1) storing the annual geometries, (2) tracking the temporal stability or change of each municipality, (3) documenting the legal instruments that authorize those changes, and (4) connecting local units to NUTS levels 1–3.
+
+These four datasets are complemented by a fifth block, conceived not as a single dataset but as an extensible “bucket” for thematic add-ons—procurement records, electoral returns, satellite-derived indicators, and so forth. Since these thematic files inherit the same stable keys, they merge seamlessly with the geographical core, preserving the relational integrity of the entire system.
+
+All four tables follow a long (“tidy”) layout: each row holds one, and only one, observation with its contextual identifiers, while every column represents a single, well-defined attribute [@wickham2014tidy].
+
+The sheer volume of information provides an additional, practical argument for a file-based, relational architecture. Consider France: across the eleven reference years 2014–2024, we maintain 388,317 municipal polygons—roughly 35,000 per year. Even when stored as efficient GeoPackage layers, the complete French stack already occupies 2,582,448,132 bytes (≈ 2.58 GB), or about 6,650 bytes per polygon. Scaled to all 32 countries, each new annual release adds on the order of one gigabyte of geometry, before any thematic attributes are attached. By keeping the geometry, change-tracking, legal provenance, and NUTS concordance in separate but inter-linked tables, we avoid a single monolithic file, minimize redundancy, and ensure that each layer streams quickly in Python, Julia, R, or any other analytics environment. In short, the project is a living, ever-growing asset, and maintaining lean, easily joined files is not a convenience—it is a necessity.
+
+## Dataset’s Purpose and Temporality
+
+<div class="table-responsive">
+<table class="table table-bordered table-sm">
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Purpose and scope</th>
+      <th>Temporal packaging</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Geographical dataset</td>
+      <td>Stores the official polygon or multipolygon footprint of every municipality for a given reference year. Each feature carries (a) the municipality’s original national code and (b) the project’s permanent internal identifier.</td>
+      <td>Annual layer</td>
+    </tr>
+    <tr>
+      <td>Standardized local code and change tracking dataset</td>
+      <td>Flags whether a municipality underwent a boundary event in a particular year or a non-geographical one, classifies the event, tracks the full lifespan of every internal and official identifier, and groups related alterations under a common case_id.</td>
+      <td>Cumulative series</td>
+    </tr>
+    <tr>
+      <td>Legal source register</td>
+      <td>Catalogues the legal acts that authorize each change, providing the act title, official reference URL, and a persistent URL to the downloadable document.</td>
+      <td>Cumulative series</td>
+    </tr>
+    <tr>
+      <td>NUTS concordance</td>
+      <td>Maps every municipal identifier (by year) to its corresponding NUTS-3, NUTS-2, and NUTS-1 levels, enabling users to aggregate results seamlessly to higher territorial tiers.</td>
+      <td>Annual layer</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+The following section provides a field-by-field description of each table, including data types and value domains. Then, another section demonstrates how to join the tables in practice and aggregate results to higher territorial tiers.

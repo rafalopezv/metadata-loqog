@@ -1,0 +1,9 @@
+---
+title: "Merging Data into French Municipalities"
+format: 
+    html:
+        csl: utils/apa.csl
+    
+bibliography: utils/references.bib
+jupyter: python3
+---

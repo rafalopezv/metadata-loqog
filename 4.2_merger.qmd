@@ -3,8 +3,7 @@ title: "Merger"
 format: 
     html:
         csl: utils/apa.csl
-    pdf:
-        csl: utils/apa.csl
+    
 bibliography: utils/references.bib
 jupyter: python3
 ---
@@ -99,7 +98,7 @@ Visit Official Resource
 
 #### d. New name with a new id
 
-The case occured in 2075 and it was noticeable in 2018.
+The case occured in 2017 and it was noticeable in 2018.
 
 The new municipality (Kommune in Norway) *Indre Fosen* (id 5054) was created through the merger of the municipalities *Leksvik* (id 1718) and *Rissa* (id 1624). Both the name and the id are new (source).Case id: no-m-6-2017-2018
 
@@ -132,6 +131,7 @@ from branca.element import Element
 
 
 gdf = gpd.read_file("geo_files/merger_before.geojson").to_crs(epsg=4326)
+gdf_after  = gpd.read_file("geo_files/merger_after.geojson").to_crs(epsg=4326)
 
 
 centroid = gdf.unary_union.centroid
@@ -139,7 +139,7 @@ centroid = gdf.unary_union.centroid
 
 m = folium.Map(
     location=[centroid.y, centroid.x],
-    zoom_start=13,
+    zoom_start=9,
     tiles=None
 )
 
@@ -184,6 +184,21 @@ geojson_tooltip = folium.features.GeoJsonTooltip(
     sticky=True
 )
 
+tooltip_after = folium.features.GeoJsonTooltip(
+    fields    = ["year", "com_name", "com_id"],
+    aliases   = ["Year:", "Municipality:", "Municipality Id:"],
+    localize  = True,
+    labels    = True,
+    style     = (
+        "box-shadow:3px 3px 6px rgba(0,0,0,0.1); "
+        "font-family:'Source Sans 3',sans-serif; "
+        "font-size:14px; padding:8px; "
+        "border:1px solid rgba(255,255,255,0.15); "
+        "background:#f7f9f9;"
+    ),
+    sticky    = True
+)
+
 
 geo_layer = folium.GeoJson(
     data=gdf,
@@ -196,6 +211,15 @@ geo_layer = folium.GeoJson(
     tooltip=geojson_tooltip
 )
 geo_layer.add_to(m)
+
+folium.GeoJson(
+    data=gdf_after,
+    name="Merger After",
+    style_function=lambda f: {"color":"#333333","weight":2.5,"fillOpacity":0.4},
+    tooltip=tooltip_after,
+    show=False
+    
+).add_to(m)
 
 
 _ = folium.LayerControl().add_to(m)
@@ -228,26 +252,58 @@ m
 <div style="flex: 1; text-align: center; margin: 0; padding: 0;">
 <br>
 <p style="margin: 0 0 0.25em 0; padding: 0;"><strong>After</strong></p>
-<img src="img/merger_after.jpg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="After Map"/>
+<img src="img/merger_after.svg" style="width: 100%; height: auto; margin: 0; padding: 0;" alt="After Map"/>
 </div>
 </div>
 
 :::
 
 
-
-
 ### How it is recorded in the data system
+
+#### Gepspatial dataset
+
+##### Year before the change
+
+| cname  | year | original_code | munqog_code | mun_name | geom                     |
+| :----- | :--- | :------------ | :---------- | :------- | :----------------------- |
+| Norway | 2017 | 1624          | no-1624     | Rissa    | here goes the geometry   |
+| Norway | 2017 | 1718          | no-1718     | Leksvik  | here goes the geometry   |
+
+##### Year after the change
+
+| cname  | year | original_code | munqog_code | mun_name        | geom                     |
+| :----- | :--- | :------------ | :---------- | :-------------- | :----------------------- |
+| Norway | 2018 | 5054          | no-5054     | Indre Fosen  | here goes the geometry   |
+
+
+#### Main Metadata
+
+| cname  | year | reference_year | original_code | munqog_code | mun_name        | geom                     | original_code_years | munqog_code_years | recorded_change | change_nature | sub_change_nature | case_id         | units_involved | change_name_description         | change_code_description          | shape_area |
+| :----- | :--- | :------------- | :------------ | :---------- | :--------------- | :----------------------- | :------------------ | :---------------- | :-------------- | :------------ | :---------------- | :-------------- | :------------- | :------------------------------- | :------------------------------- | :--------- |
+| Norway | 2018 | 2018           | 5054          | no-5054     | "Indre Fosen"    | here goes the geometry   | 4                   | 7                 | TRUE            | merger        | simple            | no-m-6-2017-2018 | 2              | new_name                        | new_code                         | 1 131 532  |
+| Norway | 2017 | 2018           | 1624          | no-1624     | Rissa            | here goes the geometry   | 4                   | 7                 | TRUE            | merger        | simple            | no-m-6-2017-2018 | 2              | name_will_cease_existance       | code_will_cease_existance       | 121 331    |
+| Norway | 2017 | 2017           | 1718          | no-1718     | Leksvik          | here goes the geometry   | 4                   | 7                 | TRUE            | merger        | simple            | no-m-6-2017-2018 | 2              | name_will_cease_existance       | code_will_cease_existance       | 1 010 201  |
+
+
+#### Legal Dataset
+
+| year | original_code | munqog_code | case_id           | law_name              | law_link                                                                                   | law_file_name               | law_qog_url                                                                                                              |
+| ---- | ------------- | ----------- | ----------------- | --------------------- | ------------------------------------------------------------------------------------------ | --------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| 2018 | 5054          | no-5054     | no-m-6-2017-2018  | LAW-2001-06-15-70     | https://lovdata.no/dokument/LF/forskrift/2016-06-17-695?q=LEKSVIK                          | no-m-6-2017-2018.pdf        | https://www.qogdata.pol.gu.se/loqog-documentation/legal/no/no-m-6-2017-2018.pdf                                           |
+| 2017 | 1624          | no-1624     | no-m-6-2017-2018  | LAW-2001-06-15-70     | https://lovdata.no/dokument/LF/forskrift/2016-06-17-695?q=LEKSVIK                          | no-m-6-2017-2018.pdf        | https://www.qogdata.pol.gu.se/loqog-documentation/legal/no/no-m-6-2017-2018.pdf                                           |
+| 2017 | 1718          | no-1718     | no-m-6-2017-2018  | LAW-2001-06-15-70     | https://lovdata.no/dokument/LF/forskrift/2016-06-17-695?q=LEKSVIK                          | no-m-6-2017-2018.pdf        | https://www.qogdata.pol.gu.se/loqog-documentation/legal/no/no-m-6-2017-2018.pdf                                           |
 
 
 ## Multiple Merger
+
 
 
 ### Definition
 
 The creation of a new municipality whose territory results from the union of more than two pre-existing municipalities.
 
-### Implication of te change
+### Implication of the change
 
 Before (year t):
 
